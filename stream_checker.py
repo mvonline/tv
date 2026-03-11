@@ -1,29 +1,17 @@
-#!/usr/bin/env python3
 """
-Stream URL Checker
-Validates each stream_url in channels.json by sending a HEAD (or GET) request.
-Updates the 'working' field to true/false and saves channels.json.
+stream_checker.py — Stream URL validator for channels.json
+Sends HEAD requests to each stream_url and sets working: true/false.
+Updates channels.json in place.
 """
 
-import requests
 import json
 import time
-import logging
-import sys
-from datetime import datetime, timezone
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)]
-)
-log = logging.getLogger(__name__)
+import requests
 
-CHANNELS_FILE = "channels.json"
-REQUEST_TIMEOUT = 10       # seconds per request
-MAX_WORKERS = 5            # concurrent checks
-REQUEST_DELAY = 0.2        # seconds between sequential requests (non-threaded mode)
+INPUT_FILE = "channels.json"
+REQUEST_TIMEOUT = 10  # seconds
+REQUEST_DELAY = 0.5  # seconds between requests
 
 HEADERS = {
     "User-Agent": (
@@ -31,124 +19,72 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
     ),
-    "Accept": "*/*",
 }
 
 
-def check_stream(channel: dict) -> tuple[str, bool | None]:
-    """
-    Check if a stream URL is accessible.
-    Returns (channel_id, working: bool | None).
-    None means no stream_url to check.
-    """
-    stream_url = channel.get("stream_url")
-    channel_id = channel.get("id", "unknown")
-
-    if not stream_url:
-        return channel_id, None
-
+def check_stream(url: str, session: requests.Session) -> bool:
+    """Return True if the stream URL responds with a 2xx or 3xx status code."""
     try:
-        # Try HEAD first (faster, no body download)
-        response = requests.head(
-            stream_url,
-            headers=HEADERS,
-            timeout=REQUEST_TIMEOUT,
-            allow_redirects=True,
-        )
-        if response.status_code < 400:
-            log.info(f"  OK [{response.status_code}] {channel['name']}")
-            return channel_id, True
-
-        # Some HLS servers reject HEAD — fallback to GET with stream=True
-        response = requests.get(
-            stream_url,
-            headers=HEADERS,
-            timeout=REQUEST_TIMEOUT,
-            stream=True,
-        )
-        # Just read the first chunk to verify the stream is alive
-        first_chunk = next(response.iter_content(chunk_size=512), None)
-        response.close()
-
-        if response.status_code < 400 and first_chunk:
-            log.info(f"  OK [{response.status_code}] {channel['name']}")
-            return channel_id, True
-        else:
-            log.warning(f"  FAIL [{response.status_code}] {channel['name']}")
-            return channel_id, False
-
-    except requests.exceptions.Timeout:
-        log.warning(f"  TIMEOUT {channel['name']}: {stream_url[:60]}...")
-        return channel_id, False
-    except requests.exceptions.ConnectionError:
-        log.warning(f"  CONNECTION ERROR {channel['name']}: {stream_url[:60]}...")
-        return channel_id, False
-    except requests.exceptions.RequestException as e:
-        log.warning(f"  ERROR {channel['name']}: {e}")
-        return channel_id, False
+        resp = session.head(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        return resp.status_code < 400
+    except requests.RequestException:
+        try:
+            # Some servers don't support HEAD — try GET with stream=True
+            resp = session.get(
+                url,
+                headers=HEADERS,
+                timeout=REQUEST_TIMEOUT,
+                stream=True,
+                allow_redirects=True,
+            )
+            resp.close()
+            return resp.status_code < 400
+        except requests.RequestException:
+            return False
 
 
 def main():
-    log.info(f"Loading {CHANNELS_FILE}...")
-    try:
-        with open(CHANNELS_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        log.error(f"{CHANNELS_FILE} not found. Run scraper.py first.")
-        sys.exit(1)
-    except json.JSONDecodeError as e:
-        log.error(f"Invalid JSON in {CHANNELS_FILE}: {e}")
-        sys.exit(1)
+    print("=" * 60)
+    print("Stream Checker")
+    print("=" * 60)
+
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
     channels = data.get("channels", [])
     total = len(channels)
-    checkable = [c for c in channels if c.get("stream_url")]
-    log.info(f"Total channels: {total}, with stream URLs: {len(checkable)}")
-
-    if not checkable:
-        log.warning("No channels with stream URLs to check.")
-        return
-
-    # Build a lookup dict for fast update
-    results: dict[str, bool | None] = {}
-
-    log.info(f"Checking {len(checkable)} streams with {MAX_WORKERS} workers...")
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        future_to_channel = {
-            executor.submit(check_stream, ch): ch
-            for ch in checkable
-        }
-        completed = 0
-        for future in as_completed(future_to_channel):
-            channel_id, working = future.result()
-            results[channel_id] = working
-            completed += 1
-            if completed % 10 == 0:
-                log.info(f"  Progress: {completed}/{len(checkable)}")
-
-    # Apply results
     working_count = 0
-    broken_count = 0
-    for channel in channels:
-        cid = channel.get("id")
-        if cid in results:
-            channel["working"] = results[cid]
-            if results[cid] is True:
+    skipped_count = 0
+
+    with requests.Session() as session:
+        for i, ch in enumerate(channels, 1):
+            stream_url = ch.get("stream_url")
+            name = ch.get("name", "Unknown")
+
+            if not stream_url:
+                ch["working"] = False
+                skipped_count += 1
+                print(f"[{i}/{total}] SKIP  (no stream_url): {name}")
+                continue
+
+            result = check_stream(stream_url, session)
+            ch["working"] = result
+
+            if result:
                 working_count += 1
-            elif results[cid] is False:
-                broken_count += 1
+                status = "OK   "
+            else:
+                status = "FAIL "
 
-    # Update metadata
-    data["checked_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    data["working_streams"] = working_count
-    data["broken_streams"] = broken_count
+            print(f"[{i}/{total}] {status} {name} — {stream_url[:60]}")
+            time.sleep(REQUEST_DELAY)
 
-    # Save
-    with open(CHANNELS_FILE, "w", encoding="utf-8") as f:
+    with open(INPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    log.info(f"\nDone! Working: {working_count}, Broken: {broken_count}, No URL: {total - len(checkable)}")
-    log.info(f"Updated {CHANNELS_FILE}")
+    print(f"\n[✓] Done! {working_count}/{total - skipped_count} streams working.")
+    print(f"    {skipped_count} channels had no stream URL.")
+    print(f"    Updated {INPUT_FILE}")
 
 
 if __name__ == "__main__":

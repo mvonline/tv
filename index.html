@@ -3,155 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=1920" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Titan TV — Persian Channels</title>
+  <meta name="description" content="MasTV — Iranian TV channels. Watch live Persian, News, Music streams on your TV." />
+  <title>MasTV — Iranian Channels</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- hls.js for HLS/m3u8 stream support on Chromium -->
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
 </head>
 <body>
+  <div id="app">
 
-<div id="app">
+    <!-- ═══════════════════════════════════════════════
+         SCREEN 1 — Home / Channel Browser
+    ─────────────────────────────────────────────────── -->
+    <div id="screen-home" class="screen active">
 
-  <!-- ═══════════════════════════════════════════════
-       HOME SCREEN
-  ══════════════════════════════════════════════════ -->
-  <div id="home-screen" class="screen">
-
-    <!-- Top Bar -->
-    <div id="topbar">
-      <div id="app-logo">
-        <!-- Inline SVG logo — swap for your own brand asset -->
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-          <rect width="40" height="40" rx="10" fill="#e5a00d"/>
-          <rect x="8" y="12" width="24" height="3" rx="1.5" fill="#0d0d0d"/>
-          <rect x="8" y="18.5" width="18" height="3" rx="1.5" fill="#0d0d0d"/>
-          <rect x="8" y="25" width="12" height="3" rx="1.5" fill="#0d0d0d"/>
-        </svg>
-        <span id="app-title">Titan TV</span>
-      </div>
-
-      <div class="topbar-spacer"></div>
-
-      <!-- Search button -->
-      <button id="search-btn" tabindex="-1" aria-label="Search channels">
-        <svg viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="7"/>
-          <line x1="16.5" y1="16.5" x2="22" y2="22"/>
-        </svg>
-      </button>
-
-      <div id="clock">00:00</div>
-    </div>
-
-    <!-- Body: Sidebar + Grid -->
-    <div class="content-area">
-
-      <!-- Left Sidebar -->
-      <nav id="sidebar" aria-label="Category navigation">
-        <div id="sidebar-title">Categories</div>
-        <ul id="category-list" role="listbox" aria-label="Channel categories"></ul>
-
-        <div id="sidebar-sort-label">Sort</div>
-        <ul id="sort-list" role="listbox" aria-label="Sort options"></ul>
-      </nav>
-
-      <!-- Channel Grid Area -->
-      <main id="grid-area">
-        <div id="grid-header">
-          <span id="grid-category-label">All</span>
-          <span id="grid-channel-count">0 channels</span>
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="MasTV" />
         </div>
-        <div id="channel-grid" role="list" aria-label="Channel list"></div>
-      </main>
+        <div class="spacer"></div>
+        <button class="search-btn" id="btn-search" tabindex="-1">
+          <span>🔍</span>
+          <span>Search</span>
+        </button>
+        <div class="clock" id="clock">00:00</div>
+      </header>
 
-    </div>
-  </div><!-- /#home-screen -->
+      <!-- Content -->
+      <div class="home-content">
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar" aria-label="Categories">
+          <div class="sidebar-section-label">CATEGORIES</div>
+          <!-- Populated by JS -->
+          <div class="sidebar-section-label" style="margin-top:16px">SORT</div>
+          <div class="sidebar-item" data-sort="az" tabindex="-1">A → Z</div>
+          <div class="sidebar-item" data-sort="za" tabindex="-1">Z → A</div>
+          <div class="sidebar-item" data-sort="cat" tabindex="-1">By Category</div>
+        </nav>
+
+        <!-- Grid -->
+        <main class="grid-area" id="grid-area">
+          <div class="channel-grid" id="channel-grid" role="list">
+            <!-- Skeleton cards while loading -->
+            <!-- Populated by JS -->
+          </div>
+        </main>
+
+      </div><!-- .home-content -->
+    </div><!-- #screen-home -->
 
 
-  <!-- ═══════════════════════════════════════════════
-       PLAYER SCREEN
-  ══════════════════════════════════════════════════ -->
-  <div id="player-screen" class="screen">
+    <!-- ═══════════════════════════════════════════════
+         SCREEN 2 — Player
+    ─────────────────────────────────────────────────── -->
+    <div id="screen-player" class="screen">
+      <video id="player-video" playsinline autoplay></video>
 
-    <video id="player-video" playsinline autoplay muted></video>
-
-    <!-- HUD overlay (fades after inactivity) -->
-    <div id="player-hud">
-      <!-- Top: channel info -->
-      <div class="hud-top">
-        <img id="hud-logo" src="" alt="" style="display:none"/>
-        <div id="hud-logo-placeholder" style="display:none"></div>
-        <div class="hud-channel-info">
-          <div id="hud-channel-name">Channel Name</div>
-          <div id="hud-category">Category</div>
+      <!-- HUD Overlay -->
+      <div class="player-hud" id="player-hud">
+        <div class="hud-top">
+          <img class="hud-channel-logo" id="hud-logo" src="" alt="" />
+          <div class="hud-channel-name" id="hud-name"></div>
+          <div class="hud-spacer"></div>
+          <button class="hud-home-btn" id="hud-home-btn" tabindex="-1">⌂ Home</button>
+          <button class="hud-fav-btn" id="hud-fav-btn" tabindex="-1">♥</button>
+          <div class="hud-clock" id="hud-clock">00:00</div>
+        </div>
+        <div class="hud-spacer"></div>
+        <div class="hud-bottom">
+          <span class="live-badge">● LIVE</span>
+          <span class="hud-status" id="hud-status">Playing</span>
+          <div class="hud-spacer"></div>
+          <span class="hud-back-hint">Back → channels &nbsp;|&nbsp; F = favourite &nbsp;|&nbsp; ⌂ Home button → exit player</span>
         </div>
       </div>
 
-      <!-- Bottom: live badge + hints + time -->
-      <div class="hud-bottom">
-        <div class="hud-bottom-left">
-          <div id="hud-live-badge">● LIVE</div>
-          <div id="hud-back-hint">Press Back to exit</div>
+      <!-- Buffering Spinner -->
+      <div class="buffering-spinner" id="buffering-spinner">
+        <div class="spinner-ring"></div>
+      </div>
+
+      <!-- Stream Error -->
+      <div class="stream-error" id="stream-error">
+        <h3>⚠ Stream Unavailable</h3>
+        <p>Could not connect to this channel's stream.</p>
+        <p>Press Back to return to the channel list.</p>
+      </div>
+    </div><!-- #screen-player -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         SCREEN 3 — Search
+    ─────────────────────────────────────────────────── -->
+    <div id="screen-search" class="screen">
+      <div class="search-header">
+        <div class="search-title">Search Channels</div>
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Type to filter channels..."
+            autocomplete="off"
+            spellcheck="false"
+          />
         </div>
-        <div id="hud-time">00:00</div>
+        <div class="search-hint">Press Esc or Back to return • Arrow keys + Enter to select</div>
+      </div>
+      <div class="search-results-area">
+        <div class="channel-grid" id="search-grid" role="list"></div>
+      </div>
+    </div><!-- #screen-search -->
+
+
+    <!-- Error (fetch failure) -->
+    <div class="error-screen" id="error-screen">
+      <div style="font-size:52px">📡</div>
+      <h2>Could Not Load Channels</h2>
+      <p>Check your network connection and try again.</p>
+      <button class="retry-btn focused" id="retry-btn" tabindex="-1">Retry</button>
+    </div>
+
+    <!-- Exit Confirmation Dialog -->
+    <div class="exit-dialog" id="exit-dialog">
+      <div class="exit-dialog-box">
+        <div class="exit-icon">📺</div>
+        <h3>Exit MasTV?</h3>
+        <p>Press <strong>Back</strong> again to exit, or <strong>Enter / Stay</strong> to keep watching.</p>
+        <div class="exit-buttons">
+          <button class="exit-btn exit-btn--stay" id="exit-stay" tabindex="-1">Stay</button>
+          <button class="exit-btn exit-btn--leave" id="exit-leave" tabindex="-1">Exit App</button>
+        </div>
       </div>
     </div>
 
-    <!-- Buffering / Error overlay -->
-    <div id="player-overlay" class="hidden">
-      <div id="buffering-spinner" class="spinner"></div>
-      <div id="player-status-msg">Loading…</div>
-      <button id="player-error-back" class="hidden" tabindex="-1">← Back to Channels</button>
-    </div>
+  </div><!-- #app -->
 
-  </div><!-- /#player-screen -->
-
-
-  <!-- ═══════════════════════════════════════════════
-       SEARCH SCREEN
-  ══════════════════════════════════════════════════ -->
-  <div id="search-screen" class="screen">
-
-    <div id="search-header">
-      <div id="search-title">Search Channels</div>
-      <div id="search-input-wrap">
-        <svg viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="7"/>
-          <line x1="16.5" y1="16.5" x2="22" y2="22"/>
-        </svg>
-        <input
-          id="search-input"
-          type="text"
-          placeholder="Type to search…"
-          autocomplete="off"
-          autocorrect="off"
-          spellcheck="false"
-        />
-      </div>
-      <div id="search-hint">Use remote keyboard or physical keyboard · Arrow Down to browse results · Back to close</div>
-    </div>
-
-    <div id="search-results-label">All channels</div>
-
-    <div id="search-grid" role="list" aria-label="Search results"></div>
-    <div id="search-no-results" class="hidden">No channels match your search.</div>
-
-  </div><!-- /#search-screen -->
-
-
-  <!-- ═══════════════════════════════════════════════
-       ERROR SCREEN
-  ══════════════════════════════════════════════════ -->
-  <div id="error-screen" class="screen">
-    <div id="error-icon">📡</div>
-    <div id="error-title">Something went wrong</div>
-    <div id="error-msg">Could not load channel data.</div>
-    <button id="retry-btn" tabindex="-1">Try Again</button>
-  </div><!-- /#error-screen -->
-
-</div><!-- /#app -->
-
-<script src="app.js"></script>
+  <!-- hls.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.11/dist/hls.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
