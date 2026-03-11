@@ -547,12 +547,20 @@ html, body {
 /* ── Player Screen ────────────────────────────────────────── */
 #screen-player {
   background: #000;
-  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+/* We override the .screen.active display rule so it keeps our alignment */
+#screen-player:not(.active) {
+  display: none !important;
 }
 
 #player-video {
   width: 100%;
-  height: 100%;
+  max-width: 100vw;
+  height: auto;
+  max-height: 100dvh;
   object-fit: contain;
   display: block;
 }
@@ -803,7 +811,8 @@ html, body {
 /* ── Mobile Numpad Overlay ─────────────────────────────────── */
 .numpad-overlay {
   position: absolute;
-  top: 50%;
+  /* Push it slightly lower down the screen on mobile (e.g., 65% instead of dead center 50%) */
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
   background: rgba(20,20,20,0.85);
@@ -812,6 +821,7 @@ html, body {
   border-radius: 16px;
   padding: 16px;
   width: 260px;
+  max-width: 90vw;
   z-index: 60;
   opacity: 0;
   pointer-events: none;

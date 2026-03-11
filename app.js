@@ -633,7 +633,12 @@ function toggleFullscreen() {
 
   if (!isFullscreen) {
     if (requestFullScreen) {
-      requestFullScreen.call(docEl).catch(() => {});
+      requestFullScreen.call(docEl).then(() => {
+        // Try to force landscape orientation on mobile
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock('landscape').catch(() => {});
+        }
+      }).catch(() => {});
     } else {
       // iOS Safari fallback on iPhones (doesn't support full API, but can fullscreen the video element directly)
       const video = dom.playerVideo();
@@ -641,11 +646,20 @@ function toggleFullscreen() {
         video.webkitEnterFullscreen();
       }
     }
+    // Also try to lock if using fallback (it might fail on iOS, but safe to attempt)
+    if (screen.orientation && screen.orientation.lock) {
+      screen.orientation.lock('landscape').catch(() => {});
+    }
+    
     dom.hudFsBtn().textContent = '⊠';
     dom.hudFsBtn().title = 'Exit Fullscreen';
   } else {
     if (cancelFullScreen) {
       cancelFullScreen.call(doc).catch(() => {});
+    }
+    // Unlock orientation
+    if (screen.orientation && screen.orientation.unlock) {
+      screen.orientation.unlock();
     }
     dom.hudFsBtn().textContent = '⛶';
     dom.hudFsBtn().title = 'Fullscreen';
