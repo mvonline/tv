@@ -77,6 +77,7 @@ html, body {
 #app {
   width: 100vw;
   height: 100vh;
+  height: 100dvh; /* For iOS Safari/Chrome dynamic toolbars */
   position: relative;
   overflow: hidden;
 }
@@ -106,6 +107,25 @@ html, body {
 }
 @media (min-width: 768px) { .top-bar { padding: 0 24px; gap: 16px; } }
 @media (min-width: 1280px){ .top-bar { padding: 0 32px; gap: 20px; } }
+
+.top-bar .mobile-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  transition: background var(--transition);
+}
+@media (max-width: 767px) {
+  .top-bar .mobile-menu-btn { display: flex; align-items: center; justify-content: center; }
+}
+.top-bar .mobile-menu-btn:focus,
+.top-bar .mobile-menu-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
 
 .top-bar .logo img {
   height: 28px;
@@ -212,6 +232,41 @@ html, body {
   color: var(--accent);
   border-left-color: var(--accent);
   font-weight: 600;
+}
+
+/* Mobile Sidebar override (slide-over drawer) */
+@media (max-width: 767px) {
+  .home-content { position: relative; }
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    z-index: 40;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  
+  /* Semi-transparent backdrop when sidebar is open */
+  .home-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 35;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .home-content.sidebar-open::before {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
 /* ── Channel Grid ─────────────────────────────────────────── */
@@ -684,11 +739,29 @@ html, body {
   pointer-events: all;
 }
 @media (min-width: 768px) { .hud-fs-btn { font-size: 20px; padding: 4px 12px; } }
-.hud-fs-btn:hover, .hud-fs-btn.focused, .hud-fs-btn:focus {
+.hud-fs-btn:hover, .hud-fs-btn.focused, .hud-fs-btn:focus,
+.hud-numpad-btn:hover, .hud-numpad-btn.focused, .hud-numpad-btn:focus {
   background: rgba(255,255,255,0.22);
   border-color: rgba(255,255,255,0.6);
   box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
 }
+
+.hud-numpad-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  font-family: inherit;
+  padding: 4px 10px;
+  cursor: pointer;
+  outline: none;
+  line-height: 1;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+  pointer-events: all;
+}
+@media (min-width: 768px) { .hud-numpad-btn { font-size: 18px; padding: 4px 12px; } }
+@media (min-width: 768px) { .hud-numpad-btn { display: none; /* Hide on larger screens assuming keyboard/remote */ } }
 
 /* ── Channel Number OSD ────────────────────────────────────── */
 .ch-osd {
@@ -727,13 +800,83 @@ html, body {
   line-height: 1;
 }
 
+/* ── Mobile Numpad Overlay ─────────────────────────────────── */
+.numpad-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 16px;
+  width: 260px;
+  z-index: 60;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+.numpad-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+.numpad-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.numpad-close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+}
+.numpad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.np-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 0;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.1s, transform 0.1s;
+}
+.np-btn:active {
+  background: var(--accent);
+  transform: scale(0.95);
+  border-color: var(--accent);
+}
+.np-enter {
+  background: rgba(229, 160, 13, 0.4);
+  color: var(--accent-light);
+  font-size: 18px;
+}
+
 /* ── Player Channel Panel ──────────────────────────────────── */
 .player-channel-panel {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  width: min(320px, 80vw);
+  width: min(320px, 85vw);
   background: rgba(10, 10, 10, 0.96);
   backdrop-filter: blur(16px);
   border-left: 1px solid rgba(255,255,255,0.08);
@@ -786,12 +929,13 @@ html, body {
   border: none;
   outline: none;
   color: var(--text-primary);
-  font-size: 13px;
+  /* Use 16px strictly on mobile to PREVENT iOS auto-zoom behavior */
+  font-size: 16px; 
   font-family: inherit;
   caret-color: var(--accent);
 }
 .pcp-search-input::placeholder { color: var(--text-muted); }
-@media (min-width: 768px) { .pcp-search-input { font-size: 14px; } }
+@media (min-width: 768px) { .pcp-search-input { font-size: 15px; } }
 
 /* No results message in panel */
 .pcp-no-results {

@@ -54,10 +54,13 @@ const state = {
 /* ── DOM refs ─────────────────────────────────────────────── */
 const $ = id => document.getElementById(id);
 const dom = {
-  screenHome:       () => $('screen-home'),
-  screenPlayer:     () => $('screen-player'),
+  app:              () => document.getElementById('app'),
+  homeContent:      () => document.querySelector('.home-content'),
+  homeScreen:       () => document.getElementById('screen-home'),
+  playerScreen:     () => document.getElementById('screen-player'),
   screenSearch:     () => $('screen-search'),
   errorScreen:      () => $('error-screen'),
+  btnMenu:          () => document.getElementById('btn-mobile-menu'),
   clock:            () => $('clock'),
   hudClock:         () => $('hud-clock'),
   channelGrid:      () => $('channel-grid'),
@@ -86,6 +89,11 @@ const dom = {
   exitLeave:        () => $('exit-leave'),
   chOsd:            () => $('ch-osd'),
   chOsdNum:         () => $('ch-osd-num'),
+  hudNumpadBtn:     () => $('hud-numpad-btn'),
+  numpadOverlay:    () => $('numpad-overlay'),
+  numpadCloseBtn:   () => $('numpad-close-btn'),
+  numpadGrid:       () => $('numpad-grid'),
+  numpadEnterBtn:   () => $('numpad-enter-btn'),
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -116,6 +124,87 @@ function _handleDigitKey(digit) {
     const ch = state.allChannels.find(c => c.num === num && c.stream_url);
     if (ch) openPlayer(ch);
   }, 1500);
+}
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE SIDEBAR LOGIC
+══════════════════════════════════════════════════════════ */
+function toggleMobileSidebar() {
+  const sidebar = dom.sidebar();
+  const content = dom.homeContent();
+  const isOpen = sidebar.classList.contains('mobile-open');
+  if (isOpen) {
+    sidebar.classList.remove('mobile-open');
+    content.classList.remove('sidebar-open');
+  } else {
+    sidebar.classList.add('mobile-open');
+    content.classList.add('sidebar-open');
+  }
+}
+
+function closeMobileSidebar() {
+  dom.sidebar().classList.remove('mobile-open');
+  dom.homeContent().classList.remove('sidebar-open');
+}
+
+// Close sidebar if user clicks on the backdrop (the pseudo-element on home-content)
+function _setupSidebarListeners() {
+  dom.homeContent().addEventListener('click', (e) => {
+    if (e.target === dom.homeContent() && dom.sidebar().classList.contains('mobile-open')) {
+      closeMobileSidebar();
+    }
+  });
+  dom.btnMenu().addEventListener('click', toggleMobileSidebar);
+}
+
+/* ══════════════════════════════════════════════════════════
+   ON-SCREEN NUMPAD LOGIC (Mobile)
+══════════════════════════════════════════════════════════ */
+function openMobileNumpad() {
+  dom.numpadOverlay().classList.add('active');
+}
+function closeMobileNumpad() {
+  dom.numpadOverlay().classList.remove('active');
+  _chInputBuf = '';
+  clearTimeout(_chInputTimer);
+  _hideChOsd();
+}
+
+function _setupNumpadListeners() {
+  dom.hudNumpadBtn().addEventListener('click', openMobileNumpad);
+  dom.numpadCloseBtn().addEventListener('click', closeMobileNumpad);
+
+  dom.numpadGrid().addEventListener('click', (e) => {
+    const btn = e.target.closest('.np-btn');
+    if (!btn) return;
+    const val = btn.dataset.val;
+    if (!val) return;
+
+    if (val === 'backspace') {
+      _chInputBuf = _chInputBuf.slice(0, -1);
+      // show what they have typed so far in OSD, or hide if empty
+      if (_chInputBuf.length > 0) _showChOsd(_chInputBuf);
+      else _hideChOsd();
+    } else {
+      // It's a digit
+      _handleDigitKey(val);
+    }
+  });
+
+  dom.numpadEnterBtn().addEventListener('click', () => {
+    if (_chInputBuf.length > 0) {
+      // Clear the timer from _handleDigitKey and trigger immediately
+      clearTimeout(_chInputTimer);
+      const num = parseInt(_chInputBuf, 10);
+      _chInputBuf = '';
+      _hideChOsd();
+      closeMobileNumpad();
+      const ch = state.allChannels.find(c => c.num === num && c.stream_url);
+      if (ch) openPlayer(ch);
+    } else {
+      closeMobileNumpad();
+    }
+  });
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -235,6 +324,17 @@ function toggleFavoriteOnFocused() {
 
 function toggleFavoritePlayer() {
   if (state.currentChannel) toggleFavorite(state.currentChannel.id);
+}
+
+/* ══════════════════════════════════════════════════════════
+   INIT
+══════════════════════════════════════════════════════════ */
+async function init() {
+  loadFavorites();
+  await loadChannels();
+  
+  _setupSidebarListeners();
+  _setupNumpadListeners();
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -503,10 +603,12 @@ function activateSidebarItem(el) {
     state.focusIndex = 0;
     applyFilter();
     focusGridItem(0);
+    closeMobileSidebar(); // Auto-close on selection
   } else if ('sort' in el.dataset) {
     state.selectedSort = el.dataset.sort;
     state.focusIndex = 0;
     applyFilter();
+    closeMobileSidebar(); // Auto-close on selection
     // Stay in sidebar after changing sort
   }
 }
@@ -520,19 +622,42 @@ function selectSidebarItem(idx) {
    FULLSCREEN
 ══════════════════════════════════════════════════════════ */
 function toggleFullscreen() {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen().catch(() => {});
+  const doc = window.document;
+  const docEl = doc.documentElement;
+
+  const requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  const cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+  
+  // Is fullscreen currently active?
+  const isFullscreen = doc.fullscreenElement || doc.mozFullScreenElement || doc.webkitFullscreenElement || doc.msFullscreenElement;
+
+  if (!isFullscreen) {
+    if (requestFullScreen) {
+      requestFullScreen.call(docEl).catch(() => {});
+    } else {
+      // iOS Safari fallback on iPhones (doesn't support full API, but can fullscreen the video element directly)
+      const video = dom.playerVideo();
+      if (video && video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+      }
+    }
     dom.hudFsBtn().textContent = '⊠';
     dom.hudFsBtn().title = 'Exit Fullscreen';
   } else {
-    document.exitFullscreen();
+    if (cancelFullScreen) {
+      cancelFullScreen.call(doc).catch(() => {});
+    }
     dom.hudFsBtn().textContent = '⛶';
     dom.hudFsBtn().title = 'Fullscreen';
   }
 }
-document.addEventListener('fullscreenchange', () => {
-  const inFs = !!document.fullscreenElement;
-  dom.hudFsBtn().textContent = inFs ? '⊠' : '⛶';
+
+// Watch for ALL vendor-prefix fullscreen changes to update the button icon accurately
+['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'MSFullscreenChange'].forEach(eventName => {
+  document.addEventListener(eventName, () => {
+    const isFs = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+    dom.hudFsBtn().textContent = isFs ? '⊠' : '⛶';
+  });
 });
 
 /* ══════════════════════════════════════════════════════════
@@ -1027,11 +1152,11 @@ dom.searchGrid().addEventListener('click',  e => {
 });
 
 /* Show HUD whenever mouse moves over the player */
-dom.screenPlayer().addEventListener('mousemove', () => {
+dom.playerScreen().addEventListener('mousemove', () => {
   if (state.activeScreen === 'player') showHud();
 });
 
 /* ══════════════════════════════════════════════════════════
    INITIAL LOAD
 ══════════════════════════════════════════════════════════ */
-loadChannels();
+init();

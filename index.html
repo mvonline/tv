@@ -17,6 +17,9 @@
 
       <!-- Top Bar -->
       <header class="top-bar">
+        <button class="mobile-menu-btn" id="btn-mobile-menu" tabindex="-1">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
         <div class="logo">
           <img src="assets/logo.svg" alt="MasTV" />
         </div>
@@ -67,6 +70,7 @@
           <div class="hud-spacer"></div>
           <button class="hud-home-btn" id="hud-home-btn" tabindex="-1">⌂ Home</button>
           <button class="hud-fav-btn" id="hud-fav-btn" tabindex="-1">♥</button>
+          <button class="hud-numpad-btn" id="hud-numpad-btn" tabindex="-1">🔢</button>
           <button class="hud-panel-btn" id="hud-panel-btn" tabindex="-1">☰ Channels</button>
           <button class="hud-fs-btn" id="hud-fs-btn" tabindex="-1">⛶</button>
           <div class="hud-clock" id="hud-clock">00:00</div>
@@ -100,6 +104,28 @@
       <div class="ch-osd" id="ch-osd">
         <div class="ch-osd-label">CH</div>
         <div class="ch-osd-num" id="ch-osd-num">--</div>
+      </div>
+
+      <!-- On-Screen Numpad for Mobile -->
+      <div class="numpad-overlay" id="numpad-overlay">
+        <div class="numpad-header">
+          <span>Enter Channel</span>
+          <button id="numpad-close-btn" class="numpad-close-btn">✕</button>
+        </div>
+        <div class="numpad-grid" id="numpad-grid">
+          <button class="np-btn" data-val="1">1</button>
+          <button class="np-btn" data-val="2">2</button>
+          <button class="np-btn" data-val="3">3</button>
+          <button class="np-btn" data-val="4">4</button>
+          <button class="np-btn" data-val="5">5</button>
+          <button class="np-btn" data-val="6">6</button>
+          <button class="np-btn" data-val="7">7</button>
+          <button class="np-btn" data-val="8">8</button>
+          <button class="np-btn" data-val="9">9</button>
+          <button class="np-btn" data-val="backspace">⌫</button>
+          <button class="np-btn" data-val="0">0</button>
+          <button class="np-btn np-enter" id="numpad-enter-btn">Go</button>
+        </div>
       </div>
 
       <!-- Buffering Spinner -->
