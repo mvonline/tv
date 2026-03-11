@@ -11,10 +11,22 @@ const CONFIG = {
   channelsUrl:      './channels.json',
   focusColor:       '#e5a00d',
   overlayHideDelay: 3000,
-  columns:          5,
   skeletonCount:    15,
   favStorageKey:    'mastv_favorites',
 };
+
+/** Returns the number of columns currently rendered in the channel grid. */
+function getGridCols(gridEl) {
+  const items = (gridEl || dom.channelGrid()).querySelectorAll('.channel-card');
+  if (items.length < 2) return 5; // sensible default before render
+  const firstTop = items[0].getBoundingClientRect().top;
+  let cols = 0;
+  for (const item of items) {
+    if (Math.abs(item.getBoundingClientRect().top - firstTop) < 4) cols++;
+    else break;
+  }
+  return cols || 5;
+}
 
 /* ── State ────────────────────────────────────────────────── */
 const state = {
@@ -23,18 +35,20 @@ const state = {
   activeScreen:     'home',
   selectedCategory: 'All',
   selectedSort:     'default',
-  focusZone:        'grid',   // 'sidebar' | 'grid' | 'topbar' | 'player' | 'player-home' | 'exit' | 'error'
+  focusZone:        'grid',   // 'sidebar' | 'grid' | 'topbar' | 'player' | 'player-home' | 'player-fav' | 'player-panel' | 'exit' | 'error'
   focusIndex:       0,
   sidebarFocusIdx:  0,
-  exitFocusBtn:     'stay',   // 'stay' | 'leave'
+  exitFocusBtn:     'stay',
   categories:       [],
   sidebarItems:     [],
   gridItems:        [],
   hudTimer:         null,
   hls:              null,
   exitDialogOpen:   false,
-  favorites:        loadFavorites(),   // Set of channel id strings
-  currentChannel:   null,              // channel object currently playing
+  favorites:        loadFavorites(),
+  currentChannel:   null,
+  panelOpen:        false,
+  panelFocusIdx:    0,
 };
 
 /* ── DOM refs ─────────────────────────────────────────────── */
@@ -58,13 +72,51 @@ const dom = {
   hudStatus:        () => $('hud-status'),
   hudHomeBtn:       () => $('hud-home-btn'),
   hudFavBtn:        () => $('hud-fav-btn'),
+  hudPanelBtn:      () => $('hud-panel-btn'),
+  hudFsBtn:         () => $('hud-fs-btn'),
+  playerChannelPanel: () => $('player-channel-panel'),
+  pcpList:          () => $('pcp-list'),
+  pcpSearchInput:   () => $('pcp-search-input'),
+  pcpCloseBtn:      () => $('pcp-close-btn'),
   bufferingSpinner: () => $('buffering-spinner'),
   streamError:      () => $('stream-error'),
   retryBtn:         () => $('retry-btn'),
   exitDialog:       () => $('exit-dialog'),
   exitStay:         () => $('exit-stay'),
   exitLeave:        () => $('exit-leave'),
+  chOsd:            () => $('ch-osd'),
+  chOsdNum:         () => $('ch-osd-num'),
 };
+
+/* ══════════════════════════════════════════════════════════
+   CHANNEL NUMBER OSD (Numpad switching)
+══════════════════════════════════════════════════════════ */
+let _chInputBuf = '';
+let _chInputTimer = null;
+
+function _showChOsd(numStr) {
+  const osd = dom.chOsd();
+  dom.chOsdNum().textContent = numStr;
+  osd.classList.add('active');
+}
+function _hideChOsd() {
+  dom.chOsd().classList.remove('active');
+}
+function _handleDigitKey(digit) {
+  if (state.activeScreen !== 'player') return;
+  _chInputBuf += digit;
+  if (_chInputBuf.length > 3) _chInputBuf = _chInputBuf.slice(-3);
+  _showChOsd(_chInputBuf);
+  showHud();
+  clearTimeout(_chInputTimer);
+  _chInputTimer = setTimeout(() => {
+    const num = parseInt(_chInputBuf, 10);
+    _chInputBuf = '';
+    _hideChOsd();
+    const ch = state.allChannels.find(c => c.num === num && c.stream_url);
+    if (ch) openPlayer(ch);
+  }, 1500);
+}
 
 /* ══════════════════════════════════════════════════════════
    CLOCK
@@ -152,11 +204,28 @@ function toggleFavorite(channelId) {
     state.favorites.add(channelId);
   }
   saveFavorites();
-  // Refresh grid heart icons and sidebar fav count
-  renderGrid(dom.channelGrid(), state.filteredChannels);
+  
+  // Rebuild categories to update Favourites count/presence
   buildCategories(state.allChannels);
-  // Restore focus
-  focusGridItem(Math.min(state.focusIndex, state.gridItems.length - 1));
+  
+  // Immediately re-sort and re-render the grid so the item jumps to the top
+  if (state.activeScreen === 'home') {
+    applyFilter();
+    // Keep focus within bounds
+    if (state.focusZone === 'grid') {
+      focusGridItem(Math.min(state.focusIndex, state.gridItems.length - 1));
+    }
+  }
+
+  // If the player panel is open, re-render it to sort it there too
+  if (state.panelOpen) {
+    renderChannelPanel(dom.pcpSearchInput().value.trim());
+  }
+
+  // If we are currently watching this channel, update the HUD heart button
+  if (state.activeScreen === 'player' && state.currentChannel && state.currentChannel.id === channelId) {
+    updateHudFavBtn();
+  }
 }
 
 function toggleFavoriteOnFocused() {
@@ -180,6 +249,9 @@ async function loadChannels() {
     const channels = (data.channels || []).filter(
       ch => ch.stream_url && ch.working !== false
     );
+    // Assign stable 1-based channel numbers
+    channels.forEach((ch, i) => { ch.num = i + 1; });
+    
     state.allChannels = channels;
     buildCategories(channels);
     applyFilter();
@@ -227,6 +299,17 @@ function applyFilter(searchTerm = '') {
     list.sort((a, b) =>
       (a.category || '').localeCompare(b.category || '') || a.name.localeCompare(b.name)
     );
+  }
+
+  // Always bring favourites to the top if we aren't already filtered specifically for them
+  if (state.selectedCategory !== '❤ Favourites') {
+    list.sort((a, b) => {
+      const aFav = state.favorites.has(a.id);
+      const bFav = state.favorites.has(b.id);
+      if (aFav && !bFav) return -1;
+      if (!aFav && bFav) return 1;
+      return 0; // maintain previous sort order if both are same
+    });
   }
 
   state.filteredChannels = list;
@@ -322,15 +405,21 @@ function createCard(ch, idx) {
   card.dataset.idx = idx;
   card.dataset.chId = ch.id;
 
+  // Generate deterministic gradient and initials for fallback artwork
+  const gradient = _generateChannelGradient(ch.id);
+  const initials = _getChannelInitials(ch.name);
+
   const logoHtml = ch.logo_url
-    ? `<img src="${escHtml(ch.logo_url)}" alt="${escHtml(ch.name)}" loading="lazy"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
-       <span class="logo-fallback" style="display:none">📺</span>`
-    : `<span class="logo-fallback">📺</span>`;
+    ? `<div class="logo-fallback" style="background:${gradient}">${initials}</div>
+       <img src="${escHtml(ch.logo_url)}" alt="${escHtml(ch.name)}" loading="lazy"
+            onerror="this.style.display='none'" />`
+    : `<div class="logo-fallback" style="background:${gradient}">${initials}</div>`;
 
   const isFav = state.favorites.has(ch.id);
+  const chNum = ch.num != null ? `<span class="card-num">${ch.num}</span>` : '';
 
   card.innerHTML = `
+    ${chNum}
     <div class="card-logo">${logoHtml}</div>
     <div class="card-info">
       <div class="card-name">${escHtml(ch.name)}</div>
@@ -338,12 +427,7 @@ function createCard(ch, idx) {
     </div>
     <button class="card-fav-btn${isFav ? ' active' : ''}" title="Favourite" tabindex="-1">♥</button>
   `;
-
-  card.addEventListener('click', () => openPlayer(ch));
-  card.querySelector('.card-fav-btn').addEventListener('click', e => {
-    e.stopPropagation();
-    toggleFavorite(ch.id);
-  });
+  // NO per-card event listeners — handled by grid-level delegation
   return card;
 }
 
@@ -351,6 +435,27 @@ function escHtml(str) {
   return String(str || '')
     .replace(/&/g, '&amp;').replace(/</g, '&lt;')
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+/* Fallback Artwork Generators */
+function _getChannelInitials(name) {
+  if (!name) return 'TV';
+  // Strip common prefixes/suffixes but return the full name
+  return name.replace(/^(hd|fhd|4k)\s+/i, '').replace(/\b(tv|hd)\b/ig, '').replace(/[\(\)\[\]]/g, '').trim();
+}
+
+function _generateChannelGradient(idStr) {
+  let hash = 0;
+  for (let i = 0; i < idStr.length; i++) {
+    hash = idStr.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  // Hue 1: based directly on hash
+  const h1 = Math.abs(hash % 360);
+  // Hue 2: analagous or complementary (+40 to +140 deg)
+  const h2 = (h1 + 40 + Math.abs((hash >> 8) % 100)) % 360;
+  
+  // Keep saturation high, lightness medium-low for a premium dark-mode look
+  return `linear-gradient(135deg, hsl(${h1}, 80%, 25%), hsl(${h2}, 85%, 20%))`;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -412,6 +517,126 @@ function selectSidebarItem(idx) {
 }
 
 /* ══════════════════════════════════════════════════════════
+   FULLSCREEN
+══════════════════════════════════════════════════════════ */
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen().catch(() => {});
+    dom.hudFsBtn().textContent = '⊠';
+    dom.hudFsBtn().title = 'Exit Fullscreen';
+  } else {
+    document.exitFullscreen();
+    dom.hudFsBtn().textContent = '⛶';
+    dom.hudFsBtn().title = 'Fullscreen';
+  }
+}
+document.addEventListener('fullscreenchange', () => {
+  const inFs = !!document.fullscreenElement;
+  dom.hudFsBtn().textContent = inFs ? '⊠' : '⛶';
+});
+
+/* ══════════════════════════════════════════════════════════
+   PLAYER CHANNEL PANEL
+══════════════════════════════════════════════════════════ */
+function openChannelPanel() {
+  state.panelOpen = true;
+  state.focusZone = 'player-panel';
+  dom.pcpSearchInput().value = '';
+  renderChannelPanel();
+  dom.playerChannelPanel().classList.add('open');
+  _focusPanelItem(state.panelFocusIdx);
+  showHud();
+}
+
+function closeChannelPanel() {
+  state.panelOpen = false;
+  state.focusZone = 'player';
+  dom.pcpSearchInput().value = '';
+  dom.playerChannelPanel().classList.remove('open');
+}
+
+function renderChannelPanel(filter = '') {
+  const list = dom.pcpList();
+  list.innerHTML = '';
+  const q = filter.toLowerCase();
+  const playableChannels = state.allChannels
+    .filter(ch => ch.stream_url && ch.working !== false)
+    .filter(ch => !q || ch.name.toLowerCase().includes(q) || (ch.category || '').toLowerCase().includes(q));
+
+  // Bring favourites to the top, fallback to channel number
+  playableChannels.sort((a, b) => {
+    const aFav = state.favorites.has(a.id);
+    const bFav = state.favorites.has(b.id);
+    if (aFav && !bFav) return -1;
+    if (!aFav && bFav) return 1;
+    return a.num - b.num;
+  });
+
+  if (!playableChannels.length) {
+    list.innerHTML = '<div class="pcp-no-results">No channels found</div>';
+    list.onclick = null;
+    return;
+  }
+
+  playableChannels.forEach((ch, idx) => {
+    const item = document.createElement('div');
+    item.className = 'pcp-item' + (state.currentChannel && ch.id === state.currentChannel.id ? ' active' : '');
+    item.dataset.idx = idx;
+
+    const gradient = _generateChannelGradient(ch.id);
+    const initials = _getChannelInitials(ch.name);
+
+    item.innerHTML = `
+      <div class="pcp-item-logo">
+        ${ch.logo_url
+          ? `<div class="logo-fallback" style="background:${gradient};font-size:12px;display:flex;align-items:center;justify-content:center;width:100%;height:100%">${initials}</div>
+             <img src="${escHtml(ch.logo_url)}" alt="" loading="lazy" onerror="this.previousElementSibling.style.display='flex';this.style.display='none'" style="position:relative;z-index:2;width:100%;height:100%;object-fit:contain" />`
+          : `<div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5)">${initials}</div>`}
+      </div>
+      <div class="pcp-item-info">
+        <div class="pcp-item-name">
+          ${state.favorites.has(ch.id) ? '<span style="color:#e5142a;margin-right:4px;font-size:11px">♥</span>' : ''}
+          ${escHtml(ch.name)}
+        </div>
+        <div class="pcp-item-cat">${escHtml(ch.category || '')}</div>
+      </div>
+    `;
+    list.appendChild(item);
+  });
+  // Single delegated listener on the list container (replaces N per-item listeners)
+  list.onclick = e => {
+    const item = e.target.closest('.pcp-item');
+    if (!item) return;
+    const ch = playableChannels[parseInt(item.dataset.idx)];
+    if (ch) { openPlayer(ch); closeChannelPanel(); }
+  };
+  // Scroll active item into view
+  const activeItem = list.querySelector('.pcp-item.active');
+  if (activeItem) {
+    state.panelFocusIdx = parseInt(activeItem.dataset.idx);
+    activeItem.scrollIntoView({ block: 'nearest' });
+  }
+}
+
+function _focusPanelItem(idx) {
+  const items = dom.pcpList().querySelectorAll('.pcp-item');
+  if (!items.length) return;
+  idx = Math.max(0, Math.min(idx, items.length - 1));
+  items.forEach((el, i) => el.classList.toggle('focused', i === idx));
+  state.panelFocusIdx = idx;
+  items[idx].scrollIntoView({ block: 'nearest' });
+}
+
+function _switchFromPanel(idx) {
+  const items = dom.pcpList().querySelectorAll('.pcp-item');
+  const el = items[idx];
+  if (!el) return;
+  const ch = state.allChannels.filter(c => c.stream_url && c.working !== false)[idx];
+  if (ch) { openPlayer(ch); }
+  closeChannelPanel();
+}
+
+/* ══════════════════════════════════════════════════════════
    PLAYER
 ══════════════════════════════════════════════════════════ */
 function openPlayer(channel) {
@@ -426,7 +651,7 @@ function openPlayer(channel) {
   } else {
     hudLogo.style.display = 'none';
   }
-  dom.hudName().textContent = channel.name;
+  dom.hudName().textContent = `${channel.num != null ? channel.num + '. ' : ''}${channel.name}`;
   dom.hudStatus().textContent = 'Connecting…';
   dom.streamError().classList.remove('active');
   dom.bufferingSpinner().classList.add('active');
@@ -459,7 +684,14 @@ function startStream(url) {
   if (!url) { showStreamError(); return; }
 
   if (Hls.isSupported()) {
-    const hls = new Hls({ enableWorker: true });
+    const hls = new Hls({
+      enableWorker:        true,
+      maxBufferLength:     15,          // buffer 15s ahead (default 30)
+      maxMaxBufferLength:  30,          // never exceed 30s
+      maxBufferSize:       60 * 1000 * 1000, // 60 MB cap (default 60 but explicit)
+      maxBufferHole:       0.5,
+      lowLatencyMode:      false,
+    });
     state.hls = hls;
 
     hls.on(Hls.Events.MANIFEST_PARSED, () => {
@@ -588,6 +820,10 @@ document.addEventListener('keydown', e => {
   const isDown  = key === 'ArrowDown';
   const isLeft  = key === 'ArrowLeft';
   const isRight = key === 'ArrowRight';
+  
+  const isDigit  = key >= '0' && key <= '9' && !e.ctrlKey && !e.metaKey;
+  const numpadDigit = key.startsWith('Numpad') ? key.replace('Numpad','') : null;
+
   const nav = { isBack, isEnter, isUp, isDown, isLeft, isRight };
 
 
@@ -600,6 +836,14 @@ document.addEventListener('keydown', e => {
 
   // Prevent browser default for arrow keys and backspace
   if (isUp || isDown || isLeft || isRight || isBack) e.preventDefault();
+
+  // Digit / numpad — channel number input while in player
+  const digit = (isDigit && key) || (numpadDigit && numpadDigit >= '0' && numpadDigit <= '9' && numpadDigit);
+  if (digit) {
+    e.preventDefault();
+    _handleDigitKey(digit);
+    return;
+  }
 
   // Favourite toggle: F key or Yellow remote button (works on all screens)
   if (isFavKey(e) && !state.exitDialogOpen && !searchFocused) {
@@ -651,7 +895,7 @@ function handleHomeNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   }
 
   // focusZone === 'grid'
-  const cols  = CONFIG.columns;
+  const cols  = getGridCols(dom.channelGrid());
   const total = state.gridItems.length;
   let idx = state.focusIndex;
 
@@ -677,56 +921,47 @@ function handlePlayerNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   showHud();
 
   if (isBack) {
+    if (state.panelOpen) { closeChannelPanel(); return; }
     goHome();
     return;
   }
 
-  // Fav button focus
+  // ── Channel panel is open ────────────────────────────────
+  if (state.focusZone === 'player-panel') {
+    const items = dom.pcpList().querySelectorAll('.pcp-item');
+    const total = items.length;
+    if (isUp)    _focusPanelItem(state.panelFocusIdx - 1);
+    else if (isDown)  _focusPanelItem(state.panelFocusIdx + 1);
+    else if (isEnter) _switchFromPanel(state.panelFocusIdx);
+    else if (isRight) closeChannelPanel();
+    return;
+  }
+
+  // ── HUD button zones ─────────────────────────────────────
   if (state.focusZone === 'player-fav') {
     if (isEnter) { toggleFavoritePlayer(); updateHudFavBtn(); return; }
-    if (isLeft) {
-      dom.hudFavBtn().classList.remove('focused');
-      state.focusZone = 'player-home';
-      dom.hudHomeBtn().classList.add('focused');
-      return;
-    }
-    if (isDown || isRight || isUp) {
-      dom.hudFavBtn().classList.remove('focused');
-      state.focusZone = 'player';
-      return;
-    }
+    if (isLeft)  { dom.hudFavBtn().classList.remove('focused'); state.focusZone = 'player-home'; dom.hudHomeBtn().classList.add('focused'); return; }
+    if (isRight || isDown || isUp) { dom.hudFavBtn().classList.remove('focused'); state.focusZone = 'player'; return; }
     return;
   }
 
-  // Home button focus toggle
   if (state.focusZone === 'player-home') {
     if (isEnter) { goHome(); return; }
-    if (isRight) {
-      dom.hudHomeBtn().classList.remove('focused');
-      state.focusZone = 'player-fav';
-      dom.hudFavBtn().classList.add('focused');
-      return;
-    }
-    if (isDown || isLeft || isUp) {
-      dom.hudHomeBtn().classList.remove('focused');
-      state.focusZone = 'player';
-      return;
-    }
+    if (isRight) { dom.hudHomeBtn().classList.remove('focused'); state.focusZone = 'player-fav'; dom.hudFavBtn().classList.add('focused'); return; }
+    if (isDown || isLeft || isUp) { dom.hudHomeBtn().classList.remove('focused'); state.focusZone = 'player'; return; }
     return;
   }
 
-  // In player zone: Up → focus the home button
-  if (isUp) {
-    state.focusZone = 'player-home';
-    dom.hudHomeBtn().classList.add('focused');
-  }
+  // ── Default player zone ──────────────────────────────────
+  if (isLeft)  { openChannelPanel(); return; }
+  if (isUp)    { state.focusZone = 'player-home'; dom.hudHomeBtn().classList.add('focused'); }
 }
 
 /* ── Search Navigation ────────────────────────────────────── */
 function handleSearchNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }, e) {
   if (isBack) { closeSearch(); return; }
 
-  const cols  = CONFIG.columns;
+  const cols  = getGridCols(dom.searchGrid());
   const total = searchGridItems.length;
   let idx = searchFocusIdx;
 
@@ -749,8 +984,52 @@ dom.btnSearch().addEventListener('click', openSearch);
 dom.retryBtn().addEventListener('click', () => { dom.errorScreen().classList.remove('active'); loadChannels(); });
 dom.hudHomeBtn().addEventListener('click', goHome);
 dom.hudFavBtn().addEventListener('click', () => { toggleFavoritePlayer(); updateHudFavBtn(); });
+dom.hudPanelBtn().addEventListener('click', () => state.panelOpen ? closeChannelPanel() : openChannelPanel());
+dom.hudFsBtn().addEventListener('click', toggleFullscreen);
+dom.pcpCloseBtn().addEventListener('click', closeChannelPanel);
 dom.exitStay().addEventListener('click', hideExitDialog);
 dom.exitLeave().addEventListener('click', exitApp);
+
+/* Panel search input — filter list on every keystroke */
+dom.pcpSearchInput().addEventListener('input', () => {
+  renderChannelPanel(dom.pcpSearchInput().value.trim());
+  state.panelFocusIdx = 0;
+  _focusPanelItem(0);
+});
+/* Stop Back/arrows from bubbling to D-pad handler while typing in panel */
+dom.pcpSearchInput().addEventListener('keydown', e => {
+  e.stopPropagation();
+  if (e.key === 'Escape') closeChannelPanel();
+});
+
+/* Delegated grid click — handles play + fav toggle for ALL cards with ONE listener each */
+function _delegatedGridClick(e, channelList) {
+  const favBtn = e.target.closest('.card-fav-btn');
+  if (favBtn) {
+    e.stopPropagation();
+    const card = favBtn.closest('.channel-card');
+    if (card) toggleFavorite(card.dataset.chId);
+    return;
+  }
+  const card = e.target.closest('.channel-card');
+  if (card) {
+    const ch = channelList[parseInt(card.dataset.idx)];
+    if (ch) openPlayer(ch);
+  }
+}
+dom.channelGrid().addEventListener('click', e => _delegatedGridClick(e, state.filteredChannels));
+dom.searchGrid().addEventListener('click',  e => {
+  const q = dom.searchInput().value.toLowerCase();
+  const filtered = state.allChannels.filter(ch =>
+    ch.name.toLowerCase().includes(q) || (ch.category || '').toLowerCase().includes(q)
+  );
+  _delegatedGridClick(e, filtered);
+});
+
+/* Show HUD whenever mouse moves over the player */
+dom.screenPlayer().addEventListener('mousemove', () => {
+  if (state.activeScreen === 'player') showHud();
+});
 
 /* ══════════════════════════════════════════════════════════
    INITIAL LOAD

@@ -2,7 +2,7 @@
 <html lang="fa" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1920" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="MasTV — Iranian TV channels. Watch live Persian, News, Music streams on your TV." />
   <title>MasTV — Iranian Channels</title>
   <link rel="stylesheet" href="style.css" />
@@ -67,6 +67,8 @@
           <div class="hud-spacer"></div>
           <button class="hud-home-btn" id="hud-home-btn" tabindex="-1">⌂ Home</button>
           <button class="hud-fav-btn" id="hud-fav-btn" tabindex="-1">♥</button>
+          <button class="hud-panel-btn" id="hud-panel-btn" tabindex="-1">☰ Channels</button>
+          <button class="hud-fs-btn" id="hud-fs-btn" tabindex="-1">⛶</button>
           <div class="hud-clock" id="hud-clock">00:00</div>
         </div>
         <div class="hud-spacer"></div>
@@ -74,8 +76,30 @@
           <span class="live-badge">● LIVE</span>
           <span class="hud-status" id="hud-status">Playing</span>
           <div class="hud-spacer"></div>
-          <span class="hud-back-hint">Back → channels &nbsp;|&nbsp; F = favourite &nbsp;|&nbsp; ⌂ Home button → exit player</span>
+          <span class="hud-back-hint">Back → channels &nbsp;|&nbsp; F = favourite &nbsp;|&nbsp; ← = channel list</span>
         </div>
+      </div>
+
+      <!-- Slide-in Channel Panel -->
+      <div class="player-channel-panel" id="player-channel-panel">
+        <div class="pcp-header">
+          <span class="pcp-title">Channels</span>
+          <button class="pcp-close-btn" id="pcp-close-btn" tabindex="-1">✕</button>
+        </div>
+        <div class="pcp-search">
+          <span class="pcp-search-icon">🔍</span>
+          <input type="text" id="pcp-search-input" class="pcp-search-input"
+            placeholder="Search channels…" autocomplete="off" spellcheck="false" tabindex="-1" />
+        </div>
+        <div class="pcp-list" id="pcp-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Channel Number OSD (appears while typing numpad) -->
+      <div class="ch-osd" id="ch-osd">
+        <div class="ch-osd-label">CH</div>
+        <div class="ch-osd-num" id="ch-osd-num">--</div>
       </div>
 
       <!-- Buffering Spinner -->

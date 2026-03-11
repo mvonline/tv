@@ -1,6 +1,14 @@
 """
 scraper.py — ParsaTV channel scraper
 Scrapes http://parsatv.com/ to extract Iranian TV channel metadata and stream URLs.
+
+Strategy (in order):
+  1. Detect the parsatv PHP stream-fetch endpoint embedded in the page JS
+     (e.g. /streams/fetch/asg/sh3.php) and call it with a proper Referer header.
+     These endpoints return a JSON/JS blob containing the proxied .m3u8 URL.
+  2. Scan <script> blocks for .m3u8 / .mp4 URLs (JWPlayer, VideoJS, etc.)
+  3. Follow <iframe> sources and repeat.
+
 Output: channels.json
 """
 
@@ -46,6 +54,9 @@ LANGUAGE_MAP = {
     "french": "fr",
 }
 
+# ─────────────────────────────────────────────────────────────
+# Helpers
+# ─────────────────────────────────────────────────────────────
 
 def slugify(text: str) -> str:
     """Convert text to a URL-friendly slug."""
@@ -65,16 +76,33 @@ def infer_language(category: str) -> str:
     return "fa"  # default to Farsi
 
 
-def get_page(url: str, session: requests.Session) -> BeautifulSoup | None:
+def get_page(url: str, session: requests.Session, extra_headers: dict | None = None) -> BeautifulSoup | None:
     """Fetch a URL and return a BeautifulSoup object, or None on failure."""
+    hdrs = {**HEADERS, **(extra_headers or {})}
     try:
-        resp = session.get(url, headers=HEADERS, timeout=15)
+        resp = session.get(url, headers=hdrs, timeout=15)
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "lxml")
     except requests.RequestException as e:
         print(f"  [ERROR] Failed to fetch {url}: {e}")
         return None
 
+
+def get_raw(url: str, session: requests.Session, extra_headers: dict | None = None) -> str | None:
+    """Fetch a URL and return the raw response text."""
+    hdrs = {**HEADERS, **(extra_headers or {})}
+    try:
+        resp = session.get(url, headers=hdrs, timeout=15)
+        resp.raise_for_status()
+        return resp.text
+    except requests.RequestException as e:
+        print(f"  [ERROR] Failed to fetch {url}: {e}")
+        return None
+
+
+# ─────────────────────────────────────────────────────────────
+# Stream URL extraction patterns
+# ─────────────────────────────────────────────────────────────
 
 # Ordered regex patterns to search inside <script> blocks.
 # Group(1) captures the stream URL.
@@ -86,24 +114,31 @@ JS_STREAM_PATTERNS = [
     r"'(https?://[^\s\"'<>]+\.mp4(?:[?#][^\s\"'<>]*)?)'",
 
     # JW Player:  file: "...",  sources: [{file:"..."}]
-    r'["\']?file["\']\s*:\s*["\']([^"\']+(?:\.m3u8|\.mp4)[^"\']*)["\']',
+    r"[\"']?file[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4)[^\"']*)[\"']",
 
     # VideoJS / generic:  src: "..."
-    r'["\']?src["\']\s*:\s*["\']([^"\']+(?:\.m3u8|\.mp4)[^"\']*)["\']',
+    r"[\"']?src[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4)[^\"']*)[\"']",
 
     # Generic key=value or key: value — covers many custom players
-    r'["\']?(?:source|stream|hls|hlsUrl|streamUrl|videoUrl|liveUrl|playUrl|hlsSrc|m3u8|url)'
-    r'["\']\s*[=:]\s*["\']([^"\']+(?:\.m3u8|\.mp4)[^"\']*)["\']',
+    r"[\"']?(?:source|stream|hls|hlsUrl|streamUrl|videoUrl|liveUrl|playUrl|hlsSrc|m3u8|url)"
+    r"[\"']\s*[=:]\s*[\"']([^\"']+(?:\.m3u8|\.mp4)[^\"']*)[\"']",
 
     # Flowplayer / Plyr object notation
-    r'src\s*:\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
+    r"src\s*:\s*[\"']([^\"']+\.m3u8[^\"']*)[\"']",
 
     # type: application/x-mpegURL with nearby src
-    r'application/x-mpegURL[^}]{0,200}?src\s*:\s*["\']([^"\']+)["\']',
+    r"application/x-mpegURL[^}]{0,200}?src\s*:\s*[\"']([^\"']+)[\"']",
 
     # Unquoted CDN stream hostnames (common in minified JS)
     r'(https?://[a-z0-9.\-]+(?:akamai|cdn|stream|live|hls|edge|media)[^\s"\'<>&]{10,})',
 ]
+
+# Regex to find parsatv PHP fetch endpoint inside page scripts
+# e.g. fetch('/streams/fetch/asg/sh3.php') or $.get('/streams/fetch/irib/sh3.php', ...)
+PHP_FETCH_PATTERN = re.compile(
+    r"""['"](/streams/fetch/[^\s'"]+\.php)['"]""",
+    re.IGNORECASE,
+)
 
 
 def _search_scripts_for_stream(soup: BeautifulSoup) -> str | None:
@@ -121,18 +156,99 @@ def _search_scripts_for_stream(soup: BeautifulSoup) -> str | None:
     return None
 
 
+def _find_php_fetch_endpoints(soup: BeautifulSoup) -> list[str]:
+    """
+    Find parsatv's hidden PHP stream-fetch endpoints embedded in script tags.
+    Returns a list of full URLs e.g. ['https://www.parsatv.com/streams/fetch/asg/sh3.php']
+    """
+    endpoints = []
+    for script in soup.find_all("script"):
+        text = script.string or ""
+        if not text.strip():
+            continue
+        for match in PHP_FETCH_PATTERN.finditer(text):
+            path = match.group(1)
+            full_url = urljoin(BASE_URL, path)
+            if full_url not in endpoints:
+                endpoints.append(full_url)
+    return endpoints
+
+
+def _fetch_stream_from_php(
+    php_url: str, page_url: str, session: requests.Session
+) -> str | None:
+    """
+    Call a parsatv PHP stream-fetch endpoint with the correct Referer header.
+    The response contains the player config (JSON or JS) with the .m3u8 URL.
+    Returns the stream URL string or None.
+    """
+    headers = {
+        "Referer": page_url,
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "X-Requested-With": "XMLHttpRequest",
+    }
+    print(f"  [php] Fetching: {php_url}")
+    raw = get_raw(php_url, session, extra_headers=headers)
+    if not raw:
+        return None
+
+    # Try to parse as JSON first
+    try:
+        data = json.loads(raw)
+        # Common patterns in ther response
+        for key in ("file", "url", "src", "stream", "hls", "source", "link"):
+            val = data.get(key, "")
+            if val and (".m3u8" in val or ".mp4" in val):
+                return val
+        # Sometimes it's nested: sources: [{file: "..."}]
+        sources = data.get("sources") or data.get("playlist") or []
+        if isinstance(sources, list):
+            for src in sources:
+                if isinstance(src, dict):
+                    for key in ("file", "src", "url"):
+                        val = src.get(key, "")
+                        if val and (".m3u8" in val or ".mp4" in val):
+                            return val
+    except (json.JSONDecodeError, AttributeError):
+        pass
+
+    # Fall back: regex over raw response text
+    for pattern in JS_STREAM_PATTERNS:
+        m = re.search(pattern, raw, re.IGNORECASE)
+        if m:
+            url = m.group(1)
+            if url.startswith("http") and len(url) > 15:
+                return url
+
+    return None
+
+
+# ─────────────────────────────────────────────────────────────
+# Main extraction entry point
+# ─────────────────────────────────────────────────────────────
+
 def extract_stream_url(
     soup: BeautifulSoup, page_url: str, session: requests.Session | None = None
 ) -> str | None:
     """
     Try to extract a stream URL from a channel page.
     Search order:
+      0. Parsatv PHP stream-fetch endpoint (highest quality source)
       1. <source src="..."> and <video src="...">
       2. VideoJS data-setup JSON attribute
       3. All <script> block text (JW Player, VideoJS, Flowplayer, Plyr, raw vars)
       4. data-* attributes anywhere on the page
-      5. <iframe> — follow and repeat steps 1-3 on the iframe source page
+      5. <iframe> — follow and repeat steps 0-3 on the iframe source page
     """
+    # 0. Parsatv-specific: look for hidden PHP fetch endpoints in JS
+    if session is not None:
+        php_endpoints = _find_php_fetch_endpoints(soup)
+        for php_url in php_endpoints:
+            stream = _fetch_stream_from_php(php_url, page_url, session)
+            if stream:
+                print(f"  [php] ✓ Found stream via PHP endpoint: {stream[:70]}")
+                return stream
+
     # 1. HTML <source> and <video> tags
     for tag in soup.find_all(["source", "video"]):
         for attr in ("src", "data-src"):
@@ -178,8 +294,15 @@ def extract_stream_url(
 
             print(f"  [iframe] Following: {src[:80]}")
             try:
-                iframe_soup = get_page(src, session)
+                iframe_headers = {"Referer": page_url}
+                iframe_soup = get_page(src, session, extra_headers=iframe_headers)
                 if iframe_soup:
+                    # Try PHP endpoints inside the iframe too
+                    php_endpoints = _find_php_fetch_endpoints(iframe_soup)
+                    for php_url in php_endpoints:
+                        stream = _fetch_stream_from_php(php_url, src, session)
+                        if stream:
+                            return stream
                     for tag in iframe_soup.find_all(["source", "video"]):
                         for attr in ("src", "data-src"):
                             sv = tag.get(attr, "")
@@ -196,11 +319,16 @@ def extract_stream_url(
 
 def scrape_channel_page(url: str, session: requests.Session) -> str | None:
     """Visit a channel page and return its stream URL."""
-    soup = get_page(url, session)
+    extra = {"Referer": BASE_URL}
+    soup = get_page(url, session, extra_headers=extra)
     if not soup:
         return None
     return extract_stream_url(soup, url, session=session)
 
+
+# ─────────────────────────────────────────────────────────────
+# Homepage scraping
+# ─────────────────────────────────────────────────────────────
 
 def scrape_homepage(session: requests.Session) -> list[dict]:
     """
@@ -217,20 +345,17 @@ def scrape_homepage(session: requests.Session) -> list[dict]:
     seen_urls = set()
 
     # Strategy 1: Look for category sections with channel links
-    # Common patterns on TV listing sites
     category_sections = soup.find_all(
         ["section", "div", "ul"],
         class_=re.compile(r"categor|channel|list|grid|group|section", re.IGNORECASE),
     )
 
     for section in category_sections:
-        # Try to find a category heading
         heading = section.find(["h1", "h2", "h3", "h4", "h5", "li", "span", "a"])
         category = heading.get_text(strip=True) if heading else "General"
         if len(category) > 50:
             category = "General"
 
-        # Find channel links within the section
         links = section.find_all("a", href=True)
         for link in links:
             href = link.get("href", "")
@@ -241,11 +366,9 @@ def scrape_homepage(session: requests.Session) -> list[dict]:
             if full_url in seen_urls:
                 continue
 
-            # Filter for channel page URLs (e.g. contains "name=" or channel slug)
             if "parsatv.com" not in full_url:
                 continue
 
-            # Try to get channel name
             name = link.get_text(strip=True)
             if not name:
                 img = link.find("img")
@@ -254,7 +377,6 @@ def scrape_homepage(session: requests.Session) -> list[dict]:
             if not name or len(name) < 2:
                 continue
 
-            # Try to get logo URL
             logo_url = None
             img = link.find("img")
             if img:
@@ -309,10 +431,14 @@ def scrape_homepage(session: requests.Session) -> list[dict]:
     return channels
 
 
+# ─────────────────────────────────────────────────────────────
+# Build output JSON
+# ─────────────────────────────────────────────────────────────
+
 def build_channels_json(raw_channels: list[dict], session: requests.Session) -> dict:
     """
     Visit each channel page to get stream URLs, then build final JSON.
-    Capped at MAX_CHANNELS entries for testing (set MAX_CHANNELS=None for full run).
+    Capped at MAX_CHANNELS entries if set.
     """
     if MAX_CHANNELS is not None:
         raw_channels = raw_channels[:MAX_CHANNELS]
