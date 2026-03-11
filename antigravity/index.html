@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1920" />
+  <meta name="description" content="Iranian TV channels for Titan OS — watch live Persian, News, Music streams on your Philips TV." />
+  <title>Titan TV — Iranian Channels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ═══════════════════════════════════════════════
+         SCREEN 1 — Home / Channel Browser
+    ─────────────────────────────────────────────────── -->
+    <div id="screen-home" class="screen active">
+
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="Titan TV" />
+        </div>
+        <div class="spacer"></div>
+        <button class="search-btn" id="btn-search" tabindex="-1">
+          <span>🔍</span>
+          <span>Search</span>
+        </button>
+        <div class="clock" id="clock">00:00</div>
+      </header>
+
+      <!-- Content -->
+      <div class="home-content">
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar" aria-label="Categories">
+          <div class="sidebar-section-label">CATEGORIES</div>
+          <!-- Populated by JS -->
+          <div class="sidebar-section-label" style="margin-top:16px">SORT</div>
+          <div class="sidebar-item" data-sort="az" tabindex="-1">A → Z</div>
+          <div class="sidebar-item" data-sort="za" tabindex="-1">Z → A</div>
+          <div class="sidebar-item" data-sort="cat" tabindex="-1">By Category</div>
+        </nav>
+
+        <!-- Grid -->
+        <main class="grid-area" id="grid-area">
+          <div class="channel-grid" id="channel-grid" role="list">
+            <!-- Skeleton cards while loading -->
+            <!-- Populated by JS -->
+          </div>
+        </main>
+
+      </div><!-- .home-content -->
+    </div><!-- #screen-home -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         SCREEN 2 — Player
+    ─────────────────────────────────────────────────── -->
+    <div id="screen-player" class="screen">
+      <video id="player-video" playsinline autoplay muted></video>
+
+      <!-- HUD Overlay -->
+      <div class="player-hud" id="player-hud">
+        <div class="hud-top">
+          <img class="hud-channel-logo" id="hud-logo" src="" alt="" />
+          <div class="hud-channel-name" id="hud-name"></div>
+          <div class="hud-spacer"></div>
+          <div class="hud-clock" id="hud-clock">00:00</div>
+        </div>
+        <div class="hud-spacer"></div>
+        <div class="hud-bottom">
+          <span class="live-badge">● LIVE</span>
+          <span class="hud-status" id="hud-status">Playing</span>
+          <div class="hud-spacer"></div>
+          <span class="hud-back-hint">← Back to channels</span>
+        </div>
+      </div>
+
+      <!-- Buffering Spinner -->
+      <div class="buffering-spinner" id="buffering-spinner">
+        <div class="spinner-ring"></div>
+      </div>
+
+      <!-- Stream Error -->
+      <div class="stream-error" id="stream-error">
+        <h3>⚠ Stream Unavailable</h3>
+        <p>Could not connect to this channel's stream.</p>
+        <p>Press Back to return to the channel list.</p>
+      </div>
+    </div><!-- #screen-player -->
+
+
+    <!-- ═══════════════════════════════════════════════
+         SCREEN 3 — Search
+    ─────────────────────────────────────────────────── -->
+    <div id="screen-search" class="screen">
+      <div class="search-header">
+        <div class="search-title">Search Channels</div>
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Type to filter channels..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <div class="search-hint">Press Esc or Back to return • Arrow keys + Enter to select</div>
+      </div>
+      <div class="search-results-area">
+        <div class="channel-grid" id="search-grid" role="list"></div>
+      </div>
+    </div><!-- #screen-search -->
+
+
+    <!-- Error (fetch failure) -->
+    <div class="error-screen" id="error-screen">
+      <div style="font-size:52px">📡</div>
+      <h2>Could Not Load Channels</h2>
+      <p>Check your network connection and try again.</p>
+      <button class="retry-btn focused" id="retry-btn" tabindex="-1">Retry</button>
+    </div>
+
+  </div><!-- #app -->
+
+  <!-- hls.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.11/dist/hls.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

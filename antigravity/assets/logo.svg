@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e5a00d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5c94e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Play icon -->
+  <polygon points="6,8 6,42 38,25" fill="url(#logoGrad)" />
+  <!-- Text -->
+  <text x="46" y="34" font-family="'Inter', 'Arial', sans-serif" font-weight="700" font-size="26" fill="#ffffff" letter-spacing="1">TITAN</text>
+  <text x="134" y="34" font-family="'Inter', 'Arial', sans-serif" font-weight="300" font-size="26" fill="#e5a00d" letter-spacing="1">TV</text>
+</svg>
