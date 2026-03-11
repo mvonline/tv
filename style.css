@@ -607,7 +607,35 @@ html, body {
 @media (min-width: 768px)  { .hud-channel-name { font-size: 21px; } }
 @media (min-width: 1280px) { .hud-channel-name { font-size: 24px; } }
 
+.hud-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hud-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .hud-spacer { flex: 1; }
+
+/* Mobile HUD Top Layout (Two-line) */
+@media (max-width: 767px) {
+  .hud-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+  .hud-spacer { display: none; }
+  .hud-controls {
+    width: 100%;
+    flex-wrap: wrap; /* allow wrapping if too many buttons */
+    gap: 8px;
+  }
+}
 
 .hud-bottom {
   margin-top: auto;

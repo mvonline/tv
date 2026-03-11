@@ -83,6 +83,7 @@ const dom = {
   pcpCloseBtn:      () => $('pcp-close-btn'),
   bufferingSpinner: () => $('buffering-spinner'),
   streamError:      () => $('stream-error'),
+  streamErrorBack:  () => $('stream-error-back-btn'),
   retryBtn:         () => $('retry-btn'),
   exitDialog:       () => $('exit-dialog'),
   exitStay:         () => $('exit-stay'),
@@ -1135,6 +1136,10 @@ dom.pcpSearchInput().addEventListener('input', () => {
   state.panelFocusIdx = 0;
   _focusPanelItem(0);
 });
+
+// Stream error mobile back button
+dom.streamErrorBack().addEventListener('click', goHome);
+
 /* Stop Back/arrows from bubbling to D-pad handler while typing in panel */
 dom.pcpSearchInput().addEventListener('keydown', e => {
   e.stopPropagation();
