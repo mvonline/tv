@@ -94,7 +94,7 @@ jobs:
       - name: init android
         run: npx tauri android init --ci
       - name: build android
-        run: npx tauri android build --apk
+        run: npx tauri android build --apk --debug
       - name: Upload to Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
