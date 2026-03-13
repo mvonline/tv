@@ -66,16 +66,17 @@ This app is configured with **Tauri v2** to build native applications for 7 plat
 
 Because building for iOS requires a Mac (Xcode), and building Tauri requires Rust, this repository includes an automated **GitHub Actions CI/CD pipeline** that handles everything in the cloud for you.
 
-### How to trigger a build:
-1. Push your code to the `main` branch of your GitHub repository.
-2. Go to the **Actions** tab in your repository.
-3. You will see a `Tauri Cross-Platform Build` workflow running. It builds for:
-   - macOS (`.dmg`, `.app`)
-   - iOS (`.ipa`)
-   - Windows (`.exe`, `.msi`)
-   - Linux (`.deb`, `.AppImage`)
-   - Android (`.apk`, `.aab`)
-4. Once completed, download your built files from the workflow Artifacts section!
+### How to create a Release (and trigger Cloud Builds):
+1. **Push a Tag**: When you are ready to create a version (e.g., v1.0.0), run:
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+2. **Auto-Build**: GitHub Actions will automatically start building **Windows, macOS, Linux, iOS, and Android** versions.
+3. **Download**: Once finished, a **GitHub Release** will be created in your repository.
+4. **Changelog**: A changelog will be automatically generated and attached to the release description.
+
+To trigger a standard build without creating a release, just push to the `main` branch as usual.
 
 ---
 
