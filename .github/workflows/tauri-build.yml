@@ -94,7 +94,7 @@ jobs:
       - name: init android
         run: npx tauri android init --ci
       - name: build android
-        run: npx tauri android build
+        run: npx tauri android build --apk
       - name: Upload to Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
@@ -149,7 +149,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: ${{ secrets.ANDROID_SERVICE_ACCOUNT_JSON }}
-          packageName: com.mastv.app
+          packageName: com.mastv.iran
           releaseFiles: src-tauri/gen/android/*.aab
           track: internal
 
