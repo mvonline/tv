@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "serve src -l 8080",
+    "dev": "serve . -l 8080",
     "tauri": "tauri"
   },
   "devDependencies": {
