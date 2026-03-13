@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   desktop-builds:
     strategy:
@@ -33,7 +36,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
@@ -56,7 +59,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -82,7 +85,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
