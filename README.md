@@ -79,6 +79,23 @@ Because building for iOS requires a Mac (Xcode), and building Tauri requires Rus
 
 ---
 
+## Production Store Submission (App Store & Play Store)
+
+The GitHub Actions workflow includes a **Production Release** job that is triggered only on the `main` branch. This job features a **Manual Approval Gate**.
+
+### 1. Setup GitHub Environment
+1. Go to your GitHub Repository Settings → **Environments**.
+2. Click **New environment** and name it `Production`.
+3. Check **Required reviewers** and add yourself. This ensures the app is NOT pushed to stores until you click "Approve" in the Actions UI.
+
+### 2. Required Secrets
+Add the following secrets to your GitHub Repository (Settings → Secrets and variables → Actions):
+- `APPLE_ID`: Your Apple ID email.
+- `APPLE_APP_SPECIFIC_PASSWORD`: Generated from appleid.apple.com.
+- `ANDROID_SERVICE_ACCOUNT_JSON`: The JSON key for your Google Play Console service account.
+
+---
+
 ## Local Web Development
 
 If you just want to edit the HTML/JS/CSS without building the desktop/mobile apps:

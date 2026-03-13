@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   desktop-builds:
     strategy:
@@ -33,7 +36,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
@@ -56,7 +59,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -82,7 +85,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -93,3 +96,36 @@ jobs:
         run: npx tauri ios init --ci
       - name: build ios
         run: npx tauri ios build --export-method debugging --target aarch64-sim
+
+  production-release:
+    needs: [desktop-builds, mobile-android, mobile-ios]
+    runs-on: ubuntu-latest
+    environment: Production
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      
+      - name: Notify Store Submission
+        run: echo "Starting official submission to App Store and Google Play Store..."
+
+      # Placeholder for Play Store Upload
+      # Requires ANDROID_SERVICE_ACCOUNT_JSON secret
+      - name: Upload to Google Play
+        if: env.ANDROID_SERVICE_ACCOUNT_JSON != ''
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJson: ${{ secrets.ANDROID_SERVICE_ACCOUNT_JSON }}
+          packageName: com.mastv.app
+          releaseFiles: src-tauri/gen/android/*.aab
+          track: internal
+
+      # Placeholder for App Store Upload
+      # Requires APPLE_ID and APPLE_APP_SPECIFIC_PASSWORD
+      - name: Upload to App Store
+        if: env.APPLE_ID != ''
+        run: |
+          xcrun altool --upload-app --type ios --file src-tauri/gen/apple/*.ipa --username "${{ secrets.APPLE_ID }}" --password "${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}"
