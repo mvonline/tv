@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "serve . -l 8080",
+    "build": "node -e \"const fs=require('fs'); if(fs.existsSync('dist')) fs.rmSync('dist', {recursive:true}); fs.mkdirSync('dist'); ['index.html', 'app.js', 'style.css', 'channels.json'].forEach(f => fs.copyFileSync(f, 'dist/'+f)); if(fs.existsSync('assets')) fs.cpSync('assets', 'dist/assets', {recursive:true})\"",
     "tauri": "tauri"
   },
   "devDependencies": {
