@@ -95,11 +95,19 @@ jobs:
         run: npx tauri android init --ci
       - name: build android
         run: npx tauri android build --apk --debug
+        env:
+          ANDROID_KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+
       - name: Upload to Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: src-tauri/gen/android/**/*.aab,src-tauri/gen/android/**/*.apk
+          files: |
+            src-tauri/gen/android/**/*.aab
+            src-tauri/gen/android/**/*.apk
           tag_name: ${{ github.ref_name }}
 
   mobile-ios:
