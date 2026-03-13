@@ -3,6 +3,8 @@ name: 'Tauri Cross-Platform Build'
 on:
   push:
     branches: [ main ]
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 env:
@@ -46,10 +48,23 @@ jobs:
       - name: install frontend deps
         run: npm install
         
+      - name: Generate Changelog
+        id: changelog
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          draft: true
+
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          tagName: ${{ github.ref_name }}
+          releaseName: 'MasTV ${{ github.ref_name }}'
+          releaseBody: 'Download the latest version of MasTV for your platform.'
+          releaseDraft: true
+          prerelease: false
           args: ${{ matrix.args }}
 
   mobile-android:
@@ -77,6 +92,12 @@ jobs:
         run: npx tauri android init --ci
       - name: build android
         run: npx tauri android build
+      - name: Upload to Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: src-tauri/gen/android/**/*.aab,src-tauri/gen/android/**/*.apk
+          tag_name: ${{ github.ref_name }}
 
   mobile-ios:
     runs-on: macos-latest
@@ -96,6 +117,12 @@ jobs:
         run: npx tauri ios init --ci
       - name: build ios
         run: npx tauri ios build --export-method debugging --target aarch64-sim
+      - name: Upload to Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: src-tauri/gen/apple/**/*.ipa,src-tauri/gen/apple/**/*.app
+          tag_name: ${{ github.ref_name }}
 
   production-release:
     needs: [desktop-builds, mobile-android, mobile-ios]
