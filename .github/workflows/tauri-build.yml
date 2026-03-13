@@ -92,4 +92,4 @@ jobs:
       - name: init ios
         run: npx tauri ios init --ci
       - name: build ios
-        run: npx tauri ios build
+        run: npx tauri ios build --export-method development --target aarch64-apple-ios-sim
