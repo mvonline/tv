@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "serve src -l 8080"
+    "dev": "serve src -l 8080",
+    "tauri": "tauri"
   },
   "devDependencies": {
     "@tauri-apps/api": "^2.10.1",
