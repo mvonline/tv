@@ -1170,9 +1170,19 @@ dom.searchGrid().addEventListener('click',  e => {
   _delegatedGridClick(e, filtered);
 });
 
-/* Show HUD whenever mouse moves over the player */
+/* Show HUD on mouse move or touch/click */
 dom.playerScreen().addEventListener('mousemove', () => {
   if (state.activeScreen === 'player') showHud();
+});
+dom.playerScreen().addEventListener('click', (e) => {
+  if (state.activeScreen === 'player') {
+    // Ignore clicks on actionable overlays (buttons, panels, numpad, etc.)
+    if (e.target.closest('button') || e.target.closest('.player-channel-panel') || e.target.closest('.numpad-overlay')) return;
+    
+    const hud = dom.playerHud();
+    if (hud.classList.contains('hidden')) showHud();
+    else hud.classList.add('hidden'); // Tap to dismiss
+  }
 });
 
 /* ══════════════════════════════════════════════════════════
