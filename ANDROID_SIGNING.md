@@ -21,7 +21,8 @@ Once you have `mastv.keystore`, follow these steps to add it to your GitHub Secr
 
 1. **Base64 Encode the file**:
    ```powershell
-   [Convert]::ToBase64String([IO.File]::ReadAllBytes("mastv.keystore")) | Out-File -FilePath mastv_base64.txt
+   $file = Get-Item "mastv.keystore"
+   [Convert]::ToBase64String([IO.File]::ReadAllBytes($file.FullName)) | Out-File -FilePath mastv_base64.txt
    ```
 2. **Copy the content**: Open `mastv_base64.txt` and copy the long string of text.
 
