@@ -32,6 +32,10 @@ MAX_CHANNELS = None  # limit for testing; set to None to scrape all
 CONNECT_TIMEOUT_S = 5
 READ_TIMEOUT_S = 20
 
+# When "following" embedded iframes, skip aggressively to avoid stalling.
+FOLLOW_CONNECT_TIMEOUT_S = 2
+FOLLOW_READ_TIMEOUT_S = 8
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -82,11 +86,20 @@ def infer_language(category: str) -> str:
     return "fa"  # default to Farsi
 
 
-def get_page(url: str, session: requests.Session, extra_headers: dict | None = None) -> BeautifulSoup | None:
+def get_page(
+    url: str,
+    session: requests.Session,
+    extra_headers: dict | None = None,
+    timeout: tuple[float, float] | None = None,
+) -> BeautifulSoup | None:
     """Fetch a URL and return a BeautifulSoup object, or None on failure."""
     hdrs = {**HEADERS, **(extra_headers or {})}
     try:
-        resp = session.get(url, headers=hdrs, timeout=(CONNECT_TIMEOUT_S, READ_TIMEOUT_S))
+        resp = session.get(
+            url,
+            headers=hdrs,
+            timeout=timeout or (CONNECT_TIMEOUT_S, READ_TIMEOUT_S),
+        )
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "lxml")
     except requests.RequestException as e:
@@ -94,11 +107,20 @@ def get_page(url: str, session: requests.Session, extra_headers: dict | None = N
         return None
 
 
-def get_raw(url: str, session: requests.Session, extra_headers: dict | None = None) -> str | None:
+def get_raw(
+    url: str,
+    session: requests.Session,
+    extra_headers: dict | None = None,
+    timeout: tuple[float, float] | None = None,
+) -> str | None:
     """Fetch a URL and return the raw response text."""
     hdrs = {**HEADERS, **(extra_headers or {})}
     try:
-        resp = session.get(url, headers=hdrs, timeout=(CONNECT_TIMEOUT_S, READ_TIMEOUT_S))
+        resp = session.get(
+            url,
+            headers=hdrs,
+            timeout=timeout or (CONNECT_TIMEOUT_S, READ_TIMEOUT_S),
+        )
         resp.raise_for_status()
         return resp.text
     except requests.RequestException as e:
@@ -301,7 +323,12 @@ def extract_stream_url(
             print(f"  [iframe] Following: {src[:80]}")
             try:
                 iframe_headers = {"Referer": page_url}
-                iframe_soup = get_page(src, session, extra_headers=iframe_headers)
+                iframe_soup = get_page(
+                    src,
+                    session,
+                    extra_headers=iframe_headers,
+                    timeout=(FOLLOW_CONNECT_TIMEOUT_S, FOLLOW_READ_TIMEOUT_S),
+                )
                 if iframe_soup:
                     # Try PHP endpoints inside the iframe too
                     php_endpoints = _find_php_fetch_endpoints(iframe_soup)
