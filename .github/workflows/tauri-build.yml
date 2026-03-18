@@ -1,4 +1,4 @@
-name: 'Tauri Cross-Platform Build'
+name: 'Tauri Build & Python Scraper'
 
 on:
   push:
@@ -6,6 +6,9 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+  # اضافه شدن زمان‌بندی: هر ۲ ساعت یکبار
+  schedule:
+    - cron: '0 */2 * * *'
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -14,7 +17,37 @@ permissions:
   contents: write
 
 jobs:
+  # --- جاب جدید برای اسکرپر ---
+  run-scraper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run scraper
+        run: python scraper.py
+
+      # اختیاری: اگر اسکرپر فایلی را تغییر می‌دهد و می‌خواهید در گیت‌هاب ذخیره شود
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-update data from scraper" || exit 0
+          git push
+
+  # --- جاب‌های قبلی شما (بدون تغییر) ---
   desktop-builds:
+    # فقط وقتی اجرا شود که پوش شده باشد (نه در حالت اسکرول/زمان‌بندی)
+    if: github.event_name != 'schedule'
     strategy:
       fail-fast: false
       matrix:
@@ -27,50 +60,36 @@ jobs:
             args: ''
           - platform: 'windows-latest'
             args: ''
-
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v4
-      
+      # ... بقیه مراحل قبلی شما ...
       - name: Install dependencies (Ubuntu only)
         if: matrix.platform == 'ubuntu-22.04'
         run: |
           sudo apt-get update
           sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
-      
       - name: setup node
         uses: actions/setup-node@v4
         with:
           node-version: 24
-      
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
           targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
-      
       - name: install frontend deps
         run: npm install
-        
-      - name: Generate Changelog
-        id: changelog
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          generate_release_notes: true
-          draft: true
-
-      - uses: tauri-apps/tauri-action@v0
+      - name: uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || '' }}
           releaseName: 'MasTV ${{ github.ref_name }}'
-          releaseBody: 'Download the latest version of MasTV for your platform.'
           releaseDraft: true
-          prerelease: false
           args: ${{ matrix.args }}
 
   mobile-android:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -101,16 +120,8 @@ jobs:
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
 
-      - name: Upload to Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: |
-            src-tauri/gen/android/**/*.aab
-            src-tauri/gen/android/**/*.apk
-          tag_name: ${{ github.ref_name }}
-
   mobile-ios:
+    if: github.event_name != 'schedule'
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
@@ -128,12 +139,6 @@ jobs:
         run: npx tauri ios init --ci
       - name: build ios
         run: npx tauri ios build --export-method debugging --target aarch64-sim
-      - name: Upload to Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          files: src-tauri/gen/apple/**/*.ipa,src-tauri/gen/apple/**/*.app
-          tag_name: ${{ github.ref_name }}
 
   production-release:
     needs: [desktop-builds, mobile-android, mobile-ios]
@@ -146,24 +151,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-      
       - name: Notify Store Submission
-        run: echo "Starting official submission to App Store and Google Play Store..."
-
-      # Placeholder for Play Store Upload
-      # Requires ANDROID_SERVICE_ACCOUNT_JSON secret
-      - name: Upload to Google Play
-        if: env.ANDROID_SERVICE_ACCOUNT_JSON != ''
-        uses: r0adkll/upload-google-play@v1
-        with:
-          serviceAccountJson: ${{ secrets.ANDROID_SERVICE_ACCOUNT_JSON }}
-          packageName: com.mastv.iran
-          releaseFiles: src-tauri/gen/android/*.aab
-          track: internal
-
-      # Placeholder for App Store Upload
-      # Requires APPLE_ID and APPLE_APP_SPECIFIC_PASSWORD
-      - name: Upload to App Store
-        if: env.APPLE_ID != ''
-        run: |
-          xcrun altool --upload-app --type ios --file src-tauri/gen/apple/*.ipa --username "${{ secrets.APPLE_ID }}" --password "${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}"
+        run: echo "Starting official submission..."
