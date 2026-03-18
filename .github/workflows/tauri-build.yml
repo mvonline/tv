@@ -6,7 +6,6 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
-  # اضافه شدن زمان‌بندی: هر ۲ ساعت یکبار
   schedule:
     - cron: '0 */2 * * *'
 
@@ -17,7 +16,6 @@ permissions:
   contents: write
 
 jobs:
-  # --- جاب جدید برای اسکرپر ---
   run-scraper:
     runs-on: ubuntu-latest
     steps:
@@ -35,7 +33,6 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
-      # اختیاری: اگر اسکرپر فایلی را تغییر می‌دهد و می‌خواهید در گیت‌هاب ذخیره شود
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
@@ -44,9 +41,7 @@ jobs:
           git commit -m "Auto-update data from scraper" || exit 0
           git push
 
-  # --- جاب‌های قبلی شما (بدون تغییر) ---
   desktop-builds:
-    # فقط وقتی اجرا شود که پوش شده باشد (نه در حالت اسکرول/زمان‌بندی)
     if: github.event_name != 'schedule'
     strategy:
       fail-fast: false
@@ -63,23 +58,28 @@ jobs:
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v4
-      # ... بقیه مراحل قبلی شما ...
+      
       - name: Install dependencies (Ubuntu only)
         if: matrix.platform == 'ubuntu-22.04'
         run: |
           sudo apt-get update
           sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+      
       - name: setup node
         uses: actions/setup-node@v4
         with:
           node-version: 24
+      
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
           targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+      
       - name: install frontend deps
         run: npm install
-      - name: uses: tauri-apps/tauri-action@v0
+
+      - name: Build Tauri App
+        uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
