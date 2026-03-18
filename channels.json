@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-03-18T20:52:36Z",
+  "scraped_at": "2026-03-18T22:50:05Z",
   "total": 1005,
   "channels": [
     {
@@ -2374,7 +2374,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1773878400&s=Q0TR1bLQuoiGEj7WIOc-AQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1773885600&s=FuBabfZoiMKVc_UG4J0mCA",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4068,7 +4068,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=DE&exp=1773874103&hash=7073341aaecfdbb9a80de89b0530e2b4e07a8e38fbc8ebbaae64efcb155dcc86",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1773882288&hash=cbe8aa4812cbae4bf78b66852b7b6c4e2922272f3e90375c11c63eded0014212",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4079,7 +4079,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1773875238&hash=de878f0a55f982be48db392947e86e22d2b7991024559b2a1089b9de7bd2c5d1",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=DE&exp=1773881668&hash=7fef0f046ac54430b99dc3ba523f86806ca3b5841f65dc181db597f5e367de54",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4090,7 +4090,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1773875240&hash=2a837473147ada8c3c752e4762662f19d5dfca9f3c2fc53134044619258eb1a6",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1773882292&hash=32d4627d0d0456588aac3a13cfce881421dbf803cf121dcf4186f07dc224bc4a",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -5751,7 +5751,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/superX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Super-RTL#deutsch",
       "working": null
     },
@@ -5850,7 +5850,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/sat1z/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sat1#deutsch",
       "working": null
     },
@@ -6411,7 +6411,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1773866540~acl=/alraimedialive/alraitv.smil/*~hmac=143806a3fdd70bec7ea8b310cecd556e2f31d5be8ef71d90aa74a45d434d8809",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1773873597~acl=/alraimedialive/alraitv.smil/*~hmac=4ef3dc65006b7454dce1787feed00bec839fc8ffc18d0910794518cc8443ebc8",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8182,7 +8182,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=66LEAILtRzMKQ1JV2OcnJw&e=1773952319",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=Rzpf7nADUGl2v-nc50PiNg&e=1773960218",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -10668,7 +10668,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/goHbjWCkGYDnCbktiPWdmxco/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
