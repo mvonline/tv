@@ -26,6 +26,12 @@ OUTPUT_FILE = "channels.json"
 REQUEST_DELAY = 1  # seconds between requests
 MAX_CHANNELS = None  # limit for testing; set to None to scrape all
 
+# Requests timeouts:
+# - Connect timeout: fail fast if host is unreachable
+# - Read timeout: allow slower responses once connected
+CONNECT_TIMEOUT_S = 5
+READ_TIMEOUT_S = 20
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -80,7 +86,7 @@ def get_page(url: str, session: requests.Session, extra_headers: dict | None = N
     """Fetch a URL and return a BeautifulSoup object, or None on failure."""
     hdrs = {**HEADERS, **(extra_headers or {})}
     try:
-        resp = session.get(url, headers=hdrs, timeout=15)
+        resp = session.get(url, headers=hdrs, timeout=(CONNECT_TIMEOUT_S, READ_TIMEOUT_S))
         resp.raise_for_status()
         return BeautifulSoup(resp.text, "lxml")
     except requests.RequestException as e:
@@ -92,7 +98,7 @@ def get_raw(url: str, session: requests.Session, extra_headers: dict | None = No
     """Fetch a URL and return the raw response text."""
     hdrs = {**HEADERS, **(extra_headers or {})}
     try:
-        resp = session.get(url, headers=hdrs, timeout=15)
+        resp = session.get(url, headers=hdrs, timeout=(CONNECT_TIMEOUT_S, READ_TIMEOUT_S))
         resp.raise_for_status()
         return resp.text
     except requests.RequestException as e:
