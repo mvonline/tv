@@ -95,6 +95,7 @@ const dom = {
   numpadCloseBtn:   () => $('numpad-close-btn'),
   numpadGrid:       () => $('numpad-grid'),
   numpadEnterBtn:   () => $('numpad-enter-btn'),
+  hudPipBtn:        () => $('hud-pip-btn'),
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -676,6 +677,122 @@ function toggleFullscreen() {
 });
 
 /* ══════════════════════════════════════════════════════════
+   PICTURE IN PICTURE
+   ══════════════════════════════════════════════════════════ */
+async function togglePiP() {
+  const video = dom.playerVideo();
+  if (!video || !document.pictureInPictureEnabled) return;
+
+  try {
+    if (document.pictureInPictureElement) {
+      await document.exitPictureInPicture();
+    } else {
+      await video.requestPictureInPicture();
+    }
+  } catch (error) {
+    console.error('PiP failed:', error);
+  }
+}
+
+// Update PiP icon based on state
+if (document.pictureInPictureEnabled) {
+  const video = dom.playerVideo();
+  video.addEventListener('enterpictureinpicture', () => {
+    dom.hudPipBtn().textContent = '❐'; // or some other icon
+    dom.hudPipBtn().title = 'Exit PiP';
+  });
+  video.addEventListener('leavepictureinpicture', () => {
+    dom.hudPipBtn().textContent = '📺';
+    dom.hudPipBtn().title = 'Picture-in-Picture';
+  });
+} else {
+  // Hide PiP button if not supported
+  setTimeout(() => {
+    const btn = dom.hudPipBtn();
+    if (btn) btn.style.display = 'none';
+  }, 100);
+}
+
+/* ══════════════════════════════════════════════════════════
+   MEDIA SESSION (Background Playback & Lock Screen)
+   ══════════════════════════════════════════════════════════ */
+function updateMediaSession(channel) {
+  if (!('mediaSession' in navigator) || !channel) return;
+
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: channel.name,
+    artist: 'MasTV — Live Iranian TV',
+    album: channel.category || 'Streaming',
+    artwork: channel.logo_url ? [
+      { src: channel.logo_url, sizes: '96x96',   type: 'image/png' },
+      { src: channel.logo_url, sizes: '128x128', type: 'image/png' },
+      { src: channel.logo_url, sizes: '192x192', type: 'image/png' },
+      { src: channel.logo_url, sizes: '256x256', type: 'image/png' },
+      { src: channel.logo_url, sizes: '384x384', type: 'image/png' },
+      { src: channel.logo_url, sizes: '512x512', type: 'image/png' },
+    ] : []
+  });
+
+  navigator.mediaSession.setActionHandler('play', () => {
+    dom.playerVideo().play().catch(() => {});
+  });
+  navigator.mediaSession.setActionHandler('pause', () => {
+    dom.playerVideo().pause();
+  });
+  // Next/Prev can switch channels if desired
+  navigator.mediaSession.setActionHandler('previoustrack', () => switchChannel(-1));
+  navigator.mediaSession.setActionHandler('nexttrack', () => switchChannel(1));
+
+  navigator.mediaSession.playbackState = 'playing';
+}
+
+/* ══════════════════════════════════════════════════════════
+   CHANNEL SWITCHING
+   ══════════════════════════════════════════════════════════ */
+function switchChannel(offset) {
+  if (!state.currentChannel || !state.allChannels.length) return;
+  
+  // Use the established sorting (favourites first, then number)
+  // This matches how they appear in the side panel
+  const list = [...state.allChannels].sort((a, b) => {
+    const aFav = state.favorites.has(a.id);
+    const bFav = state.favorites.has(b.id);
+    if (aFav && !bFav) return -1;
+    if (!aFav && bFav) return 1;
+    return (a.num || 0) - (b.num || 0);
+  });
+
+  const currentIdx = list.findIndex(ch => ch.id === state.currentChannel.id);
+  if (currentIdx === -1) return;
+
+  const nextIdx = (currentIdx + offset + list.length) % list.length;
+  const ch = list[nextIdx];
+  if (ch) openPlayer(ch);
+}
+
+// Handle browser tab switching / visibility
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    const video = dom.playerVideo();
+    // If we're on player screen and have a channel, ensure it's playing
+    if (state.activeScreen === 'player' && state.currentChannel && video.paused) {
+      video.play().catch(() => {});
+    }
+  }
+});
+
+// Sync MediaSession state with video events
+const _v = dom.playerVideo();
+if (_v) {
+  _v.addEventListener('play', () => {
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
+  });
+  _v.addEventListener('pause', () => {
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
+  });
+}
+
+/* ══════════════════════════════════════════════════════════
    PLAYER CHANNEL PANEL
 ══════════════════════════════════════════════════════════ */
 function openChannelPanel() {
@@ -797,6 +914,7 @@ function openPlayer(channel) {
   dom.bufferingSpinner().classList.add('active');
   dom.hudHomeBtn().classList.remove('focused');
   updateHudFavBtn();
+  updateMediaSession(channel);
   showHud();
   startStream(channel.stream_url);
 }
@@ -961,6 +1079,8 @@ document.addEventListener('keydown', e => {
   const isLeft  = key === 'ArrowLeft';
   const isRight = key === 'ArrowRight';
   
+  const isPip   = key === 'p' || key === 'P'; // P key for PiP
+  
   const isDigit  = key >= '0' && key <= '9' && !e.ctrlKey && !e.metaKey;
   const numpadDigit = key.startsWith('Numpad') ? key.replace('Numpad','') : null;
 
@@ -990,6 +1110,13 @@ document.addEventListener('keydown', e => {
     e.preventDefault();
     if (state.activeScreen === 'player') toggleFavoritePlayer();
     else if (state.activeScreen === 'home' && state.focusZone === 'grid') toggleFavoriteOnFocused();
+    return;
+  }
+
+  // PiP toggle shortcut
+  if (isPip && state.activeScreen === 'player') {
+    e.preventDefault();
+    togglePiP();
     return;
   }
 
@@ -1094,7 +1221,9 @@ function handlePlayerNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
 
   // ── Default player zone ──────────────────────────────────
   if (isLeft)  { openChannelPanel(); return; }
-  if (isUp)    { state.focusZone = 'player-home'; dom.hudHomeBtn().classList.add('focused'); }
+  if (isRight) { switchChannel(1); return; }
+  if (isUp)    { switchChannel(1); return; }
+  if (isDown)  { switchChannel(-1); return; }
 }
 
 /* ── Search Navigation ────────────────────────────────────── */
@@ -1125,6 +1254,7 @@ dom.retryBtn().addEventListener('click', () => { dom.errorScreen().classList.rem
 dom.hudHomeBtn().addEventListener('click', goHome);
 dom.hudFavBtn().addEventListener('click', () => { toggleFavoritePlayer(); updateHudFavBtn(); });
 dom.hudPanelBtn().addEventListener('click', () => state.panelOpen ? closeChannelPanel() : openChannelPanel());
+dom.hudPipBtn().addEventListener('click', togglePiP);
 dom.hudFsBtn().addEventListener('click', toggleFullscreen);
 dom.pcpCloseBtn().addEventListener('click', closeChannelPanel);
 dom.exitStay().addEventListener('click', hideExitDialog);

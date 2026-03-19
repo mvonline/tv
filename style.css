@@ -759,8 +759,8 @@ html, body {
   box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
 }
 
-/* HUD Fullscreen button */
-.hud-fs-btn {
+/* HUD Fullscreen and PiP buttons */
+.hud-fs-btn, .hud-pip-btn {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 8px;
@@ -774,8 +774,9 @@ html, body {
   transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
   pointer-events: all;
 }
-@media (min-width: 768px) { .hud-fs-btn { font-size: 20px; padding: 4px 12px; } }
+@media (min-width: 768px) { .hud-fs-btn, .hud-pip-btn { font-size: 20px; padding: 4px 12px; } }
 .hud-fs-btn:hover, .hud-fs-btn.focused, .hud-fs-btn:focus,
+.hud-pip-btn:hover, .hud-pip-btn.focused, .hud-pip-btn:focus,
 .hud-numpad-btn:hover, .hud-numpad-btn.focused, .hud-numpad-btn:focus {
   background: rgba(255,255,255,0.22);
   border-color: rgba(255,255,255,0.6);
