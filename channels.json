@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-03-20T13:05:08Z",
+  "scraped_at": "2026-03-20T15:01:06Z",
   "total": 1005,
   "channels": [
     {
@@ -2374,7 +2374,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774022400&s=HgcZv8k4qJ8PrwneQAVYBw",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774029600&s=Nw501qTqwLtx0jcCATeqcg",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -2869,7 +2869,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://milkyway.tangledwires.io/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Payame-Doost-Radio#radio",
       "working": null
     },
@@ -2880,7 +2880,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://wlgi.streamguys1.com/live",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Radio-Bahai-English#radio",
       "working": null
     },
@@ -2913,7 +2913,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://s2.cdn3.iranseda.ir/liveedge/radio-varzesh/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Radio-Varzesh#radio",
       "working": null
     },
@@ -2946,7 +2946,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://s2.cdn3.iranseda.ir/liveedge/radio-payam/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Radio-Payam#radio",
       "working": null
     },
@@ -2968,7 +2968,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kpbs.streamguys1.com/kpbs-mp3",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KPBS-Radio#radio",
       "working": null
     },
@@ -2979,7 +2979,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.revma.ihrhls.com/zc6286/hls.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Bloomberg-Radio#radio",
       "working": null
     },
@@ -3001,7 +3001,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://28153.live.streamtheworld.com/NOVA_SKYNEWSAAC.aac",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sky-News-Australia-Radio#radio",
       "working": null
     },
@@ -3034,7 +3034,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://14623.live.streamtheworld.com/KIRKIRAAC.aac",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Charlie-Kirk-Show#radio",
       "working": null
     },
@@ -3045,7 +3045,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NEWSMAX_FM.aac",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Newsmax-Radio#radio",
       "working": null
     },
@@ -3056,7 +3056,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "http://s-cdn.herringnetwork.com/live1/hello_world_oan_audio/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=One-America-News-Network-Radio#radio",
       "working": null
     },
@@ -3067,7 +3067,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CSPANRADIO.mp3",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CSPAN-Radio#radio",
       "working": null
     },
@@ -3078,7 +3078,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://26353.live.streamtheworld.com/WSOCFMAAC.aac",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Country-FM#radio",
       "working": null
     },
@@ -3122,7 +3122,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://pureplay.cdnstream1.com/6036_64.aac",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=100-Hitz#radio",
       "working": null
     },
@@ -3133,7 +3133,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.revma.ihrhls.com/zc185/hls.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KIIS-FM-Los-Angeles#radio",
       "working": null
     },
@@ -3166,7 +3166,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ssldyg.radyotvonline.com/smil/smil:kralpop.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kral-POP-Radio#radio",
       "working": null
     },
@@ -3188,7 +3188,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://glzwizzlv.bynetcdn.com/glz_mp3",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Galei-Zahal#radio",
       "working": null
     },
@@ -3199,7 +3199,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://27783.live.streamtheworld.com/KAN_BET.mp3",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kan-Bet#radio",
       "working": null
     },
@@ -3210,7 +3210,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dfw.audio-stream.com/proxy/israelne?mp=/live_live",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Israel-News-Talk#radio",
       "working": null
     },
@@ -3221,7 +3221,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://i6.streams.ovh/sc/barazar1/stream",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Baraza-Radio#radio",
       "working": null
     },
@@ -3254,7 +3254,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.amperwave.net/manifest/espn-network-cloud.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ESPN-Radio#radio",
       "working": null
     },
@@ -3276,7 +3276,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=M2O-TV#music",
       "working": null
     },
@@ -3287,7 +3287,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://abr.de1se01.v2beat.live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=V2Beat-TV#music",
       "working": null
     },
@@ -3309,7 +3309,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.m2.tv/hls3/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=M2-Music#music",
       "working": null
     },
@@ -3320,7 +3320,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bss1.neterra.tv/magictv/magictv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Magic-TV#music",
       "working": null
     },
@@ -3331,7 +3331,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://us.live.skyfolk.mk/live.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sky-Folk-TV#music",
       "working": null
     },
@@ -3342,7 +3342,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdnlive.myspirit.tv/LS-ATL-43240-2/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Spirit-TV#music",
       "working": null
     },
@@ -3353,7 +3353,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://w2.manasat.com/kmusic/smil:kmusic.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kuriakos-Music#music",
       "working": null
     },
@@ -3364,7 +3364,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.4fun.tv:8888/hls/4f.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=4-Fun-TV#music",
       "working": null
     },
@@ -3375,7 +3375,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S35394734/Z6U2wGoDYANk/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Radio-Capital-TV#music",
       "working": null
     },
@@ -3386,7 +3386,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Retro-Music#music",
       "working": null
     },
@@ -3397,7 +3397,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d2y0xw9ugf4if7.cloudfront.net/scheduler/scheduleMaster/417.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Feva-Music#music",
       "working": null
     },
@@ -3408,7 +3408,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://tezaur.mlbfan.org/tezaur/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tezaur-Folc-TV#music",
       "working": null
     },
@@ -3419,7 +3419,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://xite-rakuten.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=XITE#music",
       "working": null
     },
@@ -3430,7 +3430,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Deejay-TV#music",
       "working": null
     },
@@ -3441,7 +3441,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rds3.desdeparaguay.net/gotv/gotv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Go-TV#music",
       "working": null
     },
@@ -3452,7 +3452,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kronehit-TV#music",
       "working": null
     },
@@ -3463,7 +3463,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/stream03/streamPlaylist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Radio-Italia-TV#music",
       "working": null
     },
@@ -3474,7 +3474,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cmc-ono.amagi.tv/hls/amagi_hls_data_cmcAAAAAA-cmc-ono/CDN/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=California-Music-Channel#music",
       "working": null
     },
@@ -3485,7 +3485,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Company-TV#music",
       "working": null
     },
@@ -3496,7 +3496,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://euroindiemusic.icdndhcp.com:1935/euroindiemusic/euroindiemusic/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Euro-Indie-Music#music",
       "working": null
     },
@@ -3507,7 +3507,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.ecable.tv/afrobeats/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Afrobeat-TV#music",
       "working": null
     },
@@ -3518,7 +3518,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kiss-TV#music",
       "working": null
     },
@@ -3529,7 +3529,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Deluxe-Music#music",
       "working": null
     },
@@ -3540,7 +3540,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream-gtlc.telecentro.net.ar/hls/tierramiahls/main.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tierra-Mia-TV#music",
       "working": null
     },
@@ -3551,7 +3551,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://eco.streams.ovh:8081/barazatv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Baraza-TV#music",
       "working": null
     },
@@ -3562,7 +3562,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5c389faa13be3.streamlock.net:9553/onweb/live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NRG-91-Music#music",
       "working": null
     },
@@ -3573,7 +3573,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ocko-TV#music",
       "working": null
     },
@@ -3584,7 +3584,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ocko-Gold#music",
       "working": null
     },
@@ -3595,7 +3595,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_expres.stream.1.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ocko-Expres#music",
       "working": null
     },
@@ -3606,7 +3606,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://58d921499d3d3.streamlock.net/RadioPiterpanTV/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Piterpan-TV#music",
       "working": null
     },
@@ -3628,7 +3628,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live-stranafm.cdnvideo.ru/stranafm/smil:stranafm.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Country-FM-Russia#music",
       "working": null
     },
@@ -3650,7 +3650,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Rock-TV#music",
       "working": null
     },
@@ -3661,7 +3661,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn1/PraiseHim/smil:PraiseHim.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Praise-Him-Music#music",
       "working": null
     },
@@ -3672,7 +3672,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://web.onair-radio.eu:1935/Alpha-Host/Alpha-Host/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=On-Air-TV#music",
       "working": null
     },
@@ -3694,7 +3694,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59253971be783.streamlock.net/KKTV01/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kiss-Kiss-Italia-TV#music",
       "working": null
     },
@@ -3705,7 +3705,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://circle-samsung.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Circle-Country#music",
       "working": null
     },
@@ -3716,7 +3716,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00056-amg00056c7-rakuten-de-3245.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Vevo-Pop#music",
       "working": null
     },
@@ -3727,7 +3727,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00056-amg00056c15-rakuten-it-3241.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Vevo-Schlager-Pop#music",
       "working": null
     },
@@ -3738,7 +3738,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Biz-Music#music",
       "working": null
     },
@@ -3749,7 +3749,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://hz1.teleport.cc/HLS/HD.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1Muz#music",
       "working": null
     },
@@ -3760,7 +3760,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://30a-tv.com/music.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=30A-Music#music",
       "working": null
     },
@@ -3771,7 +3771,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streamtv.mediasector.es/hls/activatv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Activa-TV#music",
       "working": null
     },
@@ -3782,7 +3782,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ftv1.b-cdn.net/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/manifest.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Fashion-TV#fashion",
       "working": null
     },
@@ -3793,7 +3793,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.wfc.tv/cdn/stream-eng.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=World-Fashion-TV#fashion",
       "working": null
     },
@@ -3804,7 +3804,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.wfc.tv/cdn/stream-rus.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=World-Fashion-Russia#fashion",
       "working": null
     },
@@ -3815,7 +3815,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://lb.streaming.sk/fashiontv/stream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=FTV-Czech-Slovak#fashion",
       "working": null
     },
@@ -3826,7 +3826,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn2.invivo.bg/Codefashion_5500/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Code-Fashion#fashion",
       "working": null
     },
@@ -3837,7 +3837,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2ee690051.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Fashion-One#fashion",
       "working": null
     },
@@ -3859,7 +3859,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59ec5453559f0.streamlock.net/miamitv/smil:WEB4141/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Miami-TV#fashion",
       "working": null
     },
@@ -3870,7 +3870,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://pubgfc.teleosmedia.com/linear/globalfashionchannel/globalfashionchannel/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Global-Fashion-Channel#fashion",
       "working": null
     },
@@ -3881,7 +3881,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://lo3.gemporia.com/abrgemporiaukgfx/smil:livestream.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=GEMS-TV#fashion",
       "working": null
     },
@@ -3892,7 +3892,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://sy.wns.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Super-Yacht-TV#fashion",
       "working": null
     },
@@ -3925,7 +3925,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg01460-gemshoppingnetw-gem-ono-x662c.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Gem-Shopping-Network#fashion",
       "working": null
     },
@@ -3936,7 +3936,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc5us/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Fashion-Finds#fashion",
       "working": null
     },
@@ -3947,7 +3947,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc1uscln/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=QVC-Beauty#fashion",
       "working": null
     },
@@ -3958,7 +3958,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc2uscln/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=QVC-Beauty-2#fashion",
       "working": null
     },
@@ -3969,7 +3969,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc3uscln/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=QVC-Beauty-3#fashion",
       "working": null
     },
@@ -3980,7 +3980,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4uscln/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=QVC-Kitchen#fashion",
       "working": null
     },
@@ -3991,7 +3991,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livecdn.use1-0004.jwplive.com/live/sites/2hbjTQ4s/media/oe7UD7Ag/live.isml/live.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Jewellery-Maker#fashion",
       "working": null
     },
@@ -4013,7 +4013,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Biz-Cinema#movie",
       "working": null
     },
@@ -4024,7 +4024,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Biz-TV#movie",
       "working": null
     },
@@ -4035,7 +4035,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://strhlslb01.streamakaci.tv/str_ntv_ntv/str_ntv_ntv_multi/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NTV-Afrique#movie",
       "working": null
     },
@@ -4057,7 +4057,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-10.frequency.stream/dist/zype/10/hls/master/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Popstar!-TV#movie",
       "working": null
     },
@@ -4068,7 +4068,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=RU&exp=1774016962&hash=079929dc2d34858be16ce11e5e4d12bd1588a4012f937cf15e634a11f2c3948f",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4079,7 +4079,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=AE&exp=1774018714&hash=73f66c024bf8c3eeae062817cf0bcf01100c1b005e310a200e25f58d81d0c4d0",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4090,7 +4090,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1774019958&hash=c96548cbb9d40613134411c35f7bf9f823c11b8b5f4488dffeb2efe13ad920f6",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -4101,7 +4101,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge17.vedge.infomaniak.com/livecast/ik:event/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Carac-1#movie",
       "working": null
     },
@@ -4112,7 +4112,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge18.vedge.infomaniak.com/livecast/ik:onefmmd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Carac-2#movie",
       "working": null
     },
@@ -4123,7 +4123,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge14.vedge.infomaniak.com/livecast/ik:lfmmd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Carac-3#movie",
       "working": null
     },
@@ -4134,7 +4134,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge17.vedge.infomaniak.com/livecast/ik:compack_media_1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Carac-4#movie",
       "working": null
     },
@@ -4145,7 +4145,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://gwebstream.net/hls/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV100-Greece#movie",
       "working": null
     },
@@ -4156,7 +4156,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://web.onair-radio.eu/groovytv/groovytv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Groovy-TV#movie",
       "working": null
     },
@@ -4167,7 +4167,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-896.frequency.stream/dist/xumo/896/hls/master/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Dove-Channel#movie",
       "working": null
     },
@@ -4178,7 +4178,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://alt-al.otteravision.com/alt/al/al.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=AfroLand-TV#movie",
       "working": null
     },
@@ -4189,7 +4189,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://03e7e5beea1d42fea576037d67f531eb.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Revry/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Revry-TV#movie",
       "working": null
     },
@@ -4200,7 +4200,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg02784-nollyafricafast-amg02784c1-cineverse-us-1124.playouts.now.amagi.tv/playlist/amg02784-nollyafricafast-nollyafricahd-cineverseus/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Nolly-Africa#movie",
       "working": null
     },
@@ -4211,7 +4211,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://magnoliaa-cinelife-oando-n6z8u.amagi.tv/playlist/magnoliaA-cinelife-oando/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CineLife#movie",
       "working": null
     },
@@ -4233,7 +4233,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=MyTime-Movie#movie",
       "working": null
     },
@@ -4244,7 +4244,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=30A-Classic-Movies#movie",
       "working": null
     },
@@ -4255,7 +4255,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=MovieSphere#movie",
       "working": null
     },
@@ -4266,7 +4266,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streams2.sofast.tv/sofastplayout/32eb332e-f644-46e5-ad91-e55ad80d14f7_0_HLS/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Cowboy-Movie-Channel#movie",
       "working": null
     },
@@ -4277,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dgx2snzx175pa.cloudfront.net/scheduler/scheduleMaster/391.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CrimeFlix#movie",
       "working": null
     },
@@ -4288,7 +4288,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=24-Hour-Free-Movies#movie",
       "working": null
     },
@@ -4299,7 +4299,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://yta.unitedteleports.tv/hls/YTA-SCTE35.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=YTA-TV#movie",
       "working": null
     },
@@ -4310,7 +4310,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg01705-amg01705c1-amgplt0274.playout.now3.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Electric-Now#movie",
       "working": null
     },
@@ -4332,7 +4332,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://brat-samsung-us.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Brat-TV#movie",
       "working": null
     },
@@ -4343,7 +4343,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00793-amg00793c41-rakuten-it-5445.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-Drama-Italy#movie",
       "working": null
     },
@@ -4354,7 +4354,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bbc-classicdrwho-1-us.xumo.wurl.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-Doctor-Who-Classic#movie",
       "working": null
     },
@@ -4365,7 +4365,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fast-channels.sinclairstoryline.com/COMET/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Comet-TV#movie",
       "working": null
     },
@@ -4376,7 +4376,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Red-Bull-TV#sport",
       "working": null
     },
@@ -4387,7 +4387,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playout.fubo.tv/plex/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Fubo-Sports#sport",
       "working": null
     },
@@ -4398,7 +4398,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://a-cdn.klowdtv.com/live2/horsetv_720p/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Horse-TV#sport",
       "working": null
     },
@@ -4409,7 +4409,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://raycom-accdn-firetv.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ACC-Digital-Network#sport",
       "working": null
     },
@@ -4420,7 +4420,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Real-Madrid-TV#sport",
       "working": null
     },
@@ -4431,7 +4431,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-rakutenus/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=MAVTV#sport",
       "working": null
     },
@@ -4442,7 +4442,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=FIFA-Plus#sport",
       "working": null
     },
@@ -4453,7 +4453,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00556-amg00556c3-firetv-us-6060.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NBA-TV#sport",
       "working": null
     },
@@ -4464,7 +4464,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NFL-TV#sport",
       "working": null
     },
@@ -4475,7 +4475,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://aegis-cloudfront-1.tubi.video/1f4cbb33-cb23-40ab-b54b-2965cc551b32/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NHL-TV#sport",
       "working": null
     },
@@ -4486,7 +4486,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://aegis-cloudfront-1.tubi.video/36ef2f9d-7100-4c4d-b41a-dbf41ab7e461/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=MLB-TV#sport",
       "working": null
     },
@@ -4497,7 +4497,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://pac12-samsungus.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=PAC-12-Insider#sport",
       "working": null
     },
@@ -4508,7 +4508,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=535",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Motorvision-TV#sport",
       "working": null
     },
@@ -4519,7 +4519,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://digicom.hls.iptvdc.com/canalmotor/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=AutoMoto-TV#sport",
       "working": null
     },
@@ -4530,7 +4530,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02873-kravemedia-mtrspt1-distrotv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Motorsports-1#sport",
       "working": null
     },
@@ -4541,7 +4541,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://digicom.hls.iptvdc.com/canalmotor/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Canal-Motor#sport",
       "working": null
     },
@@ -4552,7 +4552,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dw12mvm4tomw7.cloudfront.net/playlist/amg00315-sportsgridfast-sportsgrid-sportsgridus/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sports-Grid#sport",
       "working": null
     },
@@ -4563,7 +4563,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kanal75xto-llhls.akamaized.net/live/Data/atg-kanal-15-02a-rr/HLS-Legacy-HL/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ATG-TV#sport",
       "working": null
     },
@@ -4574,7 +4574,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=FITE-247#sport",
       "working": null
     },
@@ -4585,7 +4585,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://racingvic-i.akamaized.net/hls/live/598695/racingvic/index_1.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Racing-Australia#sport",
       "working": null
     },
@@ -4596,7 +4596,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://amg01935-amg01935c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Super-Tennis#sport",
       "working": null
     },
@@ -4607,7 +4607,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dai.google.com/linear/hls/event/GxrCGmwST0ixsrc_QgB6qw/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CBS-Sports#sport",
       "working": null
     },
@@ -4618,7 +4618,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://30a-tv.com/feeds/vidaa/golf.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=30A-Golf-Kingdom#sport",
       "working": null
     },
@@ -4629,7 +4629,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rightsboosterltd-scl-1-eu.rakuten.wurl.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Strongman#sport",
       "working": null
     },
@@ -4640,7 +4640,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00793-amg00793c5-xumo-us-2664.playouts.now.amagi.tv/bbcstudios-bbctopgear8min-all/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-Top-Gear#sport",
       "working": null
     },
@@ -4651,7 +4651,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://a-cdn.klowdtv.com/live2/fntsy_720p/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Game-Plus#sport",
       "working": null
     },
@@ -4662,7 +4662,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://bein-beinxtrasports-firetv.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=beIN-Sports-Xtra#sport",
       "working": null
     },
@@ -4673,7 +4673,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tennis-Channel#sport",
       "working": null
     },
@@ -4684,7 +4684,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://1621590671.rsc.cdn77.org/HLS/BILLIARDTV.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Billiard-TV#sport",
       "working": null
     },
@@ -4695,7 +4695,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-426.frequency.stream/dist/xumo/426/hls/master/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=PokerGO#sport",
       "working": null
     },
@@ -4706,7 +4706,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/fdd6f243-f971-4a1a-9510-97ac01d6b37f/manifest.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kozoom-TV#sport",
       "working": null
     },
@@ -4717,7 +4717,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg01370-italiansportcom-sportitalia-rakuten-3hmdb.amagi.tv/hls/amagi_hls_data_rakutenAA-sportitalia-rakuten/CDN/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sportitalia#sport",
       "working": null
     },
@@ -4728,7 +4728,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://serv30.vintera.tv:443/sochilive_site/sochi_stream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sochi-TV#sport",
       "working": null
     },
@@ -4739,7 +4739,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rpn.bozztv.com/gusa/gusa-tvswsn/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Women-Sports-Network#sport",
       "working": null
     },
@@ -4772,7 +4772,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live-manifest.production-public.tubi.io/live/9fe78734-1db2-49b4-af7b-3c89f5f256ad/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Boxing-TV#sport",
       "working": null
     },
@@ -4783,7 +4783,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://alpha.tv.online.tm/hls/ch004.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Turkmenistan-Sport#sport",
       "working": null
     },
@@ -4794,7 +4794,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=World-Of-Freesports#sport",
       "working": null
     },
@@ -4805,7 +4805,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://dazn-combat-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-dazn-combat-rakuten/CDN/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=DAZN-Combat#sport",
       "working": null
     },
@@ -4816,7 +4816,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Glory-Kickboxing#sport",
       "working": null
     },
@@ -4827,7 +4827,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://30a-tv.com/darcizzle.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Darcizzle-Offshore#sport",
       "working": null
     },
@@ -4838,7 +4838,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Fuel-TV#sport",
       "working": null
     },
@@ -4849,7 +4849,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://unbeaten-tcl.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Unbeaten#sport",
       "working": null
     },
@@ -4893,7 +4893,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tscamd.akamaized.net/hls/live/503340/TSCLive/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=The-Shopping-Channel#international",
       "working": null
     },
@@ -4904,7 +4904,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdnapi.kaltura.com/p/2503451/sp/250345100/playManifest/entryId/1_gb6tjmle/protocol/https/format/applehttp/a.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=United-Nations-TV#international",
       "working": null
     },
@@ -4915,7 +4915,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.kirkism.com/hls/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Charlie-Kirk-TV#international",
       "working": null
     },
@@ -4926,7 +4926,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fast-channels.sinclairstoryline.com/TBD/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TBD-TV#international",
       "working": null
     },
@@ -4937,7 +4937,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5f204aff97bee.streamlock.net/AltoAdigeTV/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alto-Adige-TV#international",
       "working": null
     },
@@ -4959,7 +4959,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://video.oct.dc.gov/out/u/DCN.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=District-of-Columbia-Network#international",
       "working": null
     },
@@ -4970,7 +4970,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn3.wowza.com/1/UFE5VjR0eVBzSkhP/YzVaUHpi/hls/live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Seattle-Channel#international",
       "working": null
     },
@@ -4981,7 +4981,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5ed325193d4e1.streamlock.net:444/LiveTV/KTVHD/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Key-TV-Florida#international",
       "working": null
     },
@@ -4992,7 +4992,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://1494836162.rsc.cdn77.org/LS-PRG-59570-1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Vox-Africa-TV#international",
       "working": null
     },
@@ -5003,7 +5003,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5ed325193d4e1.streamlock.net:444/LiveTV/MTVHD/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Beach-TV#international",
       "working": null
     },
@@ -5014,7 +5014,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Amazing-Discoveries#international",
       "working": null
     },
@@ -5025,7 +5025,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-12.frequency.stream/dist/plex/12/hls/master/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=AFV-TV#international",
       "working": null
     },
@@ -5036,7 +5036,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5b622f07944df.streamlock.net/aghapy.tv/aghapy.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aghapy-Kids#international",
       "working": null
     },
@@ -5047,7 +5047,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aurora-Arte#international",
       "working": null
     },
@@ -5058,7 +5058,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFMGRANDLILLE/index.m3u8?end=END",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BFM-Grand-Lille#international",
       "working": null
     },
@@ -5069,7 +5069,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59959724487e3.streamlock.net/stream/live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BX1-TV#international",
       "working": null
     },
@@ -5080,7 +5080,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hnc-free-viewlift.amagi.tv/HNC_AUSTRALIA.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Horse-Country-TV#international",
       "working": null
     },
@@ -5091,7 +5091,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://francais-livews.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CGTN-French#international",
       "working": null
     },
@@ -5102,7 +5102,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CGTN-Russian#international",
       "working": null
     },
@@ -5113,7 +5113,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1TV-Georgia#international",
       "working": null
     },
@@ -5124,7 +5124,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59d7d6f47d7fc.streamlock.net/telepavia/telepavia/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Milano-Pavia-TV#international",
       "working": null
     },
@@ -5146,7 +5146,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://2-fss-1.themediacdn.com/pl_122/amlst:206280-3059514/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Cornerstone-TV#international",
       "working": null
     },
@@ -5157,7 +5157,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://30a-tv.com/feeds/masters/30atv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=30A-TV#international",
       "working": null
     },
@@ -5168,7 +5168,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://30a-tv.com/sidewalks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=30A-Sidewalks#international",
       "working": null
     },
@@ -5179,7 +5179,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Electrika-TV#international",
       "working": null
     },
@@ -5201,7 +5201,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bild-und-ton.stream/sophiatv-en/smil:sophia-tv-en.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sophia-TV#international",
       "working": null
     },
@@ -5223,7 +5223,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/3abn_live/smil:3abn_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-TV#international",
       "working": null
     },
@@ -5234,7 +5234,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/Pro_live/smil:Pro_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Proclaim#international",
       "working": null
     },
@@ -5245,7 +5245,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/d2d_live/smil:d2d_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Dare-to-Dream#international",
       "working": null
     },
@@ -5256,7 +5256,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/Kids_live/smil:Kids_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Kids#international",
       "working": null
     },
@@ -5267,7 +5267,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-International#international",
       "working": null
     },
@@ -5278,7 +5278,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abncanada/3ABN/HD720/HD720.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Canada#international",
       "working": null
     },
@@ -5289,7 +5289,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/Fre_live/smil:Fre_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Francais#international",
       "working": null
     },
@@ -5300,7 +5300,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/Rus_live/smil:Rus_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Russia#international",
       "working": null
     },
@@ -5322,7 +5322,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://api.jetstream.studio/graphql",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hope-Channel#international",
       "working": null
     },
@@ -5333,7 +5333,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livecdn.use1-0004.jwplive.com/live/sites/LXqYX6Kr/media/frRD2nUK/live.isml/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TCT-TV#international",
       "working": null
     },
@@ -5344,7 +5344,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://1740288887.rsc.cdn77.org/1740288887/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CBC-TV-8#international",
       "working": null
     },
@@ -5355,7 +5355,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59d7d6f47d7fc.streamlock.net/canale2/canale2/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Altamura-TV#international",
       "working": null
     },
@@ -5366,7 +5366,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hls-mirtv.cdnvideo.ru/mirtv-parampublish/int/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Mir-TV#international",
       "working": null
     },
@@ -5377,7 +5377,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bcovlive-a.akamaihd.net/7f5ec16d102f4b5d92e8e27bc95ff424/us-east-1/6240731308001/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-America#international",
       "working": null
     },
@@ -5388,7 +5388,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00441-amg00441c1-rakuten-us-6050.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=The-Design-Network#international",
       "working": null
     },
@@ -5410,7 +5410,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/betterlife/betterhealth/betterhealth/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Better-Health-TV#international",
       "working": null
     },
@@ -5432,7 +5432,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://l3.cloudskep.com/cybcsat/abr/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Rik-TV#international",
       "working": null
     },
@@ -5443,7 +5443,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Travelxp#documentary",
       "working": null
     },
@@ -5454,7 +5454,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://go2thls.wns.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Go2Travel-TV#documentary",
       "working": null
     },
@@ -5465,7 +5465,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streams2.sofast.tv/sofastplayout/33c31ac4-51fa-46ae-afd0-0d1fe5e60a80_0_HLS/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=4K-Travel-TV#documentary",
       "working": null
     },
@@ -5476,7 +5476,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg09501-amg09501c1-klowdtv-us-2398.playouts.now.amagi.tv/playlist/amg09501-quester-gotraveler-klowdtvus/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=GoTraveler#documentary",
       "working": null
     },
@@ -5487,7 +5487,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rpn.bozztv.com/gusa/gusa-tvstravel/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=HD-Travel-TV#documentary",
       "working": null
     },
@@ -5498,7 +5498,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://a-cdn.klowdtv.com/live3/law_720p/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Law-and-Crime#documentary",
       "working": null
     },
@@ -5509,7 +5509,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00979-amg00979c1-firetv-us-3622.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=True-Crime-Network#documentary",
       "working": null
     },
@@ -5520,7 +5520,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00376-magellan-amg00376c11-rakuten-us-1700.playouts.now.amagi.tv/playlist/amg00376-magellantv-truecrimenowww-rakutenus/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=True-Crime-Now#documentary",
       "working": null
     },
@@ -5531,7 +5531,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://lds-realcrimebeta-rakuten.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Real-Crime#documentary",
       "working": null
     },
@@ -5542,7 +5542,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-474.frequency.stream/dist/glewedtv/474/hls/master/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Crime-and-Justice#documentary",
       "working": null
     },
@@ -5553,7 +5553,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://aegis-cloudfront-1.tubi.video/b062c287-a170-47df-99e4-f5dcd441ee59/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Total-Crime#documentary",
       "working": null
     },
@@ -5564,7 +5564,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://xumo-xumoent-vc-107-xmuvk.fast.nbcuni.com/live/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Universal-Crime#documentary",
       "working": null
     },
@@ -5586,7 +5586,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl1.moveonjoy.com/National_Geographic/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=National-Geographic-East#documentary",
       "working": null
     },
@@ -5597,7 +5597,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl1.moveonjoy.com/Nat_Geo_Wild/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=National-Geographic-Wild#documentary",
       "working": null
     },
@@ -5608,7 +5608,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-188.frequency.stream/dist/glewedtv/188/hls/master/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=True-History#documentary",
       "working": null
     },
@@ -5619,7 +5619,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CGTN-Documentary#documentary",
       "working": null
     },
@@ -5630,7 +5630,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fl1.moveonjoy.com/Military_History/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Military-History#documentary",
       "working": null
     },
@@ -5641,7 +5641,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=World-War-TV#documentary",
       "working": null
     },
@@ -5652,7 +5652,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00793-amg00793c6-firetv-us-4067.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-Earth#documentary",
       "working": null
     },
@@ -5663,7 +5663,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ac76260b1102416c93f3d20958bfeb4b.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-pl_Royalworld/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Royal-World-TV#documentary",
       "working": null
     },
@@ -5674,7 +5674,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Russia-Today-Documentary#documentary",
       "working": null
     },
@@ -5685,7 +5685,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/zdfX1/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ZDF#deutsch",
       "working": null
     },
@@ -5696,7 +5696,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/voxz/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=VOX#deutsch",
       "working": null
     },
@@ -5707,7 +5707,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/sixX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sixx#deutsch",
       "working": null
     },
@@ -5718,7 +5718,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/rtla1/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTL#deutsch",
       "working": null
     },
@@ -5729,7 +5729,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/rtl2q/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTL-Zwei#deutsch",
       "working": null
     },
@@ -5740,7 +5740,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/nitro1/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTL-Nitro#deutsch",
       "working": null
     },
@@ -5751,7 +5751,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/superX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Super-RTL#deutsch",
       "working": null
     },
@@ -5762,7 +5762,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.icu.de/rtplive/smil:btv.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Baden-TV#deutsch",
       "working": null
     },
@@ -5784,7 +5784,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/dmaxX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=DMAX#deutsch",
       "working": null
     },
@@ -5795,7 +5795,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/pro7z/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ProSieben#deutsch",
       "working": null
     },
@@ -5806,7 +5806,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/pro7maxxX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ProSieben-MAXX#deutsch",
       "working": null
     },
@@ -5817,7 +5817,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/ntvX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ntv#deutsch",
       "working": null
     },
@@ -5828,7 +5828,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/n24X/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Welt#deutsch",
       "working": null
     },
@@ -5839,7 +5839,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-HLS8/disneychannelde.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Disney-Channel-Germany#deutsch",
       "working": null
     },
@@ -5850,7 +5850,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/sat1z/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sat1#deutsch",
       "working": null
     },
@@ -5861,7 +5861,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/goldX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sat1-Gold#deutsch",
       "working": null
     },
@@ -5872,7 +5872,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ndrint.akamaized.net/hls/live/2020766/ndr_int/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NDR-Fernsehen#deutsch",
       "working": null
     },
@@ -5883,7 +5883,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Das-Erste#deutsch",
       "working": null
     },
@@ -5894,7 +5894,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://alex-stream.rosebud-media.de/bounce/alexlivetv50.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alex-Berlin#deutsch",
       "working": null
     },
@@ -5905,7 +5905,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d-m-f.iptv-playoutcenter.de/dmf/dmf1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Deutsches-Musik-Fernsehen#deutsch",
       "working": null
     },
@@ -5916,7 +5916,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://streaming14.huberwebmedia.at/LiveApp/streams/livestream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tirol-TV#deutsch",
       "working": null
     },
@@ -5927,7 +5927,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Westdeutscher-Rundfunk#deutsch",
       "working": null
     },
@@ -5938,7 +5938,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mcdn.br.de/br/fs/bfs_sued/hls/int/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Bayerischer-Rundfunk-TV#deutsch",
       "working": null
     },
@@ -5949,7 +5949,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hessischer-Rundfunk#deutsch",
       "working": null
     },
@@ -5960,7 +5960,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream02.welocal.stream/stream/fhd-tvo_480355/ngrp:stream_all/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV-Oberfranken#deutsch",
       "working": null
     },
@@ -5971,7 +5971,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://wowza.telvi.de/tvb/7649_7Bpr2XK4zCR6jNV/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV-Berlin#deutsch",
       "working": null
     },
@@ -5982,7 +5982,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream02.welocal.stream/stream/fhd-augsburgtv_104951/ngrp:stream_all/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Augsburg-TV#deutsch",
       "working": null
     },
@@ -5993,7 +5993,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.welocal.stream/stream/fhd-tvmainfranken_255661/ngrp:stream_all/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV-Mainfranken#deutsch",
       "working": null
     },
@@ -6004,7 +6004,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream03.welocal.stream/stream/fhd-frankenfernsehen_199261/ngrp:stream_all/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Franken-Fernsehen#deutsch",
       "working": null
     },
@@ -6015,7 +6015,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.welocal.stream/stream/fhd-allgaeutv_25679/ngrp:stream_all/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Allgau-TV#deutsch",
       "working": null
     },
@@ -6026,7 +6026,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://h056.video-stream-hosting.de/easycast9-live/mp4:livestream999/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sylt1#deutsch",
       "working": null
     },
@@ -6037,7 +6037,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TVA#deutsch",
       "working": null
     },
@@ -6048,7 +6048,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/kabel1z/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kabel-Eins#deutsch",
       "working": null
     },
@@ -6059,7 +6059,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/dokuX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kabel-1-Doku#deutsch",
       "working": null
     },
@@ -6070,7 +6070,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ARD#deutsch",
       "working": null
     },
@@ -6081,7 +6081,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge.cdn.dorftv.at/dorftv/live/llhls.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Dorf-TV#deutsch",
       "working": null
     },
@@ -6092,7 +6092,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Okto-TV#deutsch",
       "working": null
     },
@@ -6103,7 +6103,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live-edge.rtl.lu/channel1/smil:channel1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTL-Luxembourg#deutsch",
       "working": null
     },
@@ -6114,7 +6114,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.fs1.tv/hls/webstream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Freies-Fernsehen-Salzburg#deutsch",
       "working": null
     },
@@ -6125,7 +6125,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streaming13.huberwebmedia.at/LiveApp/streams/985585225397790082777809.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Laendle-TV#deutsch",
       "working": null
     },
@@ -6136,7 +6136,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/tele5X/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tele-5#deutsch",
       "working": null
     },
@@ -6147,7 +6147,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dash4.antik.sk/live/test_arte_avc_25p/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Arte#deutsch",
       "working": null
     },
@@ -6158,7 +6158,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/tlcX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TLC-Germany#deutsch",
       "working": null
     },
@@ -6169,7 +6169,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Welt-der-Wunder#deutsch",
       "working": null
     },
@@ -6180,7 +6180,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://srfs.akamaized.net/hls/live/689649/srfsgeo/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Saarlandischer-Rundfunk#deutsch",
       "working": null
     },
@@ -6191,7 +6191,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=W24#deutsch",
       "working": null
     },
@@ -6202,7 +6202,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mcdn.br.de/br/fs/ard_alpha/hls/int/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ARD-Alpha#deutsch",
       "working": null
     },
@@ -6213,7 +6213,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d3pvma9xb2775h.cloudfront.net/live/omropfryslan/f8f68bd5/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Omrop-Fryslan#deutsch",
       "working": null
     },
@@ -6224,7 +6224,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=tagesschau24#deutsch",
       "working": null
     },
@@ -6235,7 +6235,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rt-ger.rttv.com/dvr/rtdeutsch/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Russia-Today-Germany#deutsch",
       "working": null
     },
@@ -6246,7 +6246,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk1/_definst_/live/video/hk1_de.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Parlamentsfernsehen#deutsch",
       "working": null
     },
@@ -6257,7 +6257,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://58de7a369a9c4.streamlock.net/srf/stream_720p/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sudthuringer-Regionalfernsehen#deutsch",
       "working": null
     },
@@ -6268,7 +6268,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/vivaX/tracks-v1a1/mono.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Comedy-Central#deutsch",
       "working": null
     },
@@ -6279,7 +6279,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.france24.com/hls/live/2037222/F24_AR_HI_HLS/master_2300.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=France-24-Arabic#arabic",
       "working": null
     },
@@ -6290,7 +6290,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-Arabic#arabic",
       "working": null
     },
@@ -6301,7 +6301,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.skynewsarabia.com/ott/ott.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sky-News-Arabia#arabic",
       "working": null
     },
@@ -6312,7 +6312,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Arabiya#arabic",
       "working": null
     },
@@ -6323,7 +6323,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Arabiya-Business#arabic",
       "working": null
     },
@@ -6334,7 +6334,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fm.alarabiya.net/fm/myStream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Arabiya-FM#arabic",
       "working": null
     },
@@ -6345,7 +6345,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Araby-TV#arabic",
       "working": null
     },
@@ -6356,7 +6356,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Araby-TV-2#arabic",
       "working": null
     },
@@ -6367,7 +6367,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aljazeera-Arabic#arabic",
       "working": null
     },
@@ -6378,7 +6378,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CGTN-Arabic#arabic",
       "working": null
     },
@@ -6389,7 +6389,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=DW-Arabic#arabic",
       "working": null
     },
@@ -6400,7 +6400,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trtarabi.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Arabic#arabic",
       "working": null
     },
@@ -6411,7 +6411,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1774011273~acl=/alraimedialive/alraitv.smil/*~hmac=8d58d74820947de3bb0f2933b35bacb72293f0aed547fd0dbd1ad11150f221fc",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -6433,7 +6433,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Mayadeen#arabic",
       "working": null
     },
@@ -6444,7 +6444,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://alrayyancdn.vidgyor.com/pub-noalrayy3pwz0l/liveabr/playlist_dvr.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alrayyan-TV#arabic",
       "working": null
     },
@@ -6455,7 +6455,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Hadath#arabic",
       "working": null
     },
@@ -6466,7 +6466,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hlspackager.akamaized.net/live/DB/ALYAUM_TV/HLS/ALYAUM_TV.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Yaum-TV#arabic",
       "working": null
     },
@@ -6477,7 +6477,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5d94523502c2d.streamlock.net/home/mystream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Sharqiya-TV#arabic",
       "working": null
     },
@@ -6488,7 +6488,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Sharqiya-News#arabic",
       "working": null
     },
@@ -6499,7 +6499,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ghaasiflu.online/Dijlah/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Zaman-TV#arabic",
       "working": null
     },
@@ -6510,7 +6510,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cnbc-live.akamaized.net/cnbc/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CNBC-Arabiya#arabic",
       "working": null
     },
@@ -6521,7 +6521,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sat7-Arabic#arabic",
       "working": null
     },
@@ -6532,7 +6532,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sat7-Kids#arabic",
       "working": null
     },
@@ -6543,7 +6543,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=El-Sharq-TV#arabic",
       "working": null
     },
@@ -6565,7 +6565,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.panet.com/edge/halaTV/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hala-TV#arabic",
       "working": null
     },
@@ -6576,7 +6576,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/bloomberarpublish/bloomberg_source/chunks_dvr.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Asharq-News#arabic",
       "working": null
     },
@@ -6598,7 +6598,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=National-Geographic-Abu-Dhabi#arabic",
       "working": null
     },
@@ -6609,7 +6609,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Russia-Today-Arabic#arabic",
       "working": null
     },
@@ -6620,7 +6620,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Arabica-TV#arabic",
       "working": null
     },
@@ -6631,7 +6631,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5d658d7e9f562.streamlock.net/alhorreya.tv/alhorreya.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alhorreya-TV#arabic",
       "working": null
     },
@@ -6653,7 +6653,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn1.logichost.in/ajmantv/live/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ajman-TV#arabic",
       "working": null
     },
@@ -6664,7 +6664,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/emarat_tv/emarat_tv_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Emarat-TV#arabic",
       "working": null
     },
@@ -6675,7 +6675,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_1/abudhabi_sports_1_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Abu-Dhabi-Sports-1#arabic",
       "working": null
     },
@@ -6686,7 +6686,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_2/abudhabi_sports_2_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Abu-Dhabi-Sports-2#arabic",
       "working": null
     },
@@ -6697,7 +6697,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/yas_1/yas_1_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=YAS-Sports#arabic",
       "working": null
     },
@@ -6708,7 +6708,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/smc1live/smc1tv.smil/smc1publish/smc1tvhd_source/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sharjah-TV#arabic",
       "working": null
     },
@@ -6719,7 +6719,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/smc2live/smc2tv.smil/smc2publish/smc2tv_source/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sharjah-2#arabic",
       "working": null
     },
@@ -6730,7 +6730,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sharjah-Sports#arabic",
       "working": null
     },
@@ -6741,7 +6741,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Mekameleen-TV#arabic",
       "working": null
     },
@@ -6752,7 +6752,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streaming-a-1035.cdn.nextologies.com/6zj8y5nemi8a32vyjjbkv0oqx/77pcakd8reik3g8qdqnexlkmq/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aghani-Aghani-TV#arabic",
       "working": null
     },
@@ -6763,7 +6763,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5b622f07944df.streamlock.net/koogi.tv/koogi.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Koogi-TV#arabic",
       "working": null
     },
@@ -6774,7 +6774,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qatartv.akamaized.net/hls/live/2026573/qtv1/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Qatar-TV-1#arabic",
       "working": null
     },
@@ -6785,7 +6785,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://qatartv.akamaized.net/hls/live/2026574/qtv2/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Qatar-TV-2#arabic",
       "working": null
     },
@@ -6796,7 +6796,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_tv/abudhabi_tv_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Abu-Dhabi-TV-HD#arabic",
       "working": null
     },
@@ -6884,7 +6884,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/kablatvlive/kabtv1.smil/kablatvpublish/kabtv_source/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Sharqiya-Kalba#arabic",
       "working": null
     },
@@ -6895,7 +6895,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/alwoustalive/alwoustatv.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Wousta-TV#arabic",
       "working": null
     },
@@ -6906,7 +6906,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://royatv-live.daioncdn.net/royatv/royatv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Roya-TV#arabic",
       "working": null
     },
@@ -6917,7 +6917,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Roya-Comedy#arabic",
       "working": null
     },
@@ -6928,7 +6928,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Roya-Drama#arabic",
       "working": null
     },
@@ -6939,7 +6939,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Roya-Kids#arabic",
       "working": null
     },
@@ -6950,7 +6950,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids-originals/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Roya-Kids-Originals#arabic",
       "working": null
     },
@@ -6961,7 +6961,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-kitchen/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Roya-Kitchen#arabic",
       "working": null
     },
@@ -6972,7 +6972,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/majid/majid_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Majid-Children#arabic",
       "working": null
     },
@@ -6983,7 +6983,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/baynounah/baynounah_hls_nd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Baynounah-TV#arabic",
       "working": null
     },
@@ -6994,7 +6994,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://partwota.cdn.mgmlcdn.com/omcultural/smil:omcultural.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Oman-Cultural#arabic",
       "working": null
     },
@@ -7005,7 +7005,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Oman-TV#arabic",
       "working": null
     },
@@ -7016,7 +7016,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://partwota.cdn.mgmlcdn.com/omlive/smil:omlive.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Oman-Mubasher#arabic",
       "working": null
     },
@@ -7027,7 +7027,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Oman-Sports#arabic",
       "working": null
     },
@@ -7038,7 +7038,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtktv1ta.cdn.mangomolo.com/ktv1/smil:ktv1.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-1#arabic",
       "working": null
     },
@@ -7049,7 +7049,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-2#arabic",
       "working": null
     },
@@ -7060,7 +7060,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtkbta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-News#arabic",
       "working": null
     },
@@ -7071,7 +7071,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtktvata.cdn.mangomolo.com/ktva/smil:tktva.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-Arabe#arabic",
       "working": null
     },
@@ -7082,7 +7082,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-Sport#arabic",
       "working": null
     },
@@ -7093,7 +7093,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-Sport-2#arabic",
       "working": null
     },
@@ -7104,7 +7104,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kwtethta.cdn.mangomolo.com/eth/smil:eth.stream.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=KTV-Ethraa#arabic",
       "working": null
     },
@@ -7115,7 +7115,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.catiacast.video/abr/8d2ffb0aba244e8d9101a9488a7daa05/imn/general1/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Iraqia#arabic",
       "working": null
     },
@@ -7137,7 +7137,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.catiacast.video/abr/78054972db7708422595bc96c6e024ac/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Iraqia-News#arabic",
       "working": null
     },
@@ -7148,7 +7148,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://dtfe3weh30eb8.cloudfront.net/live11/islamtv_english/bitrate1.isml/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Islam-Channel#arabic",
       "working": null
     },
@@ -7159,7 +7159,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cd198.anystream.uk:8082/hls/emnhdweb/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Eman-TV#arabic",
       "working": null
     },
@@ -7170,7 +7170,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mediaserver.abnvideos.com/streams/abnsat.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ABN-Sat-TV#arabic",
       "working": null
     },
@@ -7181,7 +7181,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://miracle.stream.boxigy.com/mc-720/stream_0.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Miracle-Channel-Arabic#arabic",
       "working": null
     },
@@ -7203,7 +7203,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hls.afintl.com/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Afghanistan-International-TV#afghan",
       "working": null
     },
@@ -7225,7 +7225,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://voa-ingest.akamaized.net/hls/live/2033781/tvmc02/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=VOA-Pashto#afghan",
       "working": null
     },
@@ -7236,7 +7236,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://g5nl6xx5lpq6-hls-live.5centscdn.com/live1234/2621b29e501b445fabf227b086123b70.sdp/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Payame-Afghan#afghan",
       "working": null
     },
@@ -7258,7 +7258,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mediaserver.abnvideos.com/streams/abnafghanistan.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ABN-Afghanistan#afghan",
       "working": null
     },
@@ -7269,7 +7269,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.pamirtv.com/stream/ptv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Pamir-TV#afghan",
       "working": null
     },
@@ -7280,7 +7280,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://iptv.sohailtv.com/sohail/playlist/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sohail-TV#afghan",
       "working": null
     },
@@ -7291,7 +7291,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dunyanhls.wns.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Donyai-New#afghan",
       "working": null
     },
@@ -7302,7 +7302,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kbl-stream.movie.af/live/smil:solhetv.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Solh-Sports#afghan",
       "working": null
     },
@@ -7313,7 +7313,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://playout395.livestreamingcdn.com/live/Stream1/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kayhan-Afghan#afghan",
       "working": null
     },
@@ -7324,7 +7324,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-36bay3/gf-afghantheather/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Afghan-Theatre#afghan",
       "working": null
     },
@@ -7335,7 +7335,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amchls.wns.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Asia-Music-Channel#afghan",
       "working": null
     },
@@ -7346,7 +7346,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://afghantv.app/hls2/deeyar/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Deeyar-TV#afghan",
       "working": null
     },
@@ -7357,7 +7357,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://jmc-live.ercdn.net/amutv/amutv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Amu-TV#afghan",
       "working": null
     },
@@ -7368,7 +7368,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://afghantv.app/hls4/imantv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Iman-TV#afghan",
       "working": null
     },
@@ -7379,7 +7379,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.bestream.io:19360/elfaro4/elfaro4.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Nour-TV#afghan",
       "working": null
     },
@@ -7390,7 +7390,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Watan-e-Maa-TV#afghan",
       "working": null
     },
@@ -7401,7 +7401,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA1)/variant.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTA-TV#afghan",
       "working": null
     },
@@ -7412,7 +7412,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA2)/variant.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTA-News#afghan",
       "working": null
     },
@@ -7423,7 +7423,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA3)/variant.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTA-Sport#afghan",
       "working": null
     },
@@ -7434,7 +7434,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-tolohd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tolo-TV#afghan",
       "working": null
     },
@@ -7445,7 +7445,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-tolonews/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tolo-News#afghan",
       "working": null
     },
@@ -7456,7 +7456,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-lemar/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Lemar-TV#afghan",
       "working": null
     },
@@ -7467,7 +7467,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-ariana/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ariana-Afghan#afghan",
       "working": null
     },
@@ -7478,7 +7478,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-atnnews/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ariana-News#afghan",
       "working": null
     },
@@ -7489,7 +7489,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-arezotv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Arezo-TV#afghan",
       "working": null
     },
@@ -7500,7 +7500,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://maawjhls.wns.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Maawj-TV#afghan",
       "working": null
     },
@@ -7511,7 +7511,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5a1178b42cc03.streamlock.net/shamshadtelevision/shamshadtelevision/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shamshad-Afghan#afghan",
       "working": null
     },
@@ -7522,7 +7522,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-zhwandoon/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Zhwandoon-TV#afghan",
       "working": null
     },
@@ -7533,7 +7533,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tgn.bozztv.com/eshgtv-dvrfl05/gin-1tvafg/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1TV-Afghanistan#afghan",
       "working": null
     },
@@ -7544,7 +7544,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA4)/variant.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=RTA-Education#afghan",
       "working": null
     },
@@ -7555,7 +7555,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hls.tamadon.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tamadon-Afghan#afghan",
       "working": null
     },
@@ -7566,7 +7566,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://eslahtvhls.wns.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Eslah-TV#afghan",
       "working": null
     },
@@ -7577,7 +7577,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://sscsott.com/srt/noortvuk/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Noor-TV#afghan",
       "working": null
     },
@@ -7599,7 +7599,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://go5lmqxjyawb-hls-live.5centscdn.com/Chekad/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Chekad-TV#afghan",
       "working": null
     },
@@ -7610,7 +7610,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Maarif%20TV/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Maarif-TV#afghan",
       "working": null
     },
@@ -7632,7 +7632,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.teleradiocom.tj/1/3m.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tojikiston-TV#afghan",
       "working": null
     },
@@ -7643,7 +7643,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.dushanbetv.tj/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Dushanbe-TV#afghan",
       "working": null
     },
@@ -7654,7 +7654,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://6476e46b58f91.streamlock.net/liveTrans/KURDS2211/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdmax-TV#kurdish",
       "working": null
     },
@@ -7665,7 +7665,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://6476e46b58f91.streamlock.net/liveTrans/SHOWS123/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdmax-Show#kurdish",
       "working": null
     },
@@ -7676,7 +7676,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://6476e46b58f91.streamlock.net/music/MUSIC2402/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdmax-Music#kurdish",
       "working": null
     },
@@ -7687,7 +7687,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://northtelecom.live/KURD.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurd-Channel#kurdish",
       "working": null
     },
@@ -7698,7 +7698,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdistan-TV#kurdish",
       "working": null
     },
@@ -7709,7 +7709,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://baskhd.ddns.net/live/Eurokurd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Eurokurd#kurdish",
       "working": null
     },
@@ -7720,7 +7720,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trtkurdi.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Kurdi#kurdish",
       "working": null
     },
@@ -7731,7 +7731,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://zindi.sterk.tv/live/sterk.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sterk-TV#kurdish",
       "working": null
     },
@@ -7742,7 +7742,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.rudaw.net/hls/rudaw-tv/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Rudaw-TV#kurdish",
       "working": null
     },
@@ -7753,7 +7753,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hlspackager.akamaized.net/live/DB/KURDSAT_HD/HLS/KURDSAT_HD.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdsat-TV#kurdish",
       "working": null
     },
@@ -7764,7 +7764,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hlspackager.akamaized.net/live/DB/KURDSAT_NEWS/HLS/KURDSAT_NEWS.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdsat-News#kurdish",
       "working": null
     },
@@ -7775,7 +7775,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://4kuhls.persiana.live/hls/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=4Kurd#kurdish",
       "working": null
     },
@@ -7786,7 +7786,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d1x82nydcxndze.cloudfront.net/live/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kurdistan-24#kurdish",
       "working": null
     },
@@ -7797,7 +7797,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hlspackager.akamaized.net/live/DB/RONAHI_TV/HLS/RONAHI_TV.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ronahi-TV#kurdish",
       "working": null
     },
@@ -7808,7 +7808,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://app-live.org/live/3268334b/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Amozhgary-TV#kurdish",
       "working": null
     },
@@ -7819,7 +7819,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://65f16f0fdfc51.streamlock.net/afarinTV/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Afarin-Kids#kurdish",
       "working": null
     },
@@ -7830,7 +7830,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5dcabf026b188.streamlock.net/afarinTV/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Baxchai-Afarin#kurdish",
       "working": null
     },
@@ -7841,7 +7841,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5dcabf026b188.streamlock.net/afarinTV/d1/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Afarin-Radio#kurdish",
       "working": null
     },
@@ -7852,7 +7852,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live20.bozztv.com/giatv/giatv-nrt/nrt/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NRT-TV#kurdish",
       "working": null
     },
@@ -7863,7 +7863,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Zagros-TV#kurdish",
       "working": null
     },
@@ -7874,7 +7874,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.aryen.tv/live/tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aryen-TV#kurdish",
       "working": null
     },
@@ -7885,7 +7885,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://58cc65c534c67.streamlock.net/agnsat.com/agn2/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Assyrian-Global-Network#kurdish",
       "working": null
     },
@@ -7896,7 +7896,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://nohadraserver.com:3785/live/nohadratvlive.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Nohadra-TV#kurdish",
       "working": null
     },
@@ -7907,7 +7907,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://media2.streambrothers.com:1936/8218/8218/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Payam-TV#kurdish",
       "working": null
     },
@@ -7918,7 +7918,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://zindikurmanci.zaroktv.com.tr/hls/0/stream.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Zarok-TV#kurdish",
       "working": null
     },
@@ -7929,7 +7929,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.jintv.org:443/medialive/jintv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=JIN-TV#kurdish",
       "working": null
     },
@@ -7940,7 +7940,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://sada-hd.ddns.net/live/sadatv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sada-TV#kurdish",
       "working": null
     },
@@ -7951,7 +7951,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/waarmedialive/waarmedia.smil/waarmediapublish/waarmedia_source/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Waar-TV#kurdish",
       "working": null
     },
@@ -7973,7 +7973,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca1.buximedia.com/coa/assyriantv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Assyrian-TV#kurdish",
       "working": null
     },
@@ -7984,7 +7984,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live20.bozztv.com/giatv/giatv-sozetv/sozetv/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=SOZ-Movies#kurdish",
       "working": null
     },
@@ -7995,7 +7995,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live20.bozztv.com/giatv/giatv-sozquran/sozquran/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=SOZ-Quran-1#kurdish",
       "working": null
     },
@@ -8006,7 +8006,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live20.bozztv.com/giatv/giatv-sozetvq/sozetvq/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=SOZ-Quran-2#kurdish",
       "working": null
     },
@@ -8028,7 +8028,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogus.daioncdn.net/startv/startv.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Star-TV#turkish",
       "working": null
     },
@@ -8039,7 +8039,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=NOW-Turkey#turkish",
       "working": null
     },
@@ -8050,7 +8050,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://turkmedya-live.ercdn.net/tv360/tv360.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV-360#turkish",
       "working": null
     },
@@ -8094,7 +8094,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Teve-2#turkish",
       "working": null
     },
@@ -8105,7 +8105,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_kanalfirat/kanalfirat/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-Firat#turkish",
       "working": null
     },
@@ -8116,7 +8116,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Dream-Turk#turkish",
       "working": null
     },
@@ -8127,7 +8127,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Number1-HD#turkish",
       "working": null
     },
@@ -8138,7 +8138,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e18f9c54e6.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Number1-Ask#turkish",
       "working": null
     },
@@ -8149,7 +8149,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e187770143.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Number1-Turk#turkish",
       "working": null
     },
@@ -8160,7 +8160,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2aa89e721.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Number1-Dance#turkish",
       "working": null
     },
@@ -8171,7 +8171,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e19877b340.smil/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Number1-Damar#turkish",
       "working": null
     },
@@ -8182,7 +8182,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=exQtSdZi_nctpbZ4IaTTPw&e=1774097545",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -8204,7 +8204,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ulke-TV#turkish",
       "working": null
     },
@@ -8215,7 +8215,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_kanal3/kanal3guncel/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-3#turkish",
       "working": null
     },
@@ -8226,7 +8226,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ATV-Turkey#turkish",
       "working": null
     },
@@ -8248,7 +8248,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streamer2.nexgen.bz/ATV/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ATV-Avrupa#turkish",
       "working": null
     },
@@ -8292,7 +8292,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-1#turkish",
       "working": null
     },
@@ -8303,7 +8303,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-2#turkish",
       "working": null
     },
@@ -8314,7 +8314,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trthaber.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Haber#turkish",
       "working": null
     },
@@ -8325,7 +8325,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-e-okul01.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-EBA-Lise#turkish",
       "working": null
     },
@@ -8336,7 +8336,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-e-okul01.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-EBA-Ilkokul#turkish",
       "working": null
     },
@@ -8347,7 +8347,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Diyanet#turkish",
       "working": null
     },
@@ -8358,7 +8358,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trtturk.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Turk#turkish",
       "working": null
     },
@@ -8369,7 +8369,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trtavaz.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Avaz#turkish",
       "working": null
     },
@@ -8380,7 +8380,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Muzik#turkish",
       "working": null
     },
@@ -8391,7 +8391,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TRT-Cocuk#turkish",
       "working": null
     },
@@ -8402,7 +8402,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV4#turkish",
       "working": null
     },
@@ -8413,7 +8413,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://akittv-live.ercdn.net/akittv/akittv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Akit-TV#turkish",
       "working": null
     },
@@ -8424,7 +8424,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.sportstv.com.tr/hls/low/sportstv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sports-TV#turkish",
       "working": null
     },
@@ -8446,7 +8446,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Bloomberg-HT#turkish",
       "working": null
     },
@@ -8457,7 +8457,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://fbtv.fenerbahce.org/fenerbahcetv.stream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Fenerbahce-TV#turkish",
       "working": null
     },
@@ -8468,7 +8468,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_brtv/brtv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BRTV-Turkey#turkish",
       "working": null
     },
@@ -8479,7 +8479,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-Taptaze#turkish",
       "working": null
     },
@@ -8490,7 +8490,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_kanalz/kanalz/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-Z#turkish",
       "working": null
     },
@@ -8501,7 +8501,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Beyaz-TV#turkish",
       "working": null
     },
@@ -8512,7 +8512,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TVnet#turkish",
       "working": null
     },
@@ -8523,7 +8523,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=24-TV#turkish",
       "working": null
     },
@@ -8545,7 +8545,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://canli.tgrthaber.com/tgrt.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TGRT-Haber#turkish",
       "working": null
     },
@@ -8556,7 +8556,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Sat7-Turk#turkish",
       "working": null
     },
@@ -8578,7 +8578,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Haberturk-TV#turkish",
       "working": null
     },
@@ -8589,7 +8589,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Haber61#turkish",
       "working": null
     },
@@ -8622,7 +8622,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-TV#turkish",
       "working": null
     },
@@ -8633,7 +8633,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlists.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-Turk#turkish",
       "working": null
     },
@@ -8644,7 +8644,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://listen.powerapp.com.tr/plove/love.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-Love#turkish",
       "working": null
     },
@@ -8655,7 +8655,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://listen.powerapp.com.tr/dance/dance.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-Dance#turkish",
       "working": null
     },
@@ -8666,7 +8666,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://listen.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-Slow#turkish",
       "working": null
     },
@@ -8677,7 +8677,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://listen.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Power-Akustik#turkish",
       "working": null
     },
@@ -8743,7 +8743,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://host.onlineradyotv.net:8081/cine5tv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Cine5#turkish",
       "working": null
     },
@@ -8754,7 +8754,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://halktv-live.daioncdn.net/halktv/halktv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Halk-TV#turkish",
       "working": null
     },
@@ -8776,7 +8776,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tempo-TV#turkish",
       "working": null
     },
@@ -8787,7 +8787,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://baskentaudiovideo.xyz/LiveApp/streams/mUE22idl26lA1683879097431.m3u8?token=undefined&subscriberId=undefined&subscriberCode=undefined",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-B#turkish",
       "working": null
     },
@@ -8798,7 +8798,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-7#turkish",
       "working": null
     },
@@ -8809,7 +8809,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-7-Avrupa#turkish",
       "working": null
     },
@@ -8820,7 +8820,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Haber-Global#turkish",
       "working": null
     },
@@ -8831,7 +8831,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kanal-V#turkish",
       "working": null
     },
@@ -8842,7 +8842,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tivi-6#turkish",
       "working": null
     },
@@ -8853,7 +8853,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ciftci-TV#turkish",
       "working": null
     },
@@ -8864,7 +8864,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.livestreamtv.ca/azstar/amlst:azstar/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=AzStar-TV#turkish",
       "working": null
     },
@@ -8875,7 +8875,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/AyazTV/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ayaz-TV#turkish",
       "working": null
     },
@@ -8886,7 +8886,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Azad-TV#turkish",
       "working": null
     },
@@ -8897,7 +8897,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-01.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -8908,7 +8908,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ak.imamhussein.live/alzahratvlive/alzahra.smil/alzahrapublish/alzahra_source/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Al-Zahra-TV#turkish",
       "working": null
     },
@@ -8919,7 +8919,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amtvusdvr.tulix.tv/am2abr/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1TV-Armenia#armenian",
       "working": null
     },
@@ -8930,7 +8930,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amtvusdvr.tulix.tv/am3abr/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1TV-News#armenian",
       "working": null
     },
@@ -8941,7 +8941,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amtvusdvr.tulix.tv/am4abr/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1TV-America#armenian",
       "working": null
     },
@@ -8952,7 +8952,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streamer1.connectto.com/AMGA_WEB_1202/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=AMGA-TV#armenian",
       "working": null
     },
@@ -8963,7 +8963,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://songtv.hls.iptvdc.com/web-armenia/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Song-TV-Armenia#armenian",
       "working": null
     },
@@ -8974,7 +8974,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=http://livestream.usatv.com/hls/master-iUSATVLIVENET.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=USArmenia-TV#armenian",
       "working": null
     },
@@ -8985,7 +8985,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://164475.gvideo.io/cmaf/164475_650646/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TBN-Armenia#armenian",
       "working": null
     },
@@ -8996,7 +8996,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.hayastantv.com:8088/nor-hayastan/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Nor-Hayastan-TV#armenian",
       "working": null
     },
@@ -9007,7 +9007,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streamer1.connectto.com/AABC_WEB_1201/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Armenian-American-TV#armenian",
       "working": null
     },
@@ -9018,7 +9018,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streamer1.connectto.com/ARTN_mobile/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ARTN-Shant-TV#armenian",
       "working": null
     },
@@ -9029,7 +9029,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://uni8rtmp.tulix.tv/shalomtv-pc/smil:shalomtv.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=JBS-TV#israel",
       "working": null
     },
@@ -9040,7 +9040,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://jlt-jltv-stirr.otteravision.com/jlt/jltv/jltv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Jewish-Life-TV#israel",
       "working": null
     },
@@ -9051,7 +9051,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/makan/live.livx/playlist.m3u8?renditions&amp;fmp4",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Makan-33#israel",
       "working": null
     },
@@ -9062,7 +9062,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://n-121-4.il.cdn-redge.media/livehls/oil/kancdn-live/live/kan_edu/live.livx/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kan-Kids#israel",
       "working": null
     },
@@ -9073,7 +9073,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8?renditions&amp;fmp4",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kan-11#israel",
       "working": null
     },
@@ -9095,7 +9095,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Reshet-13#israel",
       "working": null
     },
@@ -9117,7 +9117,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Knesset-Channel#israel",
       "working": null
     },
@@ -9128,7 +9128,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.cybercdn.live/HidabrootIL/Live97/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hidabroot-TV#israel",
       "working": null
     },
@@ -9139,7 +9139,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://video2archives.earthcam.com/earthcamtv-vod/_definst_/mp4:archives/7949/backup.mp4/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=The-Western-Wall#israel",
       "working": null
     },
@@ -9150,7 +9150,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://janya-digimix.akamaized.net/vglive-sk-150533/hebrew/ngrp:angelhebrew_all/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Angel-TV-Hebrew#israel",
       "working": null
     },
@@ -9161,7 +9161,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://1247634592.rsc.cdn77.org/1247634592/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shelanu-TV#israel",
       "working": null
     },
@@ -9172,7 +9172,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge2.uk.kab.tv/live/eng-medium/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kabbalah-TV#israel",
       "working": null
     },
@@ -9183,7 +9183,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge2.uk.kab.tv/rtplive/tv66-heb-medium.stream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Kabbalah-Hebrew#israel",
       "working": null
     },
@@ -9205,7 +9205,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aragon-TV#spanish",
       "working": null
     },
@@ -9216,7 +9216,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ETB-Sat#spanish",
       "working": null
     },
@@ -9227,7 +9227,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hola-play-2108fd06-86d4-44e8-9867-c35b4895a1c1-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6433/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hola-Play-TV#spanish",
       "working": null
     },
@@ -9238,7 +9238,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://vstream-cdn.ch/hls/teleticino.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TeleTicino#spanish",
       "working": null
     },
@@ -9260,7 +9260,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://imagenuniversaltv.net:3771/live/iutvlive.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Imagen-Television#spanish",
       "working": null
     },
@@ -9271,7 +9271,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=CGTN-Spanish#spanish",
       "working": null
     },
@@ -9282,7 +9282,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=DW-Spanish#spanish",
       "working": null
     },
@@ -9315,7 +9315,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://a-cdn.klowdtv.com/live2/france24sp_720p/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=France-24-Spanish#spanish",
       "working": null
     },
@@ -9337,7 +9337,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://59ec5453559f0.streamlock.net/Latino/smil:VIVALIVE/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Miami-TV-Latino#spanish",
       "working": null
     },
@@ -9359,7 +9359,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livecdn.enlace.plus/ejtv/smil:ejtv-hd.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Enlace-Juvenil#spanish",
       "working": null
     },
@@ -9370,7 +9370,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mdstrm.com/live-stream-playlist/65a1d2fd7e7f14355550d570.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV-Azteca#spanish",
       "working": null
     },
@@ -9381,7 +9381,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mdstrm.com/live-stream-playlist/65a1d2fd7e7f14355550d570.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Azteca-Internacional#spanish",
       "working": null
     },
@@ -9392,7 +9392,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5fc584f3f19c9.streamlock.net/tvunam/videotvunam/playlist.m3u8?DVR",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TV-UNAM#spanish",
       "working": null
     },
@@ -9403,7 +9403,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mdstrm.com/live-stream-playlist/649cc9e1f64207086e2ea343.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=ADN-40#spanish",
       "working": null
     },
@@ -9425,7 +9425,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tele-stream.telecasa.net/live/st1/yunavision-hd/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Yuna-Vision#spanish",
       "working": null
     },
@@ -9436,7 +9436,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://s5.mexside.net:1936/canal14/canal14/chunklist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Canal-Catorce#spanish",
       "working": null
     },
@@ -9447,7 +9447,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://filmex-filmex-xumo.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Filmex#spanish",
       "working": null
     },
@@ -9458,7 +9458,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://filmex-filmexclasico-xumo.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Filmex-Clasico#spanish",
       "working": null
     },
@@ -9469,7 +9469,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://estrellatv-oando.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Estrella-TV#spanish",
       "working": null
     },
@@ -9480,7 +9480,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://estrella-news-oando.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Estrella-News#spanish",
       "working": null
     },
@@ -9491,7 +9491,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00567-amg00567c1-firetv-us-4124.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Estrella-Games#spanish",
       "working": null
     },
@@ -9546,7 +9546,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bein-esp-xumo.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=beIN-Sports-Xtra-Espanol#spanish",
       "working": null
     },
@@ -9568,7 +9568,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://xumo-drct-ch836-57aiq.fast.nbcuni.com/live/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Telemundo#spanish",
       "working": null
     },
@@ -9579,7 +9579,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://xumo-xumoent-ch827-uj0ch.fast.nbcuni.com/live/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Telemundo-Noticias-Ahora#spanish",
       "working": null
     },
@@ -9590,7 +9590,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://xumo-drct-ch835-ekq0p.fast.nbcuni.com/live/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Telemundo-Accion#spanish",
       "working": null
     },
@@ -9601,7 +9601,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cls.alcarria.tv/alcarriatv/livestream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alcarria-TV#spanish",
       "working": null
     },
@@ -9612,7 +9612,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://3abn.bozztv.com/3abn2/Lat_live/smil:Lat_live.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=3ABN-Latino#spanish",
       "working": null
     },
@@ -9623,7 +9623,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg01024-olympusat-topcinefreetv-ono-ad-a0.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=FreeTV-Accion#spanish",
       "working": null
     },
@@ -9634,7 +9634,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=8NTV#spanish",
       "working": null
     },
@@ -9645,7 +9645,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.aprende.gob.mx/live/hls/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Aprende-mx#spanish",
       "working": null
     },
@@ -9656,7 +9656,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5bf8041cb3fed.streamlock.net/AlcanceTV/AlcanceTV/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alcance-TV#spanish",
       "working": null
     },
@@ -9667,7 +9667,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Canal-33-Tijuana#spanish",
       "working": null
     },
@@ -9678,7 +9678,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5e50264bd6766.streamlock.net/canal442/videocanal442/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Canal-44-Chihuahua#spanish",
       "working": null
     },
@@ -9700,7 +9700,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg00793-amg00793c40-rakuten-es-5444.playouts.now.amagi.tv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=BBC-Drama-Spanish#spanish",
       "working": null
     },
@@ -9711,7 +9711,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5e73cf528f404.streamlock.net/TeleArena/TeleArena.stream/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tele-Arena#spanish",
       "working": null
     },
@@ -9722,7 +9722,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Cine-Sony#spanish",
       "working": null
     },
@@ -9733,7 +9733,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://n1ottes.akamaized.net/hls/live/2113795/Live_1/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Newsmax-Spanish#spanish",
       "working": null
     },
@@ -9744,7 +9744,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rt-esp.rttv.com/dvr/rtesp/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Russia-Today-Spanish#spanish",
       "working": null
     },
@@ -9755,7 +9755,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://unlimited1-us.dps.live/atv/atv.smil/atv/livestream4/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Antofagasta-TV#spanish",
       "working": null
     },
@@ -9766,7 +9766,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://streamvideol1.luxnet.ua/news24/livenews.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Channel-24-Ukraine#ukraine",
       "working": null
     },
@@ -9777,7 +9777,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://freedom.cdn-03.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=UA-TV#ukraine",
       "working": null
     },
@@ -9854,7 +9854,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.1tv.od.ua/stream1/channel1/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=First-City-Odessa#ukraine",
       "working": null
     },
@@ -9898,7 +9898,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://newsxott.in/hls/newsxworld.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=News-X#india",
       "working": null
     },
@@ -9942,7 +9942,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://214680.global.ssl.fastly.net/65dcad91056e0edda4cbce91/live_4a816ff0d7c511eeab33e1cc20aaf5d7/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=The-Ismaili-TV#india",
       "working": null
     },
@@ -9953,7 +9953,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/23886666-8fc5-470f-aab1-bd637ed607b1/3.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=9XM#india",
       "working": null
     },
@@ -9975,7 +9975,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cloudcdn.in/livetv/DesiTashan/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Desi-Tashan-TV#india",
       "working": null
     },
@@ -9986,7 +9986,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=1st-India-News#india",
       "working": null
     },
@@ -9997,7 +9997,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://network10.livebox.co.in/network10hls/live.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Network-10#india",
       "working": null
     },
@@ -10008,7 +10008,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mntv.livebox.co.in/musichls/live.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Marutam-Music#india",
       "working": null
     },
@@ -10041,7 +10041,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mcncdndigital.com/balleballetv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Balle-Balle-TV#india",
       "working": null
     },
@@ -10052,7 +10052,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cloudcdn.in/live/shreeshyamtv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shree-Shyam-TV#india",
       "working": null
     },
@@ -10063,7 +10063,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca1.buximedia.com/itv/indian/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=iTV-Indian-Music#india",
       "working": null
     },
@@ -10074,7 +10074,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdn.live247stream.com/tag/tv/tag/stream1/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=TAG-TV#india",
       "working": null
     },
@@ -10085,7 +10085,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "/hls/barkattv/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Barkat-TV#india",
       "working": null
     },
@@ -10096,7 +10096,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tv1/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-1#irib",
       "working": null
     },
@@ -10107,7 +10107,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tv2/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-2#irib",
       "working": null
     },
@@ -10118,7 +10118,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/tv3/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabakeh-3#irib",
       "working": null
     },
@@ -10129,7 +10129,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tv4/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-4#irib",
       "working": null
     },
@@ -10140,7 +10140,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tehran/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-5#irib",
       "working": null
     },
@@ -10151,7 +10151,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-varzesh/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-Varzesh#irib",
       "working": null
     },
@@ -10162,7 +10162,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-khabar/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-Khabar#irib",
       "working": null
     },
@@ -10173,7 +10173,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-khabar2/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Shabake-Khabar-2#irib",
       "working": null
     },
@@ -10305,7 +10305,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-0beh3m41.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-amoozesh/chunks.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Amouzesh#irib",
       "working": null
     },
@@ -10360,7 +10360,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.presstv.ir/hls/presstv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Press-TV#irib",
       "working": null
     },
@@ -10371,7 +10371,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live4.presstv.ir/live/mp4:presstvfr/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Press-TV-French#irib",
       "working": null
     },
@@ -10382,7 +10382,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.presstv.ir/hls/hispantv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hispan-TV#irib",
       "working": null
     },
@@ -10393,7 +10393,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.presstv.ir/hls/ifilmfa.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=iFilm-Farsi#irib",
       "working": null
     },
@@ -10404,7 +10404,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.presstv.ir/hls/ifilmen.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=iFilm-English#irib",
       "working": null
     },
@@ -10415,7 +10415,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.presstv.ir/hls/ifilmar.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=iFilm-Arabic#irib",
       "working": null
     },
@@ -10426,7 +10426,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.presstv.ir/hls/ifilm2.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=iFilm-Dari#irib",
       "working": null
     },
@@ -10437,7 +10437,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://live2.alalam.ir/live/Alalam/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alalam#irib",
       "working": null
     },
@@ -10448,7 +10448,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-4u3nb1w.cfcross.workers.dev/?url=https://live2.alalam.ir/alalam.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Alalam-Syria#irib",
       "working": null
     },
@@ -10459,7 +10459,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://halive.iranradio.ir/hls/hausatv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hausa-TV#irib",
       "working": null
     },
@@ -10492,7 +10492,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv.irna.ir/live/stream/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=IRNA-TV#irib",
       "working": null
     },
@@ -10514,7 +10514,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live2.snn.ir/hls/snn4.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Student-News-Network#irib",
       "working": null
     },
@@ -10580,7 +10580,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://nl.livekadeh.com/hls2/velayattv.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Velayat-TV#irib",
       "working": null
     },
@@ -10591,7 +10591,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://iptv.tahourtv.com/tahour/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Tahour-TV#irib",
       "working": null
     },
@@ -10613,7 +10613,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ak.imamhussein.live/imhtv1live/imhtv1.smil/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Imam-Hossein#irib",
       "working": null
     },
@@ -10624,7 +10624,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://northtelecom.b-cdn.net/ABALFADHL.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Abalfadhl-TV#irib",
       "working": null
     },
@@ -10635,7 +10635,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://bucharest.zeuscdn724.com/lb0/H1/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Hadi-TV#irib",
       "working": null
     },
@@ -10646,7 +10646,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://livefa.marjaeyattv.com/mtv_fa/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Marjaeyat-TV#irib",
       "working": null
     },
@@ -10657,7 +10657,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ustvstaticcdn2-a.akamaihd.net/packed/webpack/",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Ahlebait-TV#irib",
       "working": null
     },
@@ -10668,7 +10668,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
@@ -10679,7 +10679,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://avr.host247.net/live/rasoulallahtv/playlist.m3u8",
+      "stream_url": null,
       "page_url": "https://www.parsatv.com/name=Rasoulallah-TV#irib",
       "working": null
     },
