@@ -8,11 +8,11 @@
 
 /* ── Configuration ───────────────────────────────────────── */
 const CONFIG = {
-  channelsUrl:      './channels.json',
-  focusColor:       '#e5a00d',
+  channelsUrl: './channels.json',
+  focusColor: '#e5a00d',
   overlayHideDelay: 3000,
-  skeletonCount:    15,
-  favStorageKey:    'mastv_favorites',
+  skeletonCount: 15,
+  favStorageKey: 'mastv_favorites',
 };
 
 /** Returns the number of columns currently rendered in the channel grid. */
@@ -29,7 +29,7 @@ function getGridCols(gridEl) {
 }
 
 /* ── Globals ──────────────────────────────────────────────── */
-window.onAppImageError = function(imgEl, chId, explicitUrl) {
+window.onAppImageError = function (imgEl, chId, explicitUrl) {
   const currentSrc = imgEl.getAttribute('src');
   if (explicitUrl && currentSrc.endsWith(explicitUrl) && explicitUrl !== '') {
     imgEl.setAttribute('src', `img/${chId}.png`);
@@ -49,79 +49,79 @@ window.onAppImageError = function(imgEl, chId, explicitUrl) {
 
 /* ── State ────────────────────────────────────────────────── */
 const state = {
-  allChannels:      [],
+  allChannels: [],
   filteredChannels: [],
-  activeScreen:     'home',
+  activeScreen: 'home',
   selectedCategory: 'All',
-  selectedSort:     'default',
-  focusZone:        'grid',   // 'sidebar' | 'grid' | 'topbar' | 'player' | 'player-home' | 'player-fav' | 'player-panel' | 'exit' | 'error'
-  focusIndex:       0,
-  sidebarFocusIdx:  0,
-  exitFocusBtn:     'stay',
-  categories:       [],
-  sidebarItems:     [],
-  gridItems:        [],
-  hudTimer:         null,
-  hls:              null,
-  exitDialogOpen:   false,
-  helpDialogOpen:   false,
-  favorites:        loadFavorites(),
-  currentChannel:   null,
-  panelOpen:        false,
-  panelFocusIdx:    0,
-  layoutMode:       localStorage.getItem('mastv_layout') || 'grid',
+  selectedSort: 'default',
+  focusZone: 'grid',   // 'sidebar' | 'grid' | 'topbar' | 'player' | 'player-home' | 'player-fav' | 'player-panel' | 'exit' | 'error'
+  focusIndex: 0,
+  sidebarFocusIdx: 0,
+  exitFocusBtn: 'stay',
+  categories: [],
+  sidebarItems: [],
+  gridItems: [],
+  hudTimer: null,
+  hls: null,
+  exitDialogOpen: false,
+  helpDialogOpen: false,
+  favorites: loadFavorites(),
+  currentChannel: null,
+  panelOpen: false,
+  panelFocusIdx: 0,
+  layoutMode: localStorage.getItem('mastv_layout') || 'grid',
 };
 
 /* ── DOM refs ─────────────────────────────────────────────── */
 const $ = id => document.getElementById(id);
 const dom = {
-  app:              () => document.getElementById('app'),
-  homeContent:      () => document.querySelector('.home-content'),
-  homeScreen:       () => document.getElementById('screen-home'),
-  playerScreen:     () => document.getElementById('screen-player'),
-  screenSearch:     () => $('screen-search'),
-  errorScreen:      () => $('error-screen'),
-  btnMenu:          () => document.getElementById('btn-mobile-menu'),
-  clock:            () => $('clock'),
-  hudClock:         () => $('hud-clock'),
-  channelGrid:      () => $('channel-grid'),
-  searchGrid:       () => $('search-grid'),
-  sidebar:          () => $('sidebar'),
-  searchInput:      () => $('search-input'),
-  btnSearch:        () => $('btn-search'),
-  btnLayoutGrid:    () => $('btn-layout-grid'),
-  btnLayoutList:    () => $('btn-layout-list'),
-  btnHelp:          () => $('btn-help'),
-  playerVideo:      () => $('player-video'),
-  playerHud:        () => $('player-hud'),
-  hudLogo:          () => $('hud-logo'),
-  hudName:          () => $('hud-name'),
-  hudStatus:        () => $('hud-status'),
-  hudHomeBtn:       () => $('hud-home-btn'),
-  hudFavBtn:        () => $('hud-fav-btn'),
-  hudPanelBtn:      () => $('hud-panel-btn'),
-  hudFsBtn:         () => $('hud-fs-btn'),
+  app: () => document.getElementById('app'),
+  homeContent: () => document.querySelector('.home-content'),
+  homeScreen: () => document.getElementById('screen-home'),
+  playerScreen: () => document.getElementById('screen-player'),
+  screenSearch: () => $('screen-search'),
+  errorScreen: () => $('error-screen'),
+  btnMenu: () => document.getElementById('btn-mobile-menu'),
+  clock: () => $('clock'),
+  hudClock: () => $('hud-clock'),
+  channelGrid: () => $('channel-grid'),
+  searchGrid: () => $('search-grid'),
+  sidebar: () => $('sidebar'),
+  searchInput: () => $('search-input'),
+  btnSearch: () => $('btn-search'),
+  btnLayoutGrid: () => $('btn-layout-grid'),
+  btnLayoutList: () => $('btn-layout-list'),
+  btnHelp: () => $('btn-help'),
+  playerVideo: () => $('player-video'),
+  playerHud: () => $('player-hud'),
+  hudLogo: () => $('hud-logo'),
+  hudName: () => $('hud-name'),
+  hudStatus: () => $('hud-status'),
+  hudHomeBtn: () => $('hud-home-btn'),
+  hudFavBtn: () => $('hud-fav-btn'),
+  hudPanelBtn: () => $('hud-panel-btn'),
+  hudFsBtn: () => $('hud-fs-btn'),
   playerChannelPanel: () => $('player-channel-panel'),
-  pcpList:          () => $('pcp-list'),
-  pcpSearchInput:   () => $('pcp-search-input'),
-  pcpCloseBtn:      () => $('pcp-close-btn'),
+  pcpList: () => $('pcp-list'),
+  pcpSearchInput: () => $('pcp-search-input'),
+  pcpCloseBtn: () => $('pcp-close-btn'),
   bufferingSpinner: () => $('buffering-spinner'),
-  streamError:      () => $('stream-error'),
-  streamErrorBack:  () => $('stream-error-back-btn'),
-  retryBtn:         () => $('retry-btn'),
-  exitDialog:       () => $('exit-dialog'),
-  exitStay:         () => $('exit-stay'),
-  exitLeave:        () => $('exit-leave'),
-  helpDialog:       () => $('help-dialog'),
-  helpCloseBtn:     () => $('help-close-btn'),
-  chOsd:            () => $('ch-osd'),
-  chOsdNum:         () => $('ch-osd-num'),
-  hudNumpadBtn:     () => $('hud-numpad-btn'),
-  numpadOverlay:    () => $('numpad-overlay'),
-  numpadCloseBtn:   () => $('numpad-close-btn'),
-  numpadGrid:       () => $('numpad-grid'),
-  numpadEnterBtn:   () => $('numpad-enter-btn'),
-  hudPipBtn:        () => $('hud-pip-btn'),
+  streamError: () => $('stream-error'),
+  streamErrorBack: () => $('stream-error-back-btn'),
+  retryBtn: () => $('retry-btn'),
+  exitDialog: () => $('exit-dialog'),
+  exitStay: () => $('exit-stay'),
+  exitLeave: () => $('exit-leave'),
+  helpDialog: () => $('help-dialog'),
+  helpCloseBtn: () => $('help-close-btn'),
+  chOsd: () => $('ch-osd'),
+  chOsdNum: () => $('ch-osd-num'),
+  hudNumpadBtn: () => $('hud-numpad-btn'),
+  numpadOverlay: () => $('numpad-overlay'),
+  numpadCloseBtn: () => $('numpad-close-btn'),
+  numpadGrid: () => $('numpad-grid'),
+  numpadEnterBtn: () => $('numpad-enter-btn'),
+  hudPipBtn: () => $('hud-pip-btn'),
 };
 
 /* ══════════════════════════════════════════════════════════
@@ -240,7 +240,7 @@ function _setupNumpadListeners() {
 ══════════════════════════════════════════════════════════ */
 function updateClocks() {
   const now = new Date();
-  const t = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+  const t = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
   dom.clock().textContent = t;
   dom.hudClock().textContent = t;
 }
@@ -294,7 +294,7 @@ function hideExitDialog() {
 }
 
 function exitApp() {
-  try { window.close(); } catch (e) {}
+  try { window.close(); } catch (e) { }
   // Fallback: clear the page
   document.body.innerHTML = '<div style="background:#000;height:100vh;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;font-family:sans-serif">Goodbye! You can now close this tab.</div>';
 }
@@ -345,10 +345,10 @@ function toggleFavorite(channelId) {
     const btn = ch.domElement.querySelector('.card-fav-btn');
     if (btn) btn.classList.toggle('active', state.favorites.has(channelId));
   }
-  
+
   // Rebuild categories to update Favourites count/presence
   buildCategories(state.allChannels);
-  
+
   // Immediately re-sort and re-render the grid so the item jumps to the top
   if (state.activeScreen === 'home') {
     applyFilter();
@@ -383,7 +383,7 @@ function toggleFavoritePlayer() {
 ══════════════════════════════════════════════════════════ */
 async function init() {
   loadFavorites();
-  
+
   // Apply saved layout
   if (state.layoutMode === 'list') {
     dom.channelGrid().classList.add('list-view');
@@ -398,7 +398,7 @@ async function init() {
   }
 
   await loadChannels();
-  
+
   _setupSidebarListeners();
   _setupNumpadListeners();
 }
@@ -406,7 +406,7 @@ async function init() {
 function switchLayout(mode) {
   state.layoutMode = mode;
   localStorage.setItem('mastv_layout', mode);
-  
+
   if (mode === 'list') {
     dom.channelGrid().classList.add('list-view');
     dom.btnLayoutGrid().classList.remove('active');
@@ -416,7 +416,7 @@ function switchLayout(mode) {
     dom.btnLayoutGrid().classList.add('active');
     dom.btnLayoutList().classList.remove('active');
   }
-  
+
   // Re-focus the current item to ensure it scrolls into view correctly
   if (state.activeScreen === 'home' && state.focusZone === 'grid') {
     focusGridItem(state.focusIndex);
@@ -437,12 +437,12 @@ async function loadChannels() {
     );
     // Assign stable 1-based channel numbers
     channels.forEach((ch, i) => { ch.num = i + 1; });
-    
+
     state.allChannels = channels;
     buildCategories(channels);
     applyFilter();
     dom.errorScreen().classList.remove('active');
-    
+
     // Check for deep link hash
     const initialHash = window.location.hash.substring(1);
     if (initialHash) {
@@ -461,9 +461,9 @@ function buildCategories(channels) {
   const otherCats = [...new Set(channels.map(c => c.category).filter(Boolean))];
   // Explicit user request to ensure 'Movies' is a visible category
   if (!otherCats.includes('Movies')) otherCats.push('Movies');
-  
+
   otherCats.sort((a, b) => a.localeCompare(b));
-  
+
   const cats = ['❤ Favourites', 'All', ...otherCats];
   state.categories = cats;
   renderSidebar(cats);
@@ -555,9 +555,9 @@ function renderSidebar(categories) {
 
   const sorts = [
     { value: 'default', label: '— Default —' },
-    { value: 'az',      label: 'A → Z' },
-    { value: 'za',      label: 'Z → A' },
-    { value: 'cat',     label: 'By Category' },
+    { value: 'az', label: 'A → Z' },
+    { value: 'za', label: 'Z → A' },
+    { value: 'cat', label: 'By Category' },
   ];
   sorts.forEach(s => {
     const item = document.createElement('div');
@@ -690,9 +690,9 @@ function focusTopbar() {
   unfocusSidebar();
 }
 
-function unfocusGrid()    { state.gridItems.forEach(el => el.classList.remove('focused')); }
+function unfocusGrid() { state.gridItems.forEach(el => el.classList.remove('focused')); }
 function unfocusSidebar() { state.sidebarItems.forEach(el => el.classList.remove('focused')); }
-function unfocusTopbar()  { dom.btnSearch().classList.remove('focused'); }
+function unfocusTopbar() { dom.btnSearch().classList.remove('focused'); }
 
 /* Activate (select) a sidebar item — works via click or keyboard */
 function activateSidebarItem(el) {
@@ -728,7 +728,7 @@ function toggleFullscreen() {
 
   const requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
   const cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-  
+
   // Is fullscreen currently active?
   const isFullscreen = doc.fullscreenElement || doc.mozFullScreenElement || doc.webkitFullscreenElement || doc.msFullscreenElement;
 
@@ -737,9 +737,9 @@ function toggleFullscreen() {
       requestFullScreen.call(docEl).then(() => {
         // Try to force landscape orientation on mobile
         if (screen.orientation && screen.orientation.lock) {
-          screen.orientation.lock('landscape').catch(() => {});
+          screen.orientation.lock('landscape').catch(() => { });
         }
-      }).catch(() => {});
+      }).catch(() => { });
     } else {
       // iOS Safari fallback on iPhones (doesn't support full API, but can fullscreen the video element directly)
       const video = dom.playerVideo();
@@ -749,14 +749,14 @@ function toggleFullscreen() {
     }
     // Also try to lock if using fallback (it might fail on iOS, but safe to attempt)
     if (screen.orientation && screen.orientation.lock) {
-      screen.orientation.lock('landscape').catch(() => {});
+      screen.orientation.lock('landscape').catch(() => { });
     }
-    
+
     dom.hudFsBtn().textContent = '⊠';
     dom.hudFsBtn().title = 'Exit Fullscreen';
   } else {
     if (cancelFullScreen) {
-      cancelFullScreen.call(doc).catch(() => {});
+      cancelFullScreen.call(doc).catch(() => { });
     }
     // Unlock orientation
     if (screen.orientation && screen.orientation.unlock) {
@@ -823,7 +823,7 @@ function updateMediaSession(channel) {
     artist: 'MasTV — Live Iranian TV',
     album: channel.category || 'Streaming',
     artwork: channel.logo_url ? [
-      { src: channel.logo_url, sizes: '96x96',   type: 'image/png' },
+      { src: channel.logo_url, sizes: '96x96', type: 'image/png' },
       { src: channel.logo_url, sizes: '128x128', type: 'image/png' },
       { src: channel.logo_url, sizes: '192x192', type: 'image/png' },
       { src: channel.logo_url, sizes: '256x256', type: 'image/png' },
@@ -833,7 +833,7 @@ function updateMediaSession(channel) {
   });
 
   navigator.mediaSession.setActionHandler('play', () => {
-    dom.playerVideo().play().catch(() => {});
+    dom.playerVideo().play().catch(() => { });
   });
   navigator.mediaSession.setActionHandler('pause', () => {
     dom.playerVideo().pause();
@@ -850,7 +850,7 @@ function updateMediaSession(channel) {
    ══════════════════════════════════════════════════════════ */
 function switchChannel(offset) {
   if (!state.currentChannel || !state.allChannels.length) return;
-  
+
   // Use the established sorting (favourites first, then number)
   // This matches how they appear in the side panel
   const list = [...state.allChannels].sort((a, b) => {
@@ -875,7 +875,7 @@ document.addEventListener('visibilitychange', () => {
     const video = dom.playerVideo();
     // If we're on player screen and have a channel, ensure it's playing
     if (state.activeScreen === 'player' && state.currentChannel && video.paused) {
-      video.play().catch(() => {});
+      video.play().catch(() => { });
     }
   }
 });
@@ -1003,7 +1003,7 @@ function openPlayer(channel) {
   showScreen('player');
   state.focusZone = 'player';
   state.currentChannel = channel;
-  
+
   if (window.location.hash.substring(1) !== channel.id) {
     history.replaceState(null, '', `#${channel.id}`);
   }
@@ -1011,14 +1011,15 @@ function openPlayer(channel) {
   const hudLogo = dom.hudLogo();
   const explicitUrl = channel.logo_url || '';
   const initialUrl = explicitUrl || `img/${channel.id}.png`;
-  
+
   hudLogo.src = initialUrl;
   hudLogo.style.display = '';
   hudLogo.style.opacity = '0';
-  hudLogo.onload = function() { this.style.opacity = '1'; };
-  hudLogo.onerror = function() {
+  hudLogo.onload = function () { this.style.opacity = '1'; };
+  hudLogo.onerror = function () {
     window.onAppImageError(this, channel.id, explicitUrl);
   };
+
   dom.hudName().textContent = `${channel.num != null ? channel.num + '. ' : ''}${channel.name}`;
   dom.hudStatus().textContent = 'Connecting…';
   dom.streamError().classList.remove('active');
@@ -1043,7 +1044,7 @@ function goHome() {
   showScreen('home');
   // Re-apply filter to ensure the home grid DOM is restored (it might have been "stolen" by Search)
   applyFilter();
-  
+
   if (window.location.hash) {
     history.replaceState(null, '', window.location.pathname + window.location.search);
   }
@@ -1060,12 +1061,12 @@ function startStream(url) {
 
   if (Hls.isSupported()) {
     const hls = new Hls({
-      enableWorker:        true,
-      maxBufferLength:     15,          // buffer 15s ahead (default 30)
-      maxMaxBufferLength:  30,          // never exceed 30s
-      maxBufferSize:       60 * 1000 * 1000, // 60 MB cap (default 60 but explicit)
-      maxBufferHole:       0.5,
-      lowLatencyMode:      false,
+      enableWorker: true,
+      maxBufferLength: 15,          // buffer 15s ahead (default 30)
+      maxMaxBufferLength: 30,          // never exceed 30s
+      maxBufferSize: 60 * 1000 * 1000, // 60 MB cap (default 60 but explicit)
+      maxBufferHole: 0.5,
+      lowLatencyMode: false,
     });
     state.hls = hls;
 
@@ -1132,7 +1133,7 @@ function showHud() {
    SEARCH
 ══════════════════════════════════════════════════════════ */
 let searchGridItems = [];
-let searchFocusIdx  = 0;
+let searchFocusIdx = 0;
 
 function openSearch() {
   showScreen('search');
@@ -1181,26 +1182,26 @@ const BACK_KEYCODES = new Set([8, 27, 461, 10009]);
 const isFavKey = e => e.keyCode === 405 || e.key === 'f' || e.key === 'F';
 
 document.addEventListener('keydown', e => {
-  const key   = e.key;
-  const code  = e.keyCode;
+  const key = e.key;
+  const code = e.keyCode;
 
   // If the search input is focused, let Backspace work normally (delete char)
   // Only Escape should close the search in that case
   const searchFocused = document.activeElement === dom.searchInput();
 
-  const isBack  = searchFocused
+  const isBack = searchFocused
     ? key === 'Escape' || code === 461 || code === 10009
     : BACK_KEYCODES.has(code) || key === 'Escape' || key === 'Backspace';
   const isEnter = key === 'Enter' || code === 13;
-  const isUp    = key === 'ArrowUp';
-  const isDown  = key === 'ArrowDown';
-  const isLeft  = key === 'ArrowLeft';
+  const isUp = key === 'ArrowUp';
+  const isDown = key === 'ArrowDown';
+  const isLeft = key === 'ArrowLeft';
   const isRight = key === 'ArrowRight';
-  
-  const isPip   = key === 'p' || key === 'P'; // P key for PiP
-  
-  const isDigit  = key >= '0' && key <= '9' && !e.ctrlKey && !e.metaKey;
-  const numpadDigit = key.startsWith('Numpad') ? key.replace('Numpad','') : null;
+
+  const isPip = key === 'p' || key === 'P'; // P key for PiP
+
+  const isDigit = key >= '0' && key <= '9' && !e.ctrlKey && !e.metaKey;
+  const numpadDigit = key.startsWith('Numpad') ? key.replace('Numpad', '') : null;
 
   const nav = { isBack, isEnter, isUp, isDown, isLeft, isRight };
 
@@ -1246,7 +1247,7 @@ document.addEventListener('keydown', e => {
   }
 
   switch (state.activeScreen) {
-    case 'home':   handleHomeNav(nav); break;
+    case 'home': handleHomeNav(nav); break;
     case 'player': handlePlayerNav(nav); break;
     case 'search': handleSearchNav(nav, e); break;
   }
@@ -1266,8 +1267,8 @@ function handleHomeNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
 
   if (state.focusZone === 'topbar') {
     if (isEnter) openSearch();
-    if (isDown)  focusSidebarItem(0);
-    if (isLeft)  focusSidebarItem(0);
+    if (isDown) focusSidebarItem(0);
+    if (isLeft) focusSidebarItem(0);
     return;
   }
 
@@ -1287,7 +1288,7 @@ function handleHomeNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   }
 
   // focusZone === 'grid'
-  const cols  = getGridCols(dom.channelGrid());
+  const cols = getGridCols(dom.channelGrid());
   const total = state.gridItems.length;
   let idx = state.focusIndex;
 
@@ -1322,8 +1323,8 @@ function handlePlayerNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   if (state.focusZone === 'player-panel') {
     const items = dom.pcpList().querySelectorAll('.pcp-item');
     const total = items.length;
-    if (isUp)    _focusPanelItem(state.panelFocusIdx - 1);
-    else if (isDown)  _focusPanelItem(state.panelFocusIdx + 1);
+    if (isUp) _focusPanelItem(state.panelFocusIdx - 1);
+    else if (isDown) _focusPanelItem(state.panelFocusIdx + 1);
     else if (isEnter) _switchFromPanel(state.panelFocusIdx);
     else if (isRight) closeChannelPanel();
     return;
@@ -1332,7 +1333,7 @@ function handlePlayerNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   // ── HUD button zones ─────────────────────────────────────
   if (state.focusZone === 'player-fav') {
     if (isEnter) { toggleFavoritePlayer(); updateHudFavBtn(); return; }
-    if (isLeft)  { dom.hudFavBtn().classList.remove('focused'); state.focusZone = 'player-home'; dom.hudHomeBtn().classList.add('focused'); return; }
+    if (isLeft) { dom.hudFavBtn().classList.remove('focused'); state.focusZone = 'player-home'; dom.hudHomeBtn().classList.add('focused'); return; }
     if (isRight || isDown || isUp) { dom.hudFavBtn().classList.remove('focused'); state.focusZone = 'player'; return; }
     return;
   }
@@ -1345,24 +1346,24 @@ function handlePlayerNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   }
 
   // ── Default player zone ──────────────────────────────────
-  if (isLeft)  { openChannelPanel(); return; }
+  if (isLeft) { openChannelPanel(); return; }
   if (isRight) { switchChannel(1); return; }
-  if (isUp)    { switchChannel(1); return; }
-  if (isDown)  { switchChannel(-1); return; }
+  if (isUp) { switchChannel(1); return; }
+  if (isDown) { switchChannel(-1); return; }
 }
 
 /* ── Search Navigation ────────────────────────────────────── */
 function handleSearchNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }, e) {
   if (isBack) { closeSearch(); return; }
 
-  const cols  = getGridCols(dom.searchGrid());
+  const cols = getGridCols(dom.searchGrid());
   const total = searchGridItems.length;
   let idx = searchFocusIdx;
 
-  if (isUp)    { if (idx >= cols) focusSearchItem(idx - cols); }
-  else if (isDown)  { if (idx + cols < total) focusSearchItem(idx + cols); }
-  else if (isLeft)  { if (idx % cols !== 0) focusSearchItem(idx - 1); }
-  else if (isRight) { if (idx < total - 1)  focusSearchItem(idx + 1); }
+  if (isUp) { if (idx >= cols) focusSearchItem(idx - cols); }
+  else if (isDown) { if (idx + cols < total) focusSearchItem(idx + cols); }
+  else if (isLeft) { if (idx % cols !== 0) focusSearchItem(idx - 1); }
+  else if (isRight) { if (idx < total - 1) focusSearchItem(idx + 1); }
   else if (isEnter) {
     const q = dom.searchInput().value.toLowerCase();
     const filtered = state.allChannels.filter(ch =>
@@ -1419,7 +1420,7 @@ function _delegatedGridClick(e, channelList) {
   }
 }
 dom.channelGrid().addEventListener('click', e => _delegatedGridClick(e, state.filteredChannels));
-dom.searchGrid().addEventListener('click',  e => {
+dom.searchGrid().addEventListener('click', e => {
   const q = dom.searchInput().value.toLowerCase();
   const filtered = state.allChannels.filter(ch =>
     ch.name.toLowerCase().includes(q) || (ch.category || '').toLowerCase().includes(q)
@@ -1435,7 +1436,7 @@ dom.playerScreen().addEventListener('click', (e) => {
   if (state.activeScreen === 'player') {
     // Ignore clicks on actionable overlays (buttons, panels, numpad, etc.)
     if (e.target.closest('button') || e.target.closest('.player-channel-panel') || e.target.closest('.numpad-overlay')) return;
-    
+
     const hud = dom.playerHud();
     if (hud.classList.contains('hidden')) showHud();
     else hud.classList.add('hidden'); // Tap to dismiss
