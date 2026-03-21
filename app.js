@@ -1041,6 +1041,9 @@ function updateHudFavBtn() {
 function goHome() {
   stopStream();
   showScreen('home');
+  // Re-apply filter to ensure the home grid DOM is restored (it might have been "stolen" by Search)
+  applyFilter();
+  
   if (window.location.hash) {
     history.replaceState(null, '', window.location.pathname + window.location.search);
   }
@@ -1143,6 +1146,7 @@ function openSearch() {
 function closeSearch() {
   showScreen('home');
   state.focusZone = 'grid';
+  applyFilter(); // Restore home grid cards
   focusGridItem(Math.min(state.focusIndex, state.gridItems.length - 1));
 }
 
