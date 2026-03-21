@@ -135,24 +135,26 @@ def get_raw(
 # Ordered regex patterns to search inside <script> blocks.
 # Group(1) captures the stream URL.
 JS_STREAM_PATTERNS = [
-    # Direct .m3u8 / .mp4 URLs in any quote context
+    # Direct .m3u8 / .mp4 / .mp3 URLs in any quote context
     r'"(https?://[^\s"\'<>]+\.m3u8(?:[?#][^\s"\'<>]*)?)"',
     r'"(https?://[^\s"\'<>]+\.mp4(?:[?#][^\s"\'<>]*)?)"',
+    r'"(https?://[^\s"\'<>]+\.mp3(?:[?#][^\s"\'<>]*)?)"',
     r"'(https?://[^\s\"'<>]+\.m3u8(?:[?#][^\s\"'<>]*)?)'",
     r"'(https?://[^\s\"'<>]+\.mp4(?:[?#][^\s\"'<>]*)?)'",
+    r"'(https?://[^\s\"'<>]+\.mp3(?:[?#][^\s\"'<>]*)?)'",
 
     # JW Player:  file: "...",  sources: [{file:"..."}]
-    r"[\"']?file[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4)[^\"']*)[\"']",
+    r"[\"']?file[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
 
     # VideoJS / generic:  src: "..."
-    r"[\"']?src[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4)[^\"']*)[\"']",
+    r"[\"']?src[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
 
     # Generic key=value or key: value — covers many custom players
     r"[\"']?(?:source|stream|hls|hlsUrl|streamUrl|videoUrl|liveUrl|playUrl|hlsSrc|m3u8|url)"
-    r"[\"']\s*[=:]\s*[\"']([^\"']+(?:\.m3u8|\.mp4)[^\"']*)[\"']",
+    r"[\"']\s*[=:]\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
 
     # Flowplayer / Plyr object notation
-    r"src\s*:\s*[\"']([^\"']+\.m3u8[^\"']*)[\"']",
+    r"src\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
 
     # type: application/x-mpegURL with nearby src
     r"application/x-mpegURL[^}]{0,200}?src\s*:\s*[\"']([^\"']+)[\"']",
@@ -226,7 +228,7 @@ def _fetch_stream_from_php(
         # Common patterns in ther response
         for key in ("file", "url", "src", "stream", "hls", "source", "link"):
             val = data.get(key, "")
-            if val and (".m3u8" in val or ".mp4" in val):
+            if val and (".m3u8" in val or ".mp4" in val or ".mp3" in val):
                 return val
         # Sometimes it's nested: sources: [{file: "..."}]
         sources = data.get("sources") or data.get("playlist") or []
@@ -235,7 +237,7 @@ def _fetch_stream_from_php(
                 if isinstance(src, dict):
                     for key in ("file", "src", "url"):
                         val = src.get(key, "")
-                        if val and (".m3u8" in val or ".mp4" in val):
+                        if val and (".m3u8" in val or ".mp4" in val or ".mp3" in val):
                             return val
     except (json.JSONDecodeError, AttributeError):
         pass
@@ -277,11 +279,11 @@ def extract_stream_url(
                 print(f"  [php] ✓ Found stream via PHP endpoint: {stream[:70]}")
                 return stream
 
-    # 1. HTML <source> and <video> tags
-    for tag in soup.find_all(["source", "video"]):
+    # 1. HTML <source>, <video>, and <audio> tags
+    for tag in soup.find_all(["source", "video", "audio"]):
         for attr in ("src", "data-src"):
             src = tag.get(attr, "")
-            if src and (".m3u8" in src or ".mp4" in src):
+            if src and (".m3u8" in src or ".mp4" in src or ".mp3" in src):
                 return src
 
     # 2. VideoJS data-setup JSON attribute
@@ -304,7 +306,7 @@ def extract_stream_url(
         for attr, val in el.attrs.items():
             if not isinstance(val, str):
                 continue
-            if attr.startswith("data-") and (".m3u8" in val or ".mp4" in val):
+            if attr.startswith("data-") and (".m3u8" in val or ".mp4" in val or ".mp3" in val):
                 if val.startswith("http"):
                     return val
 
@@ -319,6 +321,14 @@ def extract_stream_url(
                 src = "https:" + src
             elif not src.startswith("http"):
                 src = urljoin(page_url, src)
+
+            if "telewebion" in src and "/live/" in src:
+                match = re.search(r'/live/([^/?#]+)', src)
+                if match:
+                    alias = match.group(1)
+                    fallback_url = f"https://cdnw.telewebion.com/{alias}/live/playlist.m3u8"
+                    print(f"  [telewebion] Returning known CDN pattern: {fallback_url}")
+                    return fallback_url
 
             print(f"  [iframe] Following: {src[:80]}")
             try:
@@ -336,10 +346,10 @@ def extract_stream_url(
                         stream = _fetch_stream_from_php(php_url, src, session)
                         if stream:
                             return stream
-                    for tag in iframe_soup.find_all(["source", "video"]):
+                    for tag in iframe_soup.find_all(["source", "video", "audio"]):
                         for attr in ("src", "data-src"):
                             sv = tag.get(attr, "")
-                            if sv and (".m3u8" in sv or ".mp4" in sv):
+                            if sv and (".m3u8" in sv or ".mp4" in sv or ".mp3" in sv):
                                 return sv
                     result = _search_scripts_for_stream(iframe_soup)
                     if result:
