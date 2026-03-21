@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="MasTV — Iranian TV channels. Watch live Persian, News, Music streams on your TV." />
   <title>MasTV — Iranian Channels</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
   <div id="app">
@@ -24,6 +24,17 @@
           <img src="assets/logo.svg" alt="MasTV" />
         </div>
         <div class="spacer"></div>
+        <div class="layout-toggles">
+          <button class="layout-btn active" id="btn-layout-grid" title="Grid View" tabindex="-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          </button>
+          <button class="layout-btn" id="btn-layout-list" title="List View" tabindex="-1">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          </button>
+          <button class="layout-btn" id="btn-help" title="Help / Tips" tabindex="-1" style="margin-left: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </button>
+        </div>
         <button class="search-btn" id="btn-search" tabindex="-1">
           <span>🔍</span>
           <span>Search</span>
@@ -180,7 +191,7 @@
       <button class="retry-btn focused" id="retry-btn" tabindex="-1">Retry</button>
     </div>
 
-    <!-- Exit Confirmation Dialog -->
+    <!-- EXIT DIALOG -->
     <div class="exit-dialog" id="exit-dialog">
       <div class="exit-dialog-box">
         <div class="exit-icon">📺</div>
@@ -193,10 +204,29 @@
       </div>
     </div>
 
+    <!-- HELP DIALOG -->
+    <div class="exit-dialog" id="help-dialog">
+      <div class="exit-dialog-box" style="max-width: 470px; text-align: left; padding: 30px;">
+        <h3 style="margin-top:0; color:#fff; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:15px; font-size:24px;">How to use MasTV</h3>
+        <ul style="padding-left: 20px; line-height: 1.8; color: rgba(255,255,255,0.8); font-size: 15px; margin-bottom: 25px;">
+          <li><b style="color:#fff;">TV Remote:</b> Fully optimized for Smart TV remotes and DPads.</li>
+          <li><b style="color:#fff;">Navigation:</b> Use <kbd>Arrows</kbd> to move, <kbd>Enter</kbd> to play.</li>
+          <li><b style="color:#fff;">Back/Exit:</b> Press <kbd>Esc</kbd> or <kbd>Backspace</kbd> to close the player.</li>
+          <li><b style="color:#fff;">Direct Channel:</b> Type numbers on your keyboard (e.g. <kbd>1</kbd><kbd>2</kbd> <kbd>Enter</kbd>) to instantly jump to a channel.</li>
+          <li><b style="color:#fff;">Favourites:</b> Click the <span style="color:#e5142a; font-size: 16px;">♥</span> icon to pin channels to the top.</li>
+          <li><b style="color:#fff;">Background Play:</b> Use the <kbd>📺</kbd> button on the player for Picture-in-Picture.</li>
+          <li><b style="color:#fff;">Deep Links:</b> Bookmark a channel explicitly via URL (e.g. <code>#bbc</code>).</li>
+        </ul>
+        <div class="exit-buttons">
+          <button class="exit-btn exit-btn--stay focused" id="help-close-btn" tabindex="-1" style="width: 100%;">Got it!</button>
+        </div>
+      </div>
+    </div>
+
   </div><!-- #app -->
 
   <!-- hls.js from CDN -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.11/dist/hls.min.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

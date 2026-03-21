@@ -28,6 +28,23 @@ function getGridCols(gridEl) {
   return cols || 5;
 }
 
+/* ── Globals ──────────────────────────────────────────────── */
+window.onAppImageError = function(imgEl, chId, explicitUrl) {
+  const currentSrc = imgEl.getAttribute('src');
+  if (explicitUrl && currentSrc.endsWith(explicitUrl) && explicitUrl !== '') {
+    imgEl.setAttribute('src', `img/${chId}.png`);
+  } else if (currentSrc.endsWith('.png')) {
+    imgEl.setAttribute('src', `img/${chId}.jpg`);
+  } else if (currentSrc.endsWith('.jpg')) {
+    imgEl.setAttribute('src', `img/${chId}.webp`);
+  } else {
+    imgEl.style.display = 'none';
+    if (imgEl.previousElementSibling && imgEl.previousElementSibling.classList.contains('logo-fallback')) {
+      imgEl.previousElementSibling.style.display = 'flex';
+    }
+  }
+};
+
 /* ── State ────────────────────────────────────────────────── */
 const state = {
   allChannels:      [],
@@ -45,10 +62,12 @@ const state = {
   hudTimer:         null,
   hls:              null,
   exitDialogOpen:   false,
+  helpDialogOpen:   false,
   favorites:        loadFavorites(),
   currentChannel:   null,
   panelOpen:        false,
   panelFocusIdx:    0,
+  layoutMode:       localStorage.getItem('mastv_layout') || 'grid',
 };
 
 /* ── DOM refs ─────────────────────────────────────────────── */
@@ -68,6 +87,9 @@ const dom = {
   sidebar:          () => $('sidebar'),
   searchInput:      () => $('search-input'),
   btnSearch:        () => $('btn-search'),
+  btnLayoutGrid:    () => $('btn-layout-grid'),
+  btnLayoutList:    () => $('btn-layout-list'),
+  btnHelp:          () => $('btn-help'),
   playerVideo:      () => $('player-video'),
   playerHud:        () => $('player-hud'),
   hudLogo:          () => $('hud-logo'),
@@ -88,6 +110,8 @@ const dom = {
   exitDialog:       () => $('exit-dialog'),
   exitStay:         () => $('exit-stay'),
   exitLeave:        () => $('exit-leave'),
+  helpDialog:       () => $('help-dialog'),
+  helpCloseBtn:     () => $('help-close-btn'),
   chOsd:            () => $('ch-osd'),
   chOsdNum:         () => $('ch-osd-num'),
   hudNumpadBtn:     () => $('hud-numpad-btn'),
@@ -232,6 +256,24 @@ function showScreen(name) {
 }
 
 /* ══════════════════════════════════════════════════════════
+   HELP DIALOG
+══════════════════════════════════════════════════════════ */
+function showHelpDialog() {
+  state.helpDialogOpen = true;
+  dom.helpDialog().classList.add('active');
+  dom.helpCloseBtn().classList.add('focused');
+}
+
+function hideHelpDialog() {
+  state.helpDialogOpen = false;
+  dom.helpDialog().classList.remove('active');
+  dom.helpCloseBtn().classList.remove('focused');
+  // Return focus dynamically
+  if (state.activeScreen === 'home') dom.btnHelp().focus();
+  else if (state.activeScreen === 'player') dom.playerScreen().focus();
+}
+
+/* ══════════════════════════════════════════════════════════
    EXIT DIALOG
 ══════════════════════════════════════════════════════════ */
 function showExitDialog() {
@@ -295,6 +337,12 @@ function toggleFavorite(channelId) {
     state.favorites.add(channelId);
   }
   saveFavorites();
+
+  const ch = state.allChannels.find(c => c.id === channelId);
+  if (ch && ch.domElement) {
+    const btn = ch.domElement.querySelector('.card-fav-btn');
+    if (btn) btn.classList.toggle('active', state.favorites.has(channelId));
+  }
   
   // Rebuild categories to update Favourites count/presence
   buildCategories(state.allChannels);
@@ -333,10 +381,44 @@ function toggleFavoritePlayer() {
 ══════════════════════════════════════════════════════════ */
 async function init() {
   loadFavorites();
+  
+  // Apply saved layout
+  if (state.layoutMode === 'list') {
+    dom.channelGrid().classList.add('list-view');
+    if (dom.btnLayoutGrid()) dom.btnLayoutGrid().classList.remove('active');
+    if (dom.btnLayoutList()) dom.btnLayoutList().classList.add('active');
+  }
+
+  // Set up layout toggles
+  if (dom.btnLayoutGrid() && dom.btnLayoutList()) {
+    dom.btnLayoutGrid().addEventListener('click', () => switchLayout('grid'));
+    dom.btnLayoutList().addEventListener('click', () => switchLayout('list'));
+  }
+
   await loadChannels();
   
   _setupSidebarListeners();
   _setupNumpadListeners();
+}
+
+function switchLayout(mode) {
+  state.layoutMode = mode;
+  localStorage.setItem('mastv_layout', mode);
+  
+  if (mode === 'list') {
+    dom.channelGrid().classList.add('list-view');
+    dom.btnLayoutGrid().classList.remove('active');
+    dom.btnLayoutList().classList.add('active');
+  } else {
+    dom.channelGrid().classList.remove('list-view');
+    dom.btnLayoutGrid().classList.add('active');
+    dom.btnLayoutList().classList.remove('active');
+  }
+  
+  // Re-focus the current item to ensure it scrolls into view correctly
+  if (state.activeScreen === 'home' && state.focusZone === 'grid') {
+    focusGridItem(state.focusIndex);
+  }
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -358,6 +440,13 @@ async function loadChannels() {
     buildCategories(channels);
     applyFilter();
     dom.errorScreen().classList.remove('active');
+    
+    // Check for deep link hash
+    const initialHash = window.location.hash.substring(1);
+    if (initialHash) {
+      const match = state.allChannels.find(c => c.id === initialHash);
+      if (match) openPlayer(match);
+    }
   } catch (err) {
     console.error('Failed to load channels:', err);
     dom.channelGrid().innerHTML = '';
@@ -367,7 +456,12 @@ async function loadChannels() {
 }
 
 function buildCategories(channels) {
-  const otherCats = [...new Set(channels.map(c => c.category).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  const otherCats = [...new Set(channels.map(c => c.category).filter(Boolean))];
+  // Explicit user request to ensure 'Movies' is a visible category
+  if (!otherCats.includes('Movies')) otherCats.push('Movies');
+  
+  otherCats.sort((a, b) => a.localeCompare(b));
+  
   const cats = ['❤ Favourites', 'All', ...otherCats];
   state.categories = cats;
   renderSidebar(cats);
@@ -477,7 +571,6 @@ function renderSidebar(categories) {
 }
 
 function renderGrid(gridEl, channels) {
-  gridEl.innerHTML = '';
   state.gridItems = [];
 
   if (!channels.length) {
@@ -489,33 +582,44 @@ function renderGrid(gridEl, channels) {
     return;
   }
 
+  const fragment = document.createDocumentFragment();
+
   channels.forEach((ch, idx) => {
-    const card = createCard(ch, idx);
-    gridEl.appendChild(card);
+    if (!ch.domElement) {
+      ch.domElement = createCard(ch);
+    }
+    const card = ch.domElement;
+    card.dataset.idx = idx;
+    fragment.appendChild(card);
     state.gridItems.push(card);
   });
+
+  gridEl.innerHTML = '';
+  gridEl.appendChild(fragment);
 
   state.focusIndex = Math.min(state.focusIndex, state.gridItems.length - 1);
   focusGridItem(state.focusIndex);
 }
 
-function createCard(ch, idx) {
+function createCard(ch) {
   const card = document.createElement('div');
   card.className = 'channel-card';
   card.role = 'listitem';
   card.tabIndex = -1;
-  card.dataset.idx = idx;
   card.dataset.chId = ch.id;
 
   // Generate deterministic gradient and initials for fallback artwork
   const gradient = _generateChannelGradient(ch.id);
   const initials = _getChannelInitials(ch.name);
 
-  const logoHtml = ch.logo_url
-    ? `<div class="logo-fallback" style="background:${gradient}">${initials}</div>
-       <img src="${escHtml(ch.logo_url)}" alt="${escHtml(ch.name)}" loading="lazy"
-            onerror="this.style.display='none'" />`
-    : `<div class="logo-fallback" style="background:${gradient}">${initials}</div>`;
+  const explicitUrl = ch.logo_url || '';
+  const initialUrl = explicitUrl || `img/${ch.id}.png`;
+
+  const logoHtml = `
+    <div class="logo-fallback" style="background:${gradient};display:none;">${initials}</div>
+    <img src="${escHtml(initialUrl)}" alt="${escHtml(ch.name)}" loading="lazy"
+         onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" />
+  `;
 
   const isFav = state.favorites.has(ch.id);
   const chNum = ch.num != null ? `<span class="card-num">${ch.num}</span>` : '';
@@ -525,7 +629,7 @@ function createCard(ch, idx) {
     <div class="card-logo">${logoHtml}</div>
     <div class="card-info">
       <div class="card-name">${escHtml(ch.name)}</div>
-      <div class="card-category">${escHtml(ch.category || '')}</div>
+      <div class="card-category">${escHtml(ch.category || '')} <span style="opacity:0.5;font-size:0.85em;margin-left:4px">ID: ${escHtml(ch.id)}</span></div>
     </div>
     <button class="card-fav-btn${isFav ? ' active' : ''}" title="Favourite" tabindex="-1">♥</button>
   `;
@@ -547,17 +651,9 @@ function _getChannelInitials(name) {
 }
 
 function _generateChannelGradient(idStr) {
-  let hash = 0;
-  for (let i = 0; i < idStr.length; i++) {
-    hash = idStr.charCodeAt(i) + ((hash << 5) - hash);
-  }
-  // Hue 1: based directly on hash
-  const h1 = Math.abs(hash % 360);
-  // Hue 2: analagous or complementary (+40 to +140 deg)
-  const h2 = (h1 + 40 + Math.abs((hash >> 8) % 100)) % 360;
-  
-  // Keep saturation high, lightness medium-low for a premium dark-mode look
-  return `linear-gradient(135deg, hsl(${h1}, 80%, 25%), hsl(${h2}, 85%, 20%))`;
+  // We've moved away from colorful linear gradients to a sleek dark solid color
+  // to match the app's premium dark UI and remove clutter.
+  return '#1e1e1e';
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -843,19 +939,20 @@ function renderChannelPanel(filter = '') {
     const gradient = _generateChannelGradient(ch.id);
     const initials = _getChannelInitials(ch.name);
 
+    const explicitUrl = ch.logo_url || '';
+    const initialUrl = explicitUrl || `img/${ch.id}.png`;
+
     item.innerHTML = `
       <div class="pcp-item-logo">
-        ${ch.logo_url
-          ? `<div class="logo-fallback" style="background:${gradient};font-size:12px;display:flex;align-items:center;justify-content:center;width:100%;height:100%">${initials}</div>
-             <img src="${escHtml(ch.logo_url)}" alt="" loading="lazy" onerror="this.previousElementSibling.style.display='flex';this.style.display='none'" style="position:relative;z-index:2;width:100%;height:100%;object-fit:contain" />`
-          : `<div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5)">${initials}</div>`}
+        <div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:none;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5)">${initials}</div>
+        <img src="${escHtml(initialUrl)}" alt="" loading="lazy" onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" style="position:relative;z-index:2;width:100%;height:100%;object-fit:contain" />
       </div>
       <div class="pcp-item-info">
         <div class="pcp-item-name">
           ${state.favorites.has(ch.id) ? '<span style="color:#e5142a;margin-right:4px;font-size:11px">♥</span>' : ''}
-          ${escHtml(ch.name)}
+          ${ch.num != null ? `<span style="opacity:0.7;margin-right:4px">${ch.num}.</span>` : ''}${escHtml(ch.name)}
         </div>
-        <div class="pcp-item-cat">${escHtml(ch.category || '')}</div>
+        <div class="pcp-item-cat">${escHtml(ch.category || '')} <span style="opacity:0.5;font-size:0.85em;margin-left:4px">ID: ${escHtml(ch.id)}</span></div>
       </div>
     `;
     list.appendChild(item);
@@ -900,14 +997,20 @@ function openPlayer(channel) {
   showScreen('player');
   state.focusZone = 'player';
   state.currentChannel = channel;
+  
+  if (window.location.hash.substring(1) !== channel.id) {
+    history.replaceState(null, '', `#${channel.id}`);
+  }
 
   const hudLogo = dom.hudLogo();
-  if (channel.logo_url) {
-    hudLogo.src = channel.logo_url;
-    hudLogo.style.display = '';
-  } else {
-    hudLogo.style.display = 'none';
-  }
+  const explicitUrl = channel.logo_url || '';
+  const initialUrl = explicitUrl || `img/${channel.id}.png`;
+  
+  hudLogo.src = initialUrl;
+  hudLogo.style.display = '';
+  hudLogo.onerror = function() {
+    window.onAppImageError(this, channel.id, explicitUrl);
+  };
   dom.hudName().textContent = `${channel.num != null ? channel.num + '. ' : ''}${channel.name}`;
   dom.hudStatus().textContent = 'Connecting…';
   dom.streamError().classList.remove('active');
@@ -930,6 +1033,9 @@ function updateHudFavBtn() {
 function goHome() {
   stopStream();
   showScreen('home');
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
   state.focusZone = 'grid';
   focusGridItem(Math.max(0, Math.min(state.focusIndex, state.gridItems.length - 1)));
 }
@@ -1091,6 +1197,13 @@ document.addEventListener('keydown', e => {
   if (state.exitDialogOpen) {
     e.preventDefault();
     handleExitDialogNav(nav);
+    return;
+  }
+
+  // Help dialog captures input to close
+  if (state.helpDialogOpen) {
+    e.preventDefault();
+    if (isEnter || isBack) hideHelpDialog();
     return;
   }
 
@@ -1259,6 +1372,8 @@ dom.hudFsBtn().addEventListener('click', toggleFullscreen);
 dom.pcpCloseBtn().addEventListener('click', closeChannelPanel);
 dom.exitStay().addEventListener('click', hideExitDialog);
 dom.exitLeave().addEventListener('click', exitApp);
+dom.btnHelp().addEventListener('click', showHelpDialog);
+dom.helpCloseBtn().addEventListener('click', hideHelpDialog);
 
 /* Panel search input — filter list on every keystroke */
 dom.pcpSearchInput().addEventListener('input', () => {
@@ -1312,6 +1427,21 @@ dom.playerScreen().addEventListener('click', (e) => {
     const hud = dom.playerHud();
     if (hud.classList.contains('hidden')) showHud();
     else hud.classList.add('hidden'); // Tap to dismiss
+  }
+});
+
+/* ══════════════════════════════════════════════════════════
+   DEEP LINKING / URL HASH ROUTING
+══════════════════════════════════════════════════════════ */
+window.addEventListener('hashchange', () => {
+  const hash = window.location.hash.substring(1);
+  if (!hash && state.activeScreen === 'player') {
+    goHome();
+  } else if (hash) {
+    const match = state.allChannels.find(c => c.id === hash);
+    if (match && state.currentChannel?.id !== hash) {
+      openPlayer(match);
+    }
   }
 });
 

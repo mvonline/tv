@@ -4,3 +4,4 @@ __pycache__/
 src-tauri/target/
 .claude/
 dist/
+credentials.txt

@@ -286,6 +286,19 @@ def extract_stream_url(
             if src and (".m3u8" in src or ".mp4" in src or ".mp3" in src):
                 return src
 
+    # 1.5 Check Schema.org JSON-LD for AudioObject/VideoObject
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(script.string)
+            if isinstance(data, dict):
+                contentUrl = data.get("contentUrl")
+                if contentUrl and str(contentUrl).startswith("http"):
+                    if (".m3u8" in contentUrl or ".mp4" in contentUrl or ".mp3" in contentUrl) or \
+                       (data.get("@type") in ("AudioObject", "VideoObject")):
+                        return contentUrl
+        except Exception:
+            pass
+
     # 2. VideoJS data-setup JSON attribute
     for el in soup.find_all(attrs={"data-setup": True}):
         setup_text = el["data-setup"]

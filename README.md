@@ -60,6 +60,30 @@ The TV app automatically skips channels with `working: false` or no stream URL.
 
 ---
 
+### 5. Categorize Channels (AI-Powered)
+
+```bash
+# Configure your Gemini API key (Optional, but highly recommended)
+# Windows (PowerShell):
+$env:GEMINI_API_KEY="your-free-api-key"
+# macOS / Linux:
+export GEMINI_API_KEY="your-free-api-key"
+
+python smart_categorizer.py
+```
+
+This offline utility normalizes the raw channel categories into clean, standardized master themes (Sports, News, Music, Movies, Kids, etc). It uses a lightning-fast local rule engine to instantly map known channels, and seamlessly falls back to the **Google Gemini API** (if an API key is provided) to intelligently categorize the remaining complex channels.
+
+---
+
+### 6. Test a Single Channel URL
+
+```bash
+python scrape_url.py "https://www.parsatv.com/name=Radio-Yar#radio"
+```
+
+A standalone debugging utility that runs the core extraction logic against a single ParsaTV URL and prints the raw underlying stream. Extremely useful for verifying extraction fixes or extracting audio streams directly without scraping the entire site.
+
 ## Cross-Platform Builds (Windows, macOS, Linux, iOS, Android)
 
 This app is configured with **Tauri v2** to build native applications for 7 platforms from the same HTML5 codebase. 
@@ -175,6 +199,8 @@ const CONFIG = {
 ├── .github/workflows/ # Cloud build CI/CD pipelines
 ├── src-tauri/         # Desktop/Mobile configuration
 ├── scraper.py         # Scrapes parsatv.com → channels.json
+├── scrape_url.py      # Standalone single-channel debug scraper
+├── smart_categorizer.py # AI-powered dual-engine categorizing tool
 ├── stream_checker.py  # Validates stream URLs
 ├── index.html         # TV app entry point
 ├── app.js             # Navigation, player, search logic
