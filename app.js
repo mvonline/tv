@@ -39,8 +39,10 @@ window.onAppImageError = function(imgEl, chId, explicitUrl) {
     imgEl.setAttribute('src', `img/${chId}.webp`);
   } else {
     imgEl.style.display = 'none';
+    imgEl.classList.remove('loaded');
     if (imgEl.previousElementSibling && imgEl.previousElementSibling.classList.contains('logo-fallback')) {
       imgEl.previousElementSibling.style.display = 'flex';
+      imgEl.previousElementSibling.classList.add('active'); // Optional helper class
     }
   }
 };
@@ -616,8 +618,9 @@ function createCard(ch) {
   const initialUrl = explicitUrl || `img/${ch.id}.png`;
 
   const logoHtml = `
-    <div class="logo-fallback" style="background:${gradient};display:none;">${initials}</div>
+    <div class="logo-fallback" style="background:${gradient};">${initials}</div>
     <img src="${escHtml(initialUrl)}" alt="${escHtml(ch.name)}" loading="lazy"
+         onload="this.classList.add('loaded')"
          onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" />
   `;
 
@@ -944,8 +947,11 @@ function renderChannelPanel(filter = '') {
 
     item.innerHTML = `
       <div class="pcp-item-logo">
-        <div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:none;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5)">${initials}</div>
-        <img src="${escHtml(initialUrl)}" alt="" loading="lazy" onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" style="position:relative;z-index:2;width:100%;height:100%;object-fit:contain" />
+        <div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5)">${initials}</div>
+        <img src="${escHtml(initialUrl)}" alt="" loading="lazy" 
+             onload="this.classList.add('loaded')"
+             onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" 
+             style="position:relative;z-index:2;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity 0.3s ease" />
       </div>
       <div class="pcp-item-info">
         <div class="pcp-item-name">
@@ -1008,6 +1014,8 @@ function openPlayer(channel) {
   
   hudLogo.src = initialUrl;
   hudLogo.style.display = '';
+  hudLogo.style.opacity = '0';
+  hudLogo.onload = function() { this.style.opacity = '1'; };
   hudLogo.onerror = function() {
     window.onAppImageError(this, channel.id, explicitUrl);
   };

@@ -518,8 +518,23 @@ html, body {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
-  /* drop shadow helps it pop off the gradient behind it */
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+  
+  /* Fade-in transition to avoid flickering */
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+.card-logo img.loaded {
+  opacity: 1;
+}
+
+.logo-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex !important; /* Ensure it's visible as placeholder */
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .card-info {
