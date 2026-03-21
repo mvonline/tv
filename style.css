@@ -531,10 +531,18 @@ html, body {
 .logo-fallback {
   position: absolute;
   inset: 0;
-  display: flex !important; /* Ensure it's visible as placeholder */
+  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* When the image loads, fade out the placeholder text behind it */
+.card-logo img.loaded ~ .logo-fallback,
+.pcp-item-logo img.loaded ~ .logo-fallback {
+  opacity: 0;
 }
 
 .card-info {

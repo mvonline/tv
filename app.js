@@ -40,9 +40,9 @@ window.onAppImageError = function(imgEl, chId, explicitUrl) {
   } else {
     imgEl.style.display = 'none';
     imgEl.classList.remove('loaded');
-    if (imgEl.previousElementSibling && imgEl.previousElementSibling.classList.contains('logo-fallback')) {
-      imgEl.previousElementSibling.style.display = 'flex';
-      imgEl.previousElementSibling.classList.add('active'); // Optional helper class
+    if (imgEl.nextElementSibling && imgEl.nextElementSibling.classList.contains('logo-fallback')) {
+      imgEl.nextElementSibling.style.display = 'flex';
+      imgEl.nextElementSibling.style.opacity = '1';
     }
   }
 };
@@ -618,10 +618,10 @@ function createCard(ch) {
   const initialUrl = explicitUrl || `img/${ch.id}.png`;
 
   const logoHtml = `
-    <div class="logo-fallback" style="background:${gradient};">${initials}</div>
     <img src="${escHtml(initialUrl)}" alt="${escHtml(ch.name)}" loading="lazy"
          onload="this.classList.add('loaded')"
          onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" />
+    <div class="logo-fallback" style="background:${gradient};">${initials}</div>
   `;
 
   const isFav = state.favorites.has(ch.id);
@@ -947,11 +947,11 @@ function renderChannelPanel(filter = '') {
 
     item.innerHTML = `
       <div class="pcp-item-logo">
-        <div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5)">${initials}</div>
         <img src="${escHtml(initialUrl)}" alt="" loading="lazy" 
              onload="this.classList.add('loaded')"
              onerror="window.onAppImageError(this, '${escHtml(ch.id)}', '${escHtml(explicitUrl)}')" 
              style="position:relative;z-index:2;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity 0.3s ease" />
+        <div class="logo-fallback" style="background:${gradient};font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;position:absolute;inset:0;color:rgba(255,255,255,0.9);text-shadow:0 1px 3px rgba(0,0,0,0.5);z-index:1;transition:opacity 0.3s ease;">${initials}</div>
       </div>
       <div class="pcp-item-info">
         <div class="pcp-item-name">
