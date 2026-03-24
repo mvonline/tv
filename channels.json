@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-03-23T13:47:56Z",
-  "total": 1006,
+  "scraped_at": "2026-03-24T03:04:24Z",
+  "total": 1007,
   "channels": [
     {
       "id": "manoto-tv",
@@ -2385,7 +2385,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774281600&s=m6-ZSg69UiGvi_kzYNR-lw",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774332000&s=2s0j4TUvlxvxMZAjQbwwtw",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3853,14 +3853,14 @@
       "working": null
     },
     {
-      "id": "kaloopy-tv",
-      "name": "Kaloopy TV",
+      "id": "fashion-channel",
+      "name": "Fashion Channel",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
       "stream_url": null,
-      "page_url": "https://www.parsatv.com/name=Kaloopy-TV-HD#fashion",
+      "page_url": "https://www.parsatv.com/name=Fashion-Channel#fashion",
       "working": null
     },
     {
@@ -3886,14 +3886,14 @@
       "working": null
     },
     {
-      "id": "gems-tv",
-      "name": "GEMS TV",
+      "id": "kaloopy-tv",
+      "name": "Kaloopy TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://lo3.gemporia.com/abrgemporiaukgfx/smil:livestream.smil/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=GEMS-TV#fashion",
+      "stream_url": null,
+      "page_url": "https://www.parsatv.com/name=Kaloopy-TV-HD#fashion",
       "working": null
     },
     {
@@ -4007,6 +4007,17 @@
       "working": null
     },
     {
+      "id": "gems-tv",
+      "name": "GEMS TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://lo3.gemporia.com/abrgemporiaukgfx/smil:livestream.smil/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=GEMS-TV#fashion",
+      "working": null
+    },
+    {
       "id": "rakuten-tv",
       "name": "Rakuten TV",
       "category": "General Entertainment",
@@ -4079,7 +4090,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=TR&exp=1774280599&hash=6b7fe968c754d102765111b84f304a54896b0d346a82ff2f67574b98cc2e1e80",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1774329562&hash=95b4f719bfb75fbe23333b7eece6bd3b3200ccb5534fb36949afbdb4e1588701",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4090,7 +4101,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=TR&exp=1774280633&hash=f9bfdf66d7962ee01d213dee474c095a26f4bd3921990d68d15b890281ba3dd9",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1774329564&hash=4a44960c5d23b287a72a21fcfd717e14cf84bd2a0a936eb75a23197c8a7f696b",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4101,7 +4112,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=TR&exp=1774280662&hash=5946fa301a12bac4dfc2a09ffc5b816e18adbee17f34bcf81f1f289629567b23",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1774329566&hash=2315fa7baba5caa39521dc6e5588e8995751d6811da2291057879c812b026c8a",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6422,7 +6433,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1774273034~acl=/alraimedialive/alraitv.smil/*~hmac=9b9eef066d8658b7897d1b5b2695371a19f0af1a80b877f7c20ff392c6108ce0",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1774320867~acl=/alraimedialive/alraitv.smil/*~hmac=0e9895842771136524e2941766bf34f5a182099463e2af59d2f9242c1dcae050",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8193,7 +8204,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=0uXwGZmBkC7MXR3j-PVZ2g&e=1774359671",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=DW5casMX9q8--hsesIUO0g&e=1774407487",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -8908,7 +8919,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-de-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
