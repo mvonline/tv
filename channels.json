@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-03-24T13:51:25Z",
+  "scraped_at": "2026-03-25T03:11:22Z",
   "total": 1007,
   "channels": [
     {
@@ -119,7 +119,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/AP%20Channel%20One/chunks.m3u8",
+      "stream_url": "https://ca-rt.onetv.app:8443/ChannelOne/index-0.m3u8?token=onetv202",
       "page_url": "https://www.parsatv.com/name=Channel-One-TV#persian",
       "working": null
     },
@@ -680,7 +680,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/TODAY%20TV/chunks.m3u8",
+      "stream_url": "https://todayhls.wns.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Today-TV#persian",
       "working": null
     },
@@ -823,7 +823,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/IR%20-%20GEM%20Sport/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/IR%20-%20GEM%20Sport/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=GEM-Sport#persian",
       "working": null
     },
@@ -845,7 +845,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/IR%20-%20GEM%20Documentary/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/IR%20-%20GEM%20Documentary/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=GEM-Documentary#persian",
       "working": null
     },
@@ -867,7 +867,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/IR%20-%20GEM%20FIT_/chunks.m3u8",
+      "stream_url": "https://ca-rt.onetv.app/gemfit/index-0.m3u8?token=onetv202",
       "page_url": "https://www.parsatv.com/name=GEM-Fit#persian",
       "working": null
     },
@@ -999,7 +999,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/IR%20-%20Gem%20Onyx/chunks.m3u8",
+      "stream_url": "https://ca-rt.onetv.app/gemonyx/index-0.m3u8?token=onetv202",
       "page_url": "https://www.parsatv.com/name=GEM-Onyx#persian",
       "working": null
     },
@@ -1065,7 +1065,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Royal%20TV/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Royal%20TV/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Royal-TV#persian",
       "working": null
     },
@@ -1263,7 +1263,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Persiana%20Sports/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Persiana%20Sports/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Persiana-Sports-1#persian",
       "working": null
     },
@@ -1274,7 +1274,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Persiana%20Sports2/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Persiana%20Sports2/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Persiana-Sports-2#persian",
       "working": null
     },
@@ -1285,7 +1285,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Persiana%20Sports3/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Persiana%20Sports3/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Persiana-Sports-3#persian",
       "working": null
     },
@@ -2264,7 +2264,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": null,
+      "stream_url": "https://assets.tegnaone.com/assets/CCT/videos/b90b2676-69d4-4adc-a674-a57d56b15d68/20260310T065428/master.m3u8",
       "page_url": "https://www.parsatv.com/name=CBS-8-San-Diego#news",
       "working": null
     },
@@ -2385,7 +2385,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774368000&s=TMGhLZjP8isdEvi1oN37YA",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774418400&s=PN00Q_IenfqeaA1SSF14IA",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4090,7 +4090,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1774368337&hash=3483090949ed4f72fcb1d6208f7954d76fdb3d3806fd4076719dc80da2758702",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=CN&exp=1774415386&hash=6bfd3481d5af47a61cb8ada0101ab1d78427801ac69b717b5434f013d85163fd",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4101,7 +4101,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1774368184&hash=79cd633af782f25aaa3c4a9958f41652bddbb0c002291acb61a8b8c1fb32df07",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=DZ&exp=1774412475&hash=51426d7499c3ff3c5d24acdf064bbf1fd0e3fedb363d5de11832ce57348d82c2",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4112,7 +4112,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1774368341&hash=422d4aac57747998b8ee0fc5fc7a75206e8c13a7f2b1d67eb4054bb94e98598c",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1774416320&hash=7272f56d101765b9486f6f753b86993606666b40c6d7c65f9e76ad603445ac1f",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6433,7 +6433,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1774359658~acl=/alraimedialive/alraitv.smil/*~hmac=c30fa39a6bac7f6d539465677318d02128064e6d7f783fb19425503aa2bd7517",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1774407643~acl=/alraimedialive/alraitv.smil/*~hmac=7ebc6a918c74d5abdec931ebc7139d0ee6acf1603a34b18f3292d99b7b529084",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -7632,7 +7632,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Maarif%20TV/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/Maarif%20TV/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Maarif-TV#afghan",
       "working": null
     },
@@ -8204,7 +8204,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=obBwYFjNgFccMrwWkRAtzw&e=1774445740",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=pjk4A0Ev1UKeanh6wsIPiA&e=1774494062",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -8897,7 +8897,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/AyazTV/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/AyazTV/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Ayaz-TV#turkish",
       "working": null
     },
@@ -8919,7 +8919,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10118,7 +10118,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tv1/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/tv1/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-1#irib",
       "working": null
     },
@@ -10129,7 +10129,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tv2/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/tv2/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-2#irib",
       "working": null
     },
@@ -10140,7 +10140,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/tv3/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/tv3/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabakeh-3#irib",
       "working": null
     },
@@ -10151,7 +10151,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tv4/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/tv4/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-4#irib",
       "working": null
     },
@@ -10162,7 +10162,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-tehran/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/tehran/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-5#irib",
       "working": null
     },
@@ -10173,7 +10173,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-varzesh/chunks.m3u8",
+      "stream_url": "https://cf-cors-aparat-i9o6v.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-varzesh/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Varzesh#irib",
       "working": null
     },
@@ -10184,7 +10184,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-khabar/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/irinn/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Khabar#irib",
       "working": null
     },
@@ -10195,7 +10195,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-khabar2/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/irinn2/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Khabar-2#irib",
       "working": null
     },
@@ -10327,7 +10327,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-aparat-u5k74b3we1.cfcross.workers.dev/?url=https://gg.hls2.xyz/live/irib-amoozesh/chunks.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/amouzesh/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Amouzesh#irib",
       "working": null
     },
@@ -10690,7 +10690,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/goHbjWCkGYDnCbktiPWdmxco/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
