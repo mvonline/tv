@@ -20,6 +20,8 @@ from urllib.parse import urljoin, quote
 
 import requests
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 BASE_URL = "https://www.parsatv.com"
 OUTPUT_FILE = "channels.json"
@@ -44,6 +46,12 @@ HEADERS = {
     ),
     "Accept-Language": "en-US,en;q=0.9,fa;q=0.8",
 }
+
+# Retry transient transport failures that occasionally happen on parsatv
+# (e.g. connection reset mid-handshake / temporary 5xx responses).
+RETRY_TOTAL = 3
+RETRY_BACKOFF_FACTOR = 0.7
+RETRY_STATUS_CODES = (429, 500, 502, 503, 504)
 
 # Language inference based on category name
 LANGUAGE_MAP = {
@@ -126,6 +134,23 @@ def get_raw(
     except requests.RequestException as e:
         print(f"  [ERROR] Failed to fetch {url}: {e}")
         return None
+
+
+def configure_session(session: requests.Session) -> requests.Session:
+    """Attach retry-enabled adapters to a requests session."""
+    retry = Retry(
+        total=RETRY_TOTAL,
+        connect=RETRY_TOTAL,
+        read=RETRY_TOTAL,
+        backoff_factor=RETRY_BACKOFF_FACTOR,
+        status_forcelist=RETRY_STATUS_CODES,
+        allowed_methods=frozenset({"GET", "HEAD"}),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    return session
 
 
 # ─────────────────────────────────────────────────────────────
@@ -502,22 +527,39 @@ def build_channels_json(raw_channels: list[dict], session: requests.Session) -> 
 
     result_channels = []
     total = len(raw_channels)
+    existing_by_id = {}
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            old_data = json.load(f)
+            for old_ch in old_data.get("channels", []):
+                old_id = old_ch.get("id")
+                if old_id:
+                    existing_by_id[old_id] = old_ch
+    except Exception:
+        pass
 
     for i, ch in enumerate(raw_channels, 1):
         name = ch["name"]
         page_url = ch["page_url"]
         category = ch.get("category", "General")
+        channel_id = slugify(name)
 
         print(f"[{i}/{total}] Processing: {name}")
         print(f"         URL: {page_url}")
         stream_url = scrape_channel_page(page_url, session)
+        if not stream_url:
+            previous = existing_by_id.get(channel_id, {})
+            previous_stream = previous.get("stream_url")
+            if previous_stream:
+                stream_url = previous_stream
+                print("  [fallback] Using previous stream_url from channels.json")
 
         status = f"  ✓ stream: {stream_url[:70]}" if stream_url else "  ✗ no stream found"
         print(status)
 
         result_channels.append(
             {
-                "id": slugify(name),
+                "id": channel_id,
                 "name": name,
                 "category": category,
                 "subcategory": None,
@@ -546,7 +588,7 @@ def main():
     print("ParsaTV Channel Scraper")
     print("=" * 60)
 
-    with requests.Session() as session:
+    with configure_session(requests.Session()) as session:
         raw_channels = scrape_homepage(session)
 
         if not raw_channels:

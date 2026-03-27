@@ -11,7 +11,7 @@ Usage:
 import sys
 import requests
 from urllib.parse import urljoin
-from scraper import scrape_channel_page, BASE_URL
+from scraper import scrape_channel_page, BASE_URL, configure_session
 
 def main():
     if len(sys.argv) < 2:
@@ -34,14 +34,14 @@ def main():
     print(f"[*] Target URL: {url}")
     print(f"[*] Scraping...")
 
-    with requests.Session() as session:
+    with configure_session(requests.Session()) as session:
         stream_url = scrape_channel_page(url, session)
 
     if stream_url:
-        print(f"\n[✓] Found stream URL:")
+        print("\n[OK] Found stream URL:")
         print(stream_url)
     else:
-        print("\n[✗] No stream URL found for this page.")
+        print("\n[X] No stream URL found for this page.")
         sys.exit(1)
 
 if __name__ == "__main__":
