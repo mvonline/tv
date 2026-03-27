@@ -198,6 +198,13 @@ html, body {
   background: rgba(229, 160, 13, 0.15);
   color: var(--accent);
 }
+.ui-mode-btn {
+  min-width: 72px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 6px 10px;
+}
 .layout-btn:focus, .layout-btn:hover {
   color: var(--text-primary);
 }
@@ -1390,6 +1397,57 @@ kbd {
   border: 1px solid #555;
   box-shadow: 0 2px 0 #222;
   margin: 0 2px;
+}
+
+/* ── Optional Modern UI Mode (Classic remains default) ───── */
+body.ui-modern {
+  --bg: #070b12;
+  --bg-card: #121a28;
+  --bg-sidebar: #0d1421;
+  --border: #263246;
+  --accent: #4db8ff;
+  --accent-light: #88d5ff;
+  --text-primary: #edf4ff;
+  --text-muted: #9db0c6;
+  --focus-glow: 0 0 0 3px rgba(77, 184, 255, 0.5), 0 0 22px rgba(77, 184, 255, 0.35);
+}
+
+body.ui-modern #screen-home {
+  background: radial-gradient(1300px 650px at 75% -10%, rgba(77,184,255,0.12), transparent 50%), var(--bg);
+}
+
+body.ui-modern .top-bar {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: rgba(13, 20, 33, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.ui-modern .sidebar {
+  background: linear-gradient(180deg, rgba(14, 25, 40, 0.95), rgba(9, 16, 28, 0.95));
+}
+
+body.ui-modern .channel-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(26, 39, 58, 0.95), rgba(14, 21, 33, 0.98));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+body.ui-modern .channel-card:hover,
+body.ui-modern .channel-card.focused {
+  border-color: var(--accent);
+  transform: translateY(-2px) scale(1.03);
+}
+
+body.ui-modern .card-logo {
+  background: #111a2a;
+}
+
+body.ui-modern .layout-btn.active,
+body.ui-modern .search-btn:focus,
+body.ui-modern .search-btn.focused {
+  background: rgba(77, 184, 255, 0.16);
 }
 
 

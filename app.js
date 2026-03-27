@@ -13,6 +13,7 @@ const CONFIG = {
   overlayHideDelay: 3000,
   skeletonCount: 15,
   favStorageKey: 'mastv_favorites',
+  uiModeStorageKey: 'mastv_ui_mode',
 };
 
 /** Returns the number of columns currently rendered in the channel grid. */
@@ -70,6 +71,7 @@ const state = {
   panelOpen: false,
   panelFocusIdx: 0,
   layoutMode: localStorage.getItem('mastv_layout') || 'grid',
+  uiMode: localStorage.getItem(CONFIG.uiModeStorageKey) || 'classic',
 };
 
 /* ── DOM refs ─────────────────────────────────────────────── */
@@ -91,6 +93,7 @@ const dom = {
   btnSearch: () => $('btn-search'),
   btnLayoutGrid: () => $('btn-layout-grid'),
   btnLayoutList: () => $('btn-layout-list'),
+  btnUiMode: () => $('btn-ui-mode'),
   btnHelp: () => $('btn-help'),
   playerVideo: () => $('player-video'),
   playerHud: () => $('player-hud'),
@@ -383,6 +386,7 @@ function toggleFavoritePlayer() {
 ══════════════════════════════════════════════════════════ */
 async function init() {
   loadFavorites();
+  applyUiMode();
 
   // Apply saved layout
   if (state.layoutMode === 'list') {
@@ -396,11 +400,30 @@ async function init() {
     dom.btnLayoutGrid().addEventListener('click', () => switchLayout('grid'));
     dom.btnLayoutList().addEventListener('click', () => switchLayout('list'));
   }
+  if (dom.btnUiMode()) {
+    dom.btnUiMode().addEventListener('click', toggleUiMode);
+  }
 
   await loadChannels();
 
   _setupSidebarListeners();
   _setupNumpadListeners();
+}
+
+function applyUiMode() {
+  const isModern = state.uiMode === 'modern';
+  document.body.classList.toggle('ui-modern', isModern);
+  const btn = dom.btnUiMode();
+  if (!btn) return;
+  btn.classList.toggle('active', isModern);
+  btn.textContent = isModern ? 'Classic' : 'Modern';
+  btn.title = isModern ? 'Switch to Classic UI' : 'Switch to Modern UI';
+}
+
+function toggleUiMode() {
+  state.uiMode = state.uiMode === 'modern' ? 'classic' : 'modern';
+  localStorage.setItem(CONFIG.uiModeStorageKey, state.uiMode);
+  applyUiMode();
 }
 
 function switchLayout(mode) {
