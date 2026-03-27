@@ -96,6 +96,7 @@ const dom = {
   btnUiMode: () => $('btn-ui-mode'),
   btnHelp: () => $('btn-help'),
   playerVideo: () => $('player-video'),
+  playerYoutube: () => $('player-youtube'),
   playerHud: () => $('player-hud'),
   hudLogo: () => $('hud-logo'),
   hudName: () => $('hud-name'),
@@ -411,17 +412,28 @@ async function init() {
 }
 
 function applyUiMode() {
-  const isModern = state.uiMode === 'modern';
-  document.body.classList.toggle('ui-modern', isModern);
+  const mode = state.uiMode;
+  document.body.classList.toggle('ui-modern', mode === 'modern');
+  document.body.classList.toggle('ui-neo', mode === 'neo');
   const btn = dom.btnUiMode();
   if (!btn) return;
-  btn.classList.toggle('active', isModern);
-  btn.textContent = isModern ? 'Classic' : 'Modern';
-  btn.title = isModern ? 'Switch to Classic UI' : 'Switch to Modern UI';
+  btn.classList.toggle('active', mode !== 'classic');
+  if (mode === 'modern') {
+    btn.textContent = 'Mode: Modern';
+    btn.title = 'Switch UI mode (Classic -> Modern -> Neo)';
+  } else if (mode === 'neo') {
+    btn.textContent = 'Mode: Neo';
+    btn.title = 'Switch UI mode (Classic -> Modern -> Neo)';
+  } else {
+    btn.textContent = 'Mode: Classic';
+    btn.title = 'Switch UI mode (Classic -> Modern -> Neo)';
+  }
 }
 
 function toggleUiMode() {
-  state.uiMode = state.uiMode === 'modern' ? 'classic' : 'modern';
+  if (state.uiMode === 'classic') state.uiMode = 'modern';
+  else if (state.uiMode === 'modern') state.uiMode = 'neo';
+  else state.uiMode = 'classic';
   localStorage.setItem(CONFIG.uiModeStorageKey, state.uiMode);
   applyUiMode();
 }
@@ -1077,10 +1089,27 @@ function goHome() {
 
 function startStream(url) {
   const video = dom.playerVideo();
+  const youtube = dom.playerYoutube();
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   video.src = '';
+  video.style.display = 'block';
+  youtube.style.display = 'none';
+  youtube.src = '';
 
   if (!url) { showStreamError(); return; }
+
+  const ytEmbedUrl = getYouTubeEmbedUrl(url);
+  if (ytEmbedUrl) {
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    video.style.display = 'none';
+    youtube.style.display = 'block';
+    youtube.src = ytEmbedUrl;
+    dom.hudStatus().textContent = 'Playing';
+    dom.bufferingSpinner().classList.remove('active');
+    return;
+  }
 
   if (Hls.isSupported()) {
     const hls = new Hls({
@@ -1135,14 +1164,46 @@ function startStream(url) {
 
 function stopStream() {
   const video = dom.playerVideo();
+  const youtube = dom.playerYoutube();
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   video.src = '';
   video.load();
+  video.style.display = 'block';
+  youtube.style.display = 'none';
+  youtube.src = '';
 }
 
 function showStreamError() {
   dom.bufferingSpinner().classList.remove('active');
   dom.streamError().classList.add('active');
+}
+
+function getYouTubeEmbedUrl(rawUrl) {
+  if (!rawUrl || typeof rawUrl !== 'string') return null;
+  try {
+    const parsed = new URL(rawUrl);
+    const host = parsed.hostname.toLowerCase();
+    let videoId = '';
+
+    if (host.includes('youtu.be')) {
+      videoId = parsed.pathname.split('/').filter(Boolean)[0] || '';
+    } else if (host.includes('youtube.com') || host.includes('youtube-nocookie.com')) {
+      if (parsed.pathname === '/watch') {
+        videoId = parsed.searchParams.get('v') || '';
+      } else if (parsed.pathname.startsWith('/embed/')) {
+        videoId = parsed.pathname.split('/')[2] || '';
+      } else if (parsed.pathname.startsWith('/shorts/')) {
+        videoId = parsed.pathname.split('/')[2] || '';
+      } else if (parsed.pathname.startsWith('/live/')) {
+        videoId = parsed.pathname.split('/')[2] || '';
+      }
+    }
+
+    if (!videoId) return null;
+    return `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?autoplay=1&playsinline=1&rel=0&modestbranding=1`;
+  } catch {
+    return null;
+  }
 }
 
 /* HUD auto-hide */

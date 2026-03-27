@@ -167,19 +167,26 @@ JS_STREAM_PATTERNS = [
     r"'(https?://[^\s\"'<>]+\.m3u8(?:[?#][^\s\"'<>]*)?)'",
     r"'(https?://[^\s\"'<>]+\.mp4(?:[?#][^\s\"'<>]*)?)'",
     r"'(https?://[^\s\"'<>]+\.mp3(?:[?#][^\s\"'<>]*)?)'",
+    r'"(https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)[^\s"\'<>]*)"',
+    r"'(https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)[^\s\"'<>]*)'",
 
     # JW Player:  file: "...",  sources: [{file:"..."}]
     r"[\"']?file[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
+    r"[\"']?file[\"']\s*:\s*[\"'](https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)[^\"']*)[\"']",
 
     # VideoJS / generic:  src: "..."
     r"[\"']?src[\"']\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
+    r"[\"']?src[\"']\s*:\s*[\"'](https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)[^\"']*)[\"']",
 
     # Generic key=value or key: value — covers many custom players
     r"[\"']?(?:source|stream|hls|hlsUrl|streamUrl|videoUrl|liveUrl|playUrl|hlsSrc|m3u8|url)"
     r"[\"']\s*[=:]\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
+    r"[\"']?(?:source|stream|hls|hlsUrl|streamUrl|videoUrl|liveUrl|playUrl|hlsSrc|m3u8|url)"
+    r"[\"']\s*[=:]\s*[\"'](https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)[^\"']*)[\"']",
 
     # Flowplayer / Plyr object notation
     r"src\s*:\s*[\"']([^\"']+(?:\.m3u8|\.mp4|\.mp3)[^\"']*)[\"']",
+    r"src\s*:\s*[\"'](https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)[^\"']*)[\"']",
 
     # type: application/x-mpegURL with nearby src
     r"application/x-mpegURL[^}]{0,200}?src\s*:\s*[\"']([^\"']+)[\"']",
@@ -187,6 +194,23 @@ JS_STREAM_PATTERNS = [
     # Unquoted CDN stream hostnames (common in minified JS)
     r'(https?://[a-z0-9.\-]+(?:akamai|cdn|stream|live|hls|edge|media)[^\s"\'<>&]{10,})',
 ]
+
+YOUTUBE_URL_PATTERN = re.compile(
+    r"^https?://(?:www\.)?(?:youtube\.com|youtu\.be|youtube-nocookie\.com)/",
+    re.IGNORECASE,
+)
+
+
+def _is_supported_stream_url(value: str) -> bool:
+    """Accept direct media URLs and YouTube URLs."""
+    if not isinstance(value, str):
+        return False
+    url = value.strip()
+    if not url.startswith("http"):
+        return False
+    if YOUTUBE_URL_PATTERN.search(url):
+        return True
+    return (".m3u8" in url or ".mp4" in url or ".mp3" in url)
 
 # Regex to find parsatv PHP fetch endpoint inside page scripts
 # e.g. fetch('/streams/fetch/asg/sh3.php') or $.get('/streams/fetch/irib/sh3.php', ...)
@@ -206,7 +230,7 @@ def _search_scripts_for_stream(soup: BeautifulSoup) -> str | None:
             match = re.search(pattern, text, re.IGNORECASE)
             if match:
                 url = match.group(1)
-                if url.startswith("http") and len(url) > 15:
+                if _is_supported_stream_url(url) and len(url) > 15:
                     return url
     return None
 
@@ -253,7 +277,7 @@ def _fetch_stream_from_php(
         # Common patterns in ther response
         for key in ("file", "url", "src", "stream", "hls", "source", "link"):
             val = data.get(key, "")
-            if val and (".m3u8" in val or ".mp4" in val or ".mp3" in val):
+            if _is_supported_stream_url(val):
                 return val
         # Sometimes it's nested: sources: [{file: "..."}]
         sources = data.get("sources") or data.get("playlist") or []
@@ -262,7 +286,7 @@ def _fetch_stream_from_php(
                 if isinstance(src, dict):
                     for key in ("file", "src", "url"):
                         val = src.get(key, "")
-                        if val and (".m3u8" in val or ".mp4" in val or ".mp3" in val):
+                        if _is_supported_stream_url(val):
                             return val
     except (json.JSONDecodeError, AttributeError):
         pass
@@ -272,7 +296,7 @@ def _fetch_stream_from_php(
         m = re.search(pattern, raw, re.IGNORECASE)
         if m:
             url = m.group(1)
-            if url.startswith("http") and len(url) > 15:
+            if _is_supported_stream_url(url) and len(url) > 15:
                 return url
 
     return None
@@ -308,7 +332,7 @@ def extract_stream_url(
     for tag in soup.find_all(["source", "video", "audio"]):
         for attr in ("src", "data-src"):
             src = tag.get(attr, "")
-            if src and (".m3u8" in src or ".mp4" in src or ".mp3" in src):
+            if _is_supported_stream_url(src):
                 return src
 
     # 1.5 Check Schema.org JSON-LD for AudioObject/VideoObject
@@ -318,7 +342,7 @@ def extract_stream_url(
             if isinstance(data, dict):
                 contentUrl = data.get("contentUrl")
                 if contentUrl and str(contentUrl).startswith("http"):
-                    if (".m3u8" in contentUrl or ".mp4" in contentUrl or ".mp3" in contentUrl) or \
+                    if _is_supported_stream_url(contentUrl) or \
                        (data.get("@type") in ("AudioObject", "VideoObject")):
                         return contentUrl
         except Exception:
@@ -331,7 +355,7 @@ def extract_stream_url(
             m = re.search(pattern, setup_text, re.IGNORECASE)
             if m:
                 url = m.group(1)
-                if url.startswith("http"):
+                if _is_supported_stream_url(url):
                     return url
 
     # 3. Search all <script> blocks
@@ -344,7 +368,7 @@ def extract_stream_url(
         for attr, val in el.attrs.items():
             if not isinstance(val, str):
                 continue
-            if attr.startswith("data-") and (".m3u8" in val or ".mp4" in val or ".mp3" in val):
+            if attr.startswith("data-") and _is_supported_stream_url(val):
                 if val.startswith("http"):
                     return val
 
@@ -359,6 +383,10 @@ def extract_stream_url(
                 src = "https:" + src
             elif not src.startswith("http"):
                 src = urljoin(page_url, src)
+
+            if YOUTUBE_URL_PATTERN.search(src):
+                print(f"  [youtube] Returning source URL as-is: {src}")
+                return src
 
             if "telewebion" in src and "/live/" in src:
                 match = re.search(r'/live/([^/?#]+)', src)
@@ -387,7 +415,7 @@ def extract_stream_url(
                     for tag in iframe_soup.find_all(["source", "video", "audio"]):
                         for attr in ("src", "data-src"):
                             sv = tag.get(attr, "")
-                            if sv and (".m3u8" in sv or ".mp4" in sv or ".mp3" in sv):
+                            if _is_supported_stream_url(sv):
                                 return sv
                     result = _search_scripts_for_stream(iframe_soup)
                     if result:

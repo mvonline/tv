@@ -199,8 +199,8 @@ html, body {
   color: var(--accent);
 }
 .ui-mode-btn {
-  min-width: 72px;
-  font-size: 12px;
+  min-width: 116px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.3px;
   padding: 6px 10px;
@@ -690,6 +690,14 @@ html, body {
   max-height: 100dvh;
   object-fit: contain;
   display: block;
+}
+
+#player-youtube {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000;
 }
 
 /* HUD */
@@ -1448,6 +1456,144 @@ body.ui-modern .layout-btn.active,
 body.ui-modern .search-btn:focus,
 body.ui-modern .search-btn.focused {
   background: rgba(77, 184, 255, 0.16);
+}
+
+/* ── Optional Neo UI Mode (layout-first redesign) ─────────── */
+body.ui-neo {
+  --bg: #0b0912;
+  --bg-card: #1a1426;
+  --bg-sidebar: #130f1e;
+  --border: #3b2b5d;
+  --accent: #b16dff;
+  --accent-light: #d0a6ff;
+  --text-primary: #f5eeff;
+  --text-muted: #b8a9d1;
+  --focus-glow: 0 0 0 3px rgba(177, 109, 255, 0.45), 0 0 26px rgba(177, 109, 255, 0.35);
+}
+
+body.ui-neo #screen-home {
+  background: radial-gradient(900px 500px at 5% 8%, rgba(177,109,255,0.2), transparent 55%),
+              radial-gradient(1200px 700px at 95% -5%, rgba(255,75,205,0.14), transparent 50%),
+              var(--bg);
+}
+
+/* Make home layout feel totally different: category rail on top */
+body.ui-neo .home-content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+}
+
+body.ui-neo .top-bar {
+  background: rgba(19, 15, 30, 0.88);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+body.ui-neo .sidebar {
+  width: 100%;
+  border-right: none;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(14, 10, 24, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+body.ui-neo .sidebar-section-label {
+  display: none;
+}
+
+body.ui-neo .sidebar-item {
+  border: 1px solid rgba(255,255,255,0.12);
+  border-left: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  padding: 8px 14px;
+  white-space: nowrap;
+  font-size: 12px;
+  background: rgba(255,255,255,0.02);
+}
+
+body.ui-neo .sidebar-item:hover,
+body.ui-neo .sidebar-item.focused {
+  background: rgba(177,109,255,0.18);
+  border-color: rgba(177,109,255,0.75);
+}
+
+body.ui-neo .sidebar-item.selected {
+  background: rgba(177,109,255,0.24);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+body.ui-neo .grid-area {
+  padding: 20px;
+}
+
+body.ui-neo .channel-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+body.ui-neo .channel-card {
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(41, 25, 68, 0.92), rgba(22, 16, 33, 0.96));
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+body.ui-neo .channel-card:hover,
+body.ui-neo .channel-card.focused {
+  border-color: var(--accent);
+  transform: translateY(-4px) scale(1.02);
+}
+
+body.ui-neo .card-logo {
+  aspect-ratio: 21/9;
+  background: #1a1230;
+}
+
+body.ui-neo .card-info {
+  padding: 12px 14px 14px;
+}
+
+body.ui-neo .card-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body.ui-neo .card-category {
+  margin-top: 6px;
+}
+
+body.ui-neo .card-num {
+  background: rgba(177,109,255,0.8);
+  color: #12091f;
+  font-weight: 900;
+}
+
+body.ui-neo .layout-btn.active,
+body.ui-neo .search-btn:focus,
+body.ui-neo .search-btn.focused {
+  background: rgba(177,109,255,0.22);
+}
+
+@media (max-width: 767px) {
+  body.ui-neo .sidebar {
+    position: static;
+    transform: none;
+    box-shadow: none;
+  }
+  body.ui-neo .home-content::before,
+  body.ui-neo .home-content.sidebar-open::before {
+    display: none;
+  }
 }
 
 

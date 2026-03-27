@@ -17,7 +17,7 @@
 
       <!-- Top Bar -->
       <header class="top-bar">
-        <button class="mobile-menu-btn" id="btn-mobile-menu" tabindex="-1">
+        <button class="mobile-menu-btn" id="btn-mobile-menu" tabindex="-1" title="Menu" aria-label="Open menu">
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
         <div class="logo">
@@ -26,7 +26,7 @@
         <div class="spacer"></div>
         <div class="layout-toggles">
           <button class="layout-btn ui-mode-btn" id="btn-ui-mode" title="Switch UI Theme" tabindex="-1">
-            Modern
+            Mode: Classic
           </button>
           <button class="layout-btn active" id="btn-layout-grid" title="Grid View" tabindex="-1">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
@@ -75,6 +75,14 @@
     ─────────────────────────────────────────────────── -->
     <div id="screen-player" class="screen">
       <video id="player-video" playsinline autoplay></video>
+      <iframe
+        id="player-youtube"
+        title="YouTube Player"
+        src=""
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
 
       <!-- HUD Overlay -->
       <div class="player-hud" id="player-hud">
