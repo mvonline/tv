@@ -121,6 +121,36 @@ html, body {
 }
 @media (max-width: 767px) {
   .top-bar .mobile-menu-btn { display: flex; align-items: center; justify-content: center; }
+
+  /* Make sure all top-bar actions stay visible/usable on small screens */
+  .top-bar {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .top-bar .spacer { flex: 0; }
+  .top-bar .clock { display: none; }
+
+  .layout-toggles { padding: 3px; gap: 2px; }
+  .layout-btn { padding: 5px; }
+
+  /* Keep the new UI mode button compact so Search stays on-screen */
+  .ui-mode-btn {
+    min-width: 64px;
+    font-size: 10px;
+    padding: 6px 8px;
+    max-width: 74px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Search must remain viewable on mobile: icon only */
+  .top-bar .search-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+    gap: 0;
+  }
+  .top-bar .search-btn span:last-child { display: none; }
 }
 .top-bar .mobile-menu-btn:focus,
 .top-bar .mobile-menu-btn:hover {

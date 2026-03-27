@@ -72,6 +72,7 @@ const state = {
   panelFocusIdx: 0,
   layoutMode: localStorage.getItem('mastv_layout') || 'grid',
   uiMode: localStorage.getItem(CONFIG.uiModeStorageKey) || 'classic',
+  topbarFocusIdx: 0,
 };
 
 /* ── DOM refs ─────────────────────────────────────────────── */
@@ -719,15 +720,47 @@ function focusSidebarItem(idx) {
 }
 
 function focusTopbar() {
-  state.focusZone = 'topbar';
-  dom.btnSearch().classList.add('focused');
-  unfocusGrid();
-  unfocusSidebar();
+  focusTopbarItem(0);
 }
 
 function unfocusGrid() { state.gridItems.forEach(el => el.classList.remove('focused')); }
 function unfocusSidebar() { state.sidebarItems.forEach(el => el.classList.remove('focused')); }
-function unfocusTopbar() { dom.btnSearch().classList.remove('focused'); }
+function unfocusTopbar() {
+  const items = getTopbarItems();
+  const searchBtn = dom.btnSearch();
+  if (searchBtn) searchBtn.classList.remove('focused');
+  items.forEach(el => { try { el && el.blur && el.blur(); } catch { } });
+}
+
+function getTopbarItems() {
+  return [
+    dom.btnSearch(),
+    dom.btnUiMode(),
+    dom.btnLayoutGrid(),
+    dom.btnLayoutList(),
+    dom.btnHelp(),
+  ].filter(Boolean);
+}
+
+function focusTopbarItem(idx) {
+  const items = getTopbarItems();
+  if (!items.length) return;
+  idx = Math.max(0, Math.min(idx, items.length - 1));
+  state.topbarFocusIdx = idx;
+
+  unfocusGrid();
+  unfocusSidebar();
+  state.focusZone = 'topbar';
+
+  items.forEach((el, i) => {
+    if (!el) return;
+    const isSearch = el === dom.btnSearch();
+    el.classList.toggle('focused', isSearch && i === idx);
+    if (i === idx) {
+      try { el.focus(); } catch { }
+    }
+  });
+}
 
 /* Activate (select) a sidebar item — works via click or keyboard */
 function activateSidebarItem(el) {
@@ -1350,9 +1383,36 @@ function handleHomeNav({ isBack, isEnter, isUp, isDown, isLeft, isRight }) {
   }
 
   if (state.focusZone === 'topbar') {
-    if (isEnter) openSearch();
-    if (isDown) focusSidebarItem(0);
-    if (isLeft) focusSidebarItem(0);
+    const items = getTopbarItems();
+    const focused = items[state.topbarFocusIdx] || null;
+
+    if (isUp) {
+      focusGridItem(Math.max(0, Math.min(state.focusIndex, state.gridItems.length - 1)));
+      return;
+    }
+
+    if (isDown) {
+      focusSidebarItem(0);
+      return;
+    }
+
+    if (isLeft) {
+      focusTopbarItem(state.topbarFocusIdx - 1);
+      return;
+    }
+
+    if (isRight) {
+      focusTopbarItem(state.topbarFocusIdx + 1);
+      return;
+    }
+
+    if (isEnter && focused) {
+      if (focused === dom.btnSearch()) openSearch();
+      else if (focused === dom.btnUiMode()) toggleUiMode();
+      else if (focused === dom.btnLayoutGrid()) switchLayout('grid');
+      else if (focused === dom.btnLayoutList()) switchLayout('list');
+      else if (focused === dom.btnHelp()) showHelpDialog();
+    }
     return;
   }
 
