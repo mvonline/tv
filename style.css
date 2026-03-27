@@ -124,33 +124,36 @@ html, body {
 
   /* Make sure all top-bar actions stay visible/usable on small screens */
   .top-bar {
-    padding: 0 10px;
+    padding: 8px 10px;
     gap: 8px;
+    height: auto;
+    min-height: var(--topbar-h);
+    flex-wrap: wrap;
   }
-  .top-bar .spacer { flex: 0; }
-  .top-bar .clock { display: none; }
+  .top-bar .spacer { flex: 1 1 100%; display: none; } /* hide spacer to allow natural wrapping or use margins */
+  .logo { flex: 1; } /* push other items if they stay on same line, or just let them wrap */
+  
+  .top-bar .clock { 
+    display: block; 
+    font-size: 14px; 
+    min-width: auto;
+    margin-left: auto;
+  }
 
   .layout-toggles { padding: 3px; gap: 2px; }
   .layout-btn { padding: 5px; }
 
-  /* Keep the new UI mode button compact so Search stays on-screen */
-  .ui-mode-btn {
-    min-width: 64px;
-    font-size: 10px;
-    padding: 6px 8px;
-    max-width: 74px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 
-  /* Search must remain viewable on mobile: icon only */
+
+  /* Search must remain viewable on mobile: icon + text */
   .top-bar .search-btn {
-    padding: 8px 10px;
+    padding: 6px 10px;
     font-size: 12px;
-    gap: 0;
+    gap: 4px;
+    flex: 1; /* expand on next row if needed */
+    justify-content: center;
   }
-  .top-bar .search-btn span:last-child { display: none; }
+  .top-bar .search-btn span:last-child { display: inline; }
 }
 .top-bar .mobile-menu-btn:focus,
 .top-bar .mobile-menu-btn:hover {
@@ -228,13 +231,7 @@ html, body {
   background: rgba(229, 160, 13, 0.15);
   color: var(--accent);
 }
-.ui-mode-btn {
-  min-width: 116px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  padding: 6px 10px;
-}
+
 .layout-btn:focus, .layout-btn:hover {
   color: var(--text-primary);
 }

@@ -420,14 +420,11 @@ function applyUiMode() {
   if (!btn) return;
   btn.classList.toggle('active', mode !== 'classic');
   if (mode === 'modern') {
-    btn.textContent = 'Mode: Modern';
-    btn.title = 'Switch UI mode (Classic -> Modern -> Neo)';
+    btn.title = 'Mode: Modern (Click to switch)';
   } else if (mode === 'neo') {
-    btn.textContent = 'Mode: Neo';
-    btn.title = 'Switch UI mode (Classic -> Modern -> Neo)';
+    btn.title = 'Mode: Neo (Click to switch)';
   } else {
-    btn.textContent = 'Mode: Classic';
-    btn.title = 'Switch UI mode (Classic -> Modern -> Neo)';
+    btn.title = 'Mode: Classic (Click to switch)';
   }
 }
 
