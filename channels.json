@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-03-31T14:19:36Z",
-  "total": 1023,
+  "scraped_at": "2026-04-01T03:59:15Z",
+  "total": 1025,
   "channels": [
     {
       "id": "manoto-tv",
@@ -1609,6 +1609,17 @@
       "working": null
     },
     {
+      "id": "4u-family",
+      "name": "4U Family",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://familyhls.4utv.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=4U-Family#persian",
+      "working": null
+    },
+    {
       "id": "sky-news",
       "name": "Sky News",
       "category": "News",
@@ -2374,7 +2385,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1774972800&s=tsY6E_yL9rn5cOFvDVJBlQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775023200&s=GKLqOuEBnJxon14UNb44CA",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3952,14 +3963,14 @@
       "working": null
     },
     {
-      "id": "3mv-media",
-      "name": "3MV Media",
+      "id": "swimwear-party",
+      "name": "Swimwear Party",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/SETqJo0mD9s?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=3MV-Media#fashion",
+      "stream_url": "https://www.youtube-nocookie.com/embed/V9hGjPuFMqI?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Swimwear-Party#fashion",
       "working": null
     },
     {
@@ -3980,7 +3991,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/eV8aThO0vU8?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/xamTB938lIU?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Bikini-Party#fashion",
       "working": null
     },
@@ -4024,7 +4035,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/FvK708BYr7g?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/YYg7uDIE72U?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Shift-Bikini#fashion",
       "working": null
     },
@@ -4035,7 +4046,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/TC80bH9qYgo?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/FvK708BYr7g?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Shift-Swimwear#fashion",
       "working": null
     },
@@ -4244,7 +4255,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1774974846&hash=2ee07a58cd1d117f33ba8807e8f9792dcb01528d6cf6a0c0297b8e6422303bba",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1775024034&hash=dd68b98db83c6ea6fee3f5e51d9e9dfeb0d4e501bef9ece89c2fd6ee5f7f933e",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4255,7 +4266,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1774974848&hash=2d037d5c1764f8d9c6ccb196fe9f89ed0964ffb2b85413e625ddc9cb39e32386",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=IQ&exp=1775021876&hash=c767028fdd389ccec7bcd48d4f4787bb89da17ab59decefb2211dd5488c55b6b",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4266,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1774974850&hash=fab16344f4d621114241530ea48b9a81e7bb4d47ba984c0f5dbb78e254e3bf5d",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=IQ&exp=1775022488&hash=0fc487a0a5f53604be541a0083e5d27c4bdbd2e7ba6ceead5042ebcc7e4a7349",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6427,6 +6438,28 @@
       "working": null
     },
     {
+      "id": "orf-1",
+      "name": "ORF 1",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/orf1111/tracks-v1a1/mono.m3u8",
+      "page_url": "https://www.parsatv.com/name=ORF-1#deutsch",
+      "working": null
+    },
+    {
+      "id": "3sat",
+      "name": "3sat",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8",
+      "page_url": "https://www.parsatv.com/name=3sat#deutsch",
+      "working": null
+    },
+    {
       "id": "srf",
       "name": "SRF",
       "category": "General Entertainment",
@@ -8369,7 +8402,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=WQoq7LWXEOaWikwXdjUeMw&e=1775052769",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=t3UfX8hhlkUW8wtJIwz4bg&e=1775101962",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9084,7 +9117,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10255,14 +10288,14 @@
       "working": null
     },
     {
-      "id": "itv-indian",
-      "name": "iTV Indian",
+      "id": "barkat-tv",
+      "name": "Barkat TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca1.buximedia.com/itv/indian/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=iTV-Indian-Music#india",
+      "stream_url": "/hls/barkattv/index.m3u8",
+      "page_url": "https://www.parsatv.com/name=Barkat-TV#india",
       "working": null
     },
     {
@@ -10274,17 +10307,6 @@
       "logo_url": null,
       "stream_url": "https://cdn.live247stream.com/tag/tv/tag/stream1/chunks.m3u8",
       "page_url": "https://www.parsatv.com/name=TAG-TV#india",
-      "working": null
-    },
-    {
-      "id": "barkat-tv",
-      "name": "Barkat TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "/hls/barkattv/index.m3u8",
-      "page_url": "https://www.parsatv.com/name=Barkat-TV#india",
       "working": null
     },
     {
@@ -10866,7 +10888,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/zDdVwKZDzHmpSuyCyAhoWpfs/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
