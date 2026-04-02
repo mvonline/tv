@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-01T14:21:55Z",
-  "total": 1025,
+  "scraped_at": "2026-04-02T03:44:12Z",
+  "total": 1026,
   "channels": [
     {
       "id": "manoto-tv",
@@ -2385,7 +2385,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775066400&s=ttcCpDoWqHqSEJFUfdQ2zw",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775109600&s=H8ZasI0U6eHghNDr6mGZpQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4255,7 +4255,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1775061364&hash=3b54ff64fedf71ccd8509d672fe24e1373a26d14a826443592f73cf82e35f7bd",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=SA&exp=1775107709&hash=c5bb6939e5cbd2cb0368fa8b915d996cc4d71ca39449bd1e5eb92e1be19821e6",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4266,7 +4266,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1775061366&hash=85d2fe0a4962bd70bc77fb6124f7801c776738ad943cc79a2a3e55af4e3f27ce",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=SA&exp=1775107638&hash=0ae973bbc33d127dc60dca4ee11f28cb0f5e95bb81c761bbd4a98c0ed248b17e",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4277,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1775061368&hash=ca09f9aa3e7690ca304322ddee94a42233e41c4112ee328dbbfd39cf135941e0",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=SA&exp=1775107578&hash=db533b7d1d2d08d9c97a277b002f86bc6e3d2b26ae3067d17d6e44d3785a4015",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6482,6 +6482,17 @@
       "working": null
     },
     {
+      "id": "servustv",
+      "name": "ServusTV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://s6.hopslan.com/servus/tracks-v1a1/mono.m3u8",
+      "page_url": "https://www.parsatv.com/name=ServusTV#deutsch",
+      "working": null
+    },
+    {
       "id": "france-24-ar",
       "name": "France 24 AR",
       "category": "General Entertainment",
@@ -6620,7 +6631,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775052686~acl=/alraimedialive/alraitv.smil/*~hmac=62e5047a25c466471bea953e311f7e7c7e0aa3452d775f3205d82c2b92d0bdde",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775100791~acl=/alraimedialive/alraitv.smil/*~hmac=531a2d6dcf4e3bdefc5b633d0e5a3f3185c3774e58a6d4c38c1e65ca799ad3c3",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8402,7 +8413,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=feWG4QlF9vfEGitsuo8ZqA&e=1775139329",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=K009ynox8y5Zg5Nw63n4ZA&e=1775187432",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9117,7 +9128,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-01.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
