@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-02T03:44:12Z",
-  "total": 1026,
+  "scraped_at": "2026-04-02T14:13:28Z",
+  "total": 1028,
   "channels": [
     {
       "id": "manoto-tv",
@@ -476,14 +476,14 @@
       "working": null
     },
     {
-      "id": "itc-tv",
-      "name": "ITC TV",
-      "category": "General Entertainment",
+      "id": "4u-family",
+      "name": "4U Family",
+      "category": "Movies & Series",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-itctv.cfcross.workers.dev/?url=https://stream.castr.com/6762194902ac17bd275d775c/live_4f894a10bcd811efba81b178a13fa3de/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=ITC-TV#Persian",
+      "stream_url": "https://familyhls.4utv.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=4U-Family#persian",
       "working": null
     },
     {
@@ -498,25 +498,25 @@
       "working": null
     },
     {
-      "id": "t2-movies",
-      "name": "T2 Movies",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/T2Movies/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=T2-Movies#persian",
-      "working": null
-    },
-    {
-      "id": "datis-tv",
-      "name": "Datis TV",
+      "id": "itc-tv",
+      "name": "ITC TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dathls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Datis-TV",
+      "stream_url": "https://spf-cors-itctv.cfcross.workers.dev/?url=https://stream.castr.com/6762194902ac17bd275d775c/live_4f894a10bcd811efba81b178a13fa3de/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=ITC-TV#Persian",
+      "working": null
+    },
+    {
+      "id": "payam-javan",
+      "name": "Payam Javan",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=Payam-Javan-TV#persian",
       "working": null
     },
     {
@@ -528,6 +528,39 @@
       "logo_url": null,
       "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://media2.streambrothers.com:19360/uxgjkvvpes/uxgjkvvpes.m3u8",
       "page_url": "https://www.parsatv.com/name=Khatereh-TV#Persian",
+      "working": null
+    },
+    {
+      "id": "t2-movies",
+      "name": "T2 Movies",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://ca-rt.onetv.app/T2Movies/index-0.m3u8?token=onetv202",
+      "page_url": "https://www.parsatv.com/name=T2-Movies#persian",
+      "working": null
+    },
+    {
+      "id": "ravi-tv",
+      "name": "Ravi TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://hls.ravitv.com/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Ravi-TV#Persian",
+      "working": null
+    },
+    {
+      "id": "datis-tv",
+      "name": "Datis TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://dathls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Datis-TV",
       "working": null
     },
     {
@@ -1312,17 +1345,6 @@
       "working": null
     },
     {
-      "id": "payam-javan",
-      "name": "Payam Javan",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=Payam-Javan-TV#persian",
-      "working": null
-    },
-    {
       "id": "persiana-medical",
       "name": "Persiana Medical",
       "category": "Movies & Series",
@@ -1331,6 +1353,17 @@
       "logo_url": null,
       "stream_url": "https://phd2hls.persiana.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Persiana-Medical#persian",
+      "working": null
+    },
+    {
+      "id": "porchooneh-tv",
+      "name": "Porchooneh TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://oldkors-g0p7s.cfcross.workers.dev/?url=http://porchooneh.com/hls/live1/stream1.m3u8",
+      "page_url": "https://www.parsatv.com/name=Porchooneh-TV#persian",
       "working": null
     },
     {
@@ -1389,17 +1422,6 @@
       "working": null
     },
     {
-      "id": "porchooneh-tv",
-      "name": "Porchooneh TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://oldkors-g0p7s.cfcross.workers.dev/?url=http://porchooneh.com/hls/live1/stream1.m3u8",
-      "page_url": "https://www.parsatv.com/name=Porchooneh-TV#persian",
-      "working": null
-    },
-    {
       "id": "cafe-film",
       "name": "Cafe Film",
       "category": "Movies & Series",
@@ -1419,6 +1441,17 @@
       "logo_url": null,
       "stream_url": "https://cafetradehls.wns.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Cafe-Trade-TV#persian",
+      "working": null
+    },
+    {
+      "id": "erfan-halgheh",
+      "name": "Erfan Halgheh",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://hls.erfanhalgheh.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Erfan-Halgheh#persian",
       "working": null
     },
     {
@@ -1587,17 +1620,6 @@
       "working": null
     },
     {
-      "id": "erfan-halgheh",
-      "name": "Erfan Halgheh",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://hls.erfanhalgheh.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Erfan-Halgheh#persian",
-      "working": null
-    },
-    {
       "id": "irib-channels",
       "name": "IRIB Channels",
       "category": "General Entertainment",
@@ -1606,17 +1628,6 @@
       "logo_url": null,
       "stream_url": null,
       "page_url": "https://www.parsatv.com/name=IRIB",
-      "working": null
-    },
-    {
-      "id": "4u-family",
-      "name": "4U Family",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://familyhls.4utv.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=4U-Family#persian",
       "working": null
     },
     {
@@ -2385,7 +2396,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775109600&s=H8ZasI0U6eHghNDr6mGZpQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775145600&s=jKLlDMbMHuMZV_ZCYW2ADg",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4255,7 +4266,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=SA&exp=1775107709&hash=c5bb6939e5cbd2cb0368fa8b915d996cc4d71ca39449bd1e5eb92e1be19821e6",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1775147223&hash=78fc19194f893f7330070f89727e125b7a5f799bd225778fd8142e4e72549aab",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4266,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=SA&exp=1775107638&hash=0ae973bbc33d127dc60dca4ee11f28cb0f5e95bb81c761bbd4a98c0ed248b17e",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1775147225&hash=8046e7550f4f3248d399cda4d6ee5e29169f0c3220e8cd0e53d725bd5ee047c1",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4277,7 +4288,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=SA&exp=1775107578&hash=db533b7d1d2d08d9c97a277b002f86bc6e3d2b26ae3067d17d6e44d3785a4015",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=AL&exp=1775143062&hash=4112a52a554f9e632bfb7ea16351fe0e9c7fb9c02b0a3c48ccb576999f3b925b",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6631,7 +6642,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775100791~acl=/alraimedialive/alraitv.smil/*~hmac=531a2d6dcf4e3bdefc5b633d0e5a3f3185c3774e58a6d4c38c1e65ca799ad3c3",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775138560~acl=/alraimedialive/alraitv.smil/*~hmac=77ea0b5ddbcb9deed75b1a5110325e17d37de6167b297bb58d0f69902e0f7f79",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -7351,6 +7362,17 @@
       "working": null
     },
     {
+      "id": "dijlah-tv",
+      "name": "Dijlah TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://ghaasiflu.online/Dijlah/index.m3u8",
+      "page_url": "https://www.parsatv.com/name=Dijlah-TV#arabic",
+      "working": null
+    },
+    {
       "id": "al-iraqia-news",
       "name": "Al Iraqia News",
       "category": "News",
@@ -7362,25 +7384,14 @@
       "working": null
     },
     {
-      "id": "islam-channel",
-      "name": "Islam Channel",
-      "category": "Religion",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://dtfe3weh30eb8.cloudfront.net/live11/islamtv_english/bitrate1.isml/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=Islam-Channel#arabic",
-      "working": null
-    },
-    {
-      "id": "eman-tv",
-      "name": "Eman TV",
+      "id": "al-khaleej-tv",
+      "name": "Al Khaleej TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cd198.anystream.uk:8082/hls/emnhdweb/index.m3u8",
-      "page_url": "https://www.parsatv.com/name=Eman-TV#arabic",
+      "stream_url": "https://mn-nl.mncdn.com/khalij/khalij/chunklist.m3u8",
+      "page_url": "https://www.parsatv.com/name=Al-Khaleej-TV#arabic",
       "working": null
     },
     {
@@ -7406,14 +7417,25 @@
       "working": null
     },
     {
-      "id": "al-khaleej-tv",
-      "name": "Al Khaleej TV",
+      "id": "eman-tv",
+      "name": "Eman TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/khalij/khalij/chunklist.m3u8",
-      "page_url": "https://www.parsatv.com/name=Al-Khaleej-TV#arabic",
+      "stream_url": "https://cd198.anystream.uk:8082/hls/emnhdweb/index.m3u8",
+      "page_url": "https://www.parsatv.com/name=Eman-TV#arabic",
+      "working": null
+    },
+    {
+      "id": "islam-channel",
+      "name": "Islam Channel",
+      "category": "Religion",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://corsply-1m6d3p9z.cfcross.workers.dev/?url=https://dtfe3weh30eb8.cloudfront.net/live11/islamtv_english/bitrate1.isml/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=Islam-Channel#arabic",
       "working": null
     },
     {
@@ -8413,7 +8435,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=K009ynox8y5Zg5Nw63n4ZA&e=1775187432",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=O8ZrlUfAya1v925PREtRXg&e=1775225199",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9128,7 +9150,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10899,7 +10921,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/zDdVwKZDzHmpSuyCyAhoWpfs/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
