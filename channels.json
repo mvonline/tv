@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-06T14:05:31Z",
-  "total": 1028,
+  "scraped_at": "2026-04-07T03:49:27Z",
+  "total": 1029,
   "channels": [
     {
       "id": "manoto-tv",
@@ -2396,7 +2396,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775491200&s=xJ1S5omB3-8wDGJKTS70wA",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775541600&s=3rH8_i-WZZwlVKA5XQnEsg",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4194,6 +4194,17 @@
       "working": null
     },
     {
+      "id": "vision-supreme",
+      "name": "Vision Supreme",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://www.youtube-nocookie.com/embed/rD1FOR6PqGg?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=A-Vision-Supreme#fashion",
+      "working": null
+    },
+    {
       "id": "rakuten-tv",
       "name": "Rakuten TV",
       "category": "General Entertainment",
@@ -4266,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1775492357&hash=88d0c9db62a554fb6c92533289448fb450bf2ac0d232e5344cde04b6d363a687",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=AT&exp=1775538864&hash=52e97517c8af7ef5b9a31f5591ecba6c900e73658f3c768049c5724e2d3e0856",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4277,7 +4288,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1775492360&hash=7b58d9e0774cc9b5da72a924e877eb781b47f2190c395a5a6c0ad49199157664",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1775541773&hash=6c8a0273ef944ec75280ee63d08098ff828b6714064a6f71618aa6a6a9f93a59",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4288,7 +4299,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1775492362&hash=ba248e52212f9472a75be3d823aacb77777045bed48645c51c96f8b3ca040b20",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1775541775&hash=dadec49b3053edb5bab3312ebc4f5e373ae6d40617b6e4905c683f790c221fec",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6642,7 +6653,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775483688~acl=/alraimedialive/alraitv.smil/*~hmac=17bfd95d6422daa69627a8c76bc1b4038a1aee0097abce3997597c6e3d9b7229",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775533108~acl=/alraimedialive/alraitv.smil/*~hmac=f6df1f013d3ed32c61fee5ece3507a065e86d5cf30b3e948dba9f78e373a1a2e",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8435,7 +8446,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=mzVsQpeuGSP8Ix1qf0vSQw&e=1775570326",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=xJY4M9j3MNHMB_YEi_in6Q&e=1775619751",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9150,7 +9161,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10921,7 +10932,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/zDdVwKZDzHmpSuyCyAhoWpfs/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
