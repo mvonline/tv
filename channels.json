@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-07T14:17:05Z",
-  "total": 1029,
+  "scraped_at": "2026-04-08T03:49:55Z",
+  "total": 1032,
   "channels": [
     {
       "id": "manoto-tv",
@@ -2396,7 +2396,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775577600&s=x3ryZwRXjN5cIDna-PAU6w",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1775628000&s=Io61LQsgOLMOxFs9pNSqew",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3897,6 +3897,17 @@
       "working": null
     },
     {
+      "id": "vision-supreme",
+      "name": "Vision Supreme",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://www.youtube-nocookie.com/embed/rD1FOR6PqGg?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=A-Vision-Supreme#fashion",
+      "working": null
+    },
+    {
       "id": "kaloopy-tv",
       "name": "Kaloopy TV",
       "category": "General Entertainment",
@@ -3919,24 +3930,13 @@
       "working": null
     },
     {
-      "id": "swimwear-tv",
-      "name": "Swimwear TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/fdPuEd0e-0M?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Swimwear-Fashion#fashion",
-      "working": null
-    },
-    {
       "id": "swim-style",
       "name": "Swim Style",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/X--OCDzTWpc?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/ziN5HBk_e5A?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Swim-Style-TV#fashion",
       "working": null
     },
@@ -3963,14 +3963,47 @@
       "working": null
     },
     {
-      "id": "smash-fashion",
-      "name": "Smash Fashion",
+      "id": "swimwear-tv",
+      "name": "Swimwear TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/live_stream?channel=UC6EC-y22t2je067_03PYppg&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Smash-Fashion#fashion",
+      "stream_url": "https://www.youtube-nocookie.com/embed/fdPuEd0e-0M?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Swimwear-Fashion#fashion",
+      "working": null
+    },
+    {
+      "id": "runway-show",
+      "name": "Runway Show",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://www.youtube-nocookie.com/embed?list=UUnrgQOVmJiRS8JW9nRCsFng&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Runway-Show#fashion",
+      "working": null
+    },
+    {
+      "id": "black-tape",
+      "name": "Black Tape",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://www.youtube-nocookie.com/embed?list=UUg3EL0TgTv8vURAtZp0POTg&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Black-Tape-Project#fashion",
+      "working": null
+    },
+    {
+      "id": "fashion-fusion",
+      "name": "Fashion Fusion",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://www.youtube-nocookie.com/embed?list=UUg3EL0TgTv8vURAtZp0POTg&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Fashion-Fusion#fashion",
       "working": null
     },
     {
@@ -3980,7 +4013,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/V9hGjPuFMqI?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/1UZXpFHGe-8?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Swimwear-Party#fashion",
       "working": null
     },
@@ -4013,7 +4046,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/ow2iErVE7kU?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/A9UHPnm4sBE?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Bikini-Show#fashion",
       "working": null
     },
@@ -4024,7 +4057,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/gSep61fA96I?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/QlPvSFvVWRk?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Lingerie-Party#fashion",
       "working": null
     },
@@ -4194,14 +4227,14 @@
       "working": null
     },
     {
-      "id": "vision-supreme",
-      "name": "Vision Supreme",
+      "id": "splash-tv",
+      "name": "Splash TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/rD1FOR6PqGg?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=A-Vision-Supreme#fashion",
+      "stream_url": "https://www.youtube-nocookie.com/embed/V81LN_9MPv8?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Splash-TV#fashion",
       "working": null
     },
     {
@@ -4277,7 +4310,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=QA&exp=1775578712&hash=748100c1515ac472cd3467830fc7b25e803af6af2cc73fbdea3b0ae4d75a5bad",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=CA&exp=1775628235&hash=797609e4229a30936adbc5eb75ce4cbbdf3a03330727b23b417cf1b1fd5b2a14",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4288,7 +4321,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=DE&exp=1775579272&hash=71620e0148970ef35d37d71cc30df8364e0b3f00446a8580e92f085a20e021cb",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1775628277&hash=faa9188d999f1c84fac40f940a82f66bc1d9b4759d0b4300c2b57355a8147263",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4299,7 +4332,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=DE&exp=1775579275&hash=8f61ab8b8197dc8c21deffcc8dd5884c3a8563c00f83c749256bbe8f7f800bd4",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=CA&exp=1775624580&hash=7e96e0997662c9df7503a3e67498cd59445df815b821dbffa343a799b737ab25",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6653,7 +6686,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775570788~acl=/alraimedialive/alraitv.smil/*~hmac=5196624f5608f60b13aabcbd3d7524382b4c1079f438496c57f139c8664dff89",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1775619581~acl=/alraimedialive/alraitv.smil/*~hmac=4f5a1d4bbb2ee7d94d38efeffc11ee448e821e4f60a4559352a52e744bd883ee",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8446,7 +8479,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=tFAzCW6ELQw7HjAa6LNIHA&e=1775656688",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=4f4A1h99Rh17Z2DoO429UQ&e=1775706201",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9161,7 +9194,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10932,7 +10965,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/goHbjWCkGYDnCbktiPWdmxco/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
