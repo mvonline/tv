@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-18T03:47:23Z",
+  "scraped_at": "2026-04-18T13:45:09Z",
   "total": 1032,
   "channels": [
     {
@@ -2396,7 +2396,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1776492000&s=OzlecDSPfyxe9bDMnjpCow",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1776528000&s=xP3AoDYQ5zoFcz3s2x1nxA",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4079,7 +4079,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/7fhZS2B4CeQ?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/ebzs8cdcdmw?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Shift-Bikini#fashion",
       "working": null
     },
@@ -4095,14 +4095,14 @@
       "working": null
     },
     {
-      "id": "super-yacht",
-      "name": "Super Yacht",
+      "id": "splash-tv",
+      "name": "Splash TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://sy.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Super-Yacht-TV#fashion",
+      "stream_url": "https://www.youtube-nocookie.com/embed/O3Clb6JWcSE?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Splash-TV#fashion",
       "working": null
     },
     {
@@ -4117,14 +4117,14 @@
       "working": null
     },
     {
-      "id": "yoga-girl",
-      "name": "Yoga Girl",
+      "id": "super-yacht",
+      "name": "Super Yacht",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/KxrlvLMciXQ?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Yoga-Girl#fashion",
+      "stream_url": "https://sy.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Super-Yacht-TV#fashion",
       "working": null
     },
     {
@@ -4227,14 +4227,14 @@
       "working": null
     },
     {
-      "id": "splash-tv",
-      "name": "Splash TV",
+      "id": "yoga-girl",
+      "name": "Yoga Girl",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/O3Clb6JWcSE?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Splash-TV#fashion",
+      "stream_url": "https://www.youtube-nocookie.com/embed/KxrlvLMciXQ?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Yoga-Girl#fashion",
       "working": null
     },
     {
@@ -4310,7 +4310,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=PL&exp=1776489249&hash=e875bb42bf7c284d8e12e121be206376c444822649dccda4eb4fb3cdccb619ea",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=DZ&exp=1776526460&hash=6c9e29fc08349e06650e7ec054abf47b55cf8c839eaff0c50db8cb2311d875a5",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4321,7 +4321,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=PL&exp=1776489261&hash=a839a30cb4d50f21a394791fb2c4004e44ef1b458442f8e2c064b62e3f1d73e0",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1776527978&hash=eb63db1dfb038dbd577f70b0962ebc0dee1cf397a0bb87cd39f86d4a23116614",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4332,7 +4332,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1776492119&hash=4608cf1913810b60be0f80b13aacdbc94de2b9aff7c48cd40bda71ecb489303c",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1776527980&hash=63c2438afc648109468c649103a5585cc5921cbe8607748b4bd4427a2899fa27",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6686,7 +6686,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1776483425~acl=/alraimedialive/alraitv.smil/*~hmac=94bc331af4d4eadac6ad63ad71bb3681f63e9875535285c1e026aa168f984868",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1776519290~acl=/alraimedialive/alraitv.smil/*~hmac=7986abbdc6eba1ebd3c8ab02a1366c57daf2abd9c84a12a0541d8af635dc80eb",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8479,7 +8479,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=y5hdwEUOELGa2BS6i3eP9w&e=1776569781",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=2tlkaHACvtMYOfYyQoLybQ&e=1776605919",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -10965,7 +10965,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/goHbjWCkGYDnCbktiPWdmxco/index.m3u8",
+      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
