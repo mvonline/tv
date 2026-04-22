@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-21T14:28:19Z",
-  "total": 1032,
+  "scraped_at": "2026-04-22T03:58:47Z",
+  "total": 1033,
   "channels": [
     {
       "id": "manoto-tv",
@@ -2396,7 +2396,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1776794400&s=otJnd9frghB677DlgS_DGA",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1776837600&s=Oo5IwIJsG5rC-9I_XAHgYQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4310,7 +4310,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=QA&exp=1776789603&hash=2ac29bcb0f0bce577a1d5d40b360eb925e68c42844e3838dd65801c0dd92e24b",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1776838396&hash=8cc6cc1eb6bb0abecbda192301e3c155deecb4fea48607e65d8c50383eca1a16",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4321,7 +4321,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=QA&exp=1776789609&hash=035849582ec848175edd91aa6d0d219058e4433b021e5960fc6851f4069bdb10",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=SA&exp=1776836255&hash=5a7a2ed74965f7a4dd783882c18b6fe82ac2b847c07112fd388452062cfa014a",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4332,7 +4332,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1776785689&hash=3b4ea425843ebfb60744ad95e4a2233887f263db98ad1f0a0e67915e706c26b4",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1776834678&hash=a1579b6c64b3da6fad7168df136de02f6c0fa13145c43d1a49476713dc8dcf2e",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6686,7 +6686,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1776781073~acl=/alraimedialive/alraitv.smil/*~hmac=21567569170ac7bfef9622e30621c6edb6e6b46c46bc202cfb7bf70a35ee4910",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1776829707~acl=/alraimedialive/alraitv.smil/*~hmac=79fd129fa870da6feab1a6f183e7f1778002ce4b5d586da572e9d4d6dd924c79",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8479,7 +8479,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=kQvCrKQlYM0OzJLcBXhutw&e=1776866812",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=i6vDP8h3hEvPvhslr12EFw&e=1776916333",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9194,7 +9194,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-de-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10965,7 +10965,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream01.nasimrezvan.com/hls/nCqGTHytkVFziVPWBLqkdQYK/index.m3u8",
+      "stream_url": "https://cdnw.telewebion.com/razavi/live/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Imam-Reza#irib",
       "working": null
     },
@@ -10978,6 +10978,17 @@
       "logo_url": null,
       "stream_url": "https://avr.host247.net/live/rasoulallahtv/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Rasoulallah-TV#irib",
+      "working": null
+    },
+    {
+      "id": "shabake-1",
+      "name": "Shabake 1 +",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://cdnw.telewebion.com/tv1plus/live/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=Shabake-1-Plus#irib",
       "working": null
     },
     {
