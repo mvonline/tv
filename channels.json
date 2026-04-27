@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-27T04:17:00Z",
-  "total": 1033,
+  "scraped_at": "2026-04-27T14:44:22Z",
+  "total": 1034,
   "channels": [
     {
       "id": "manoto-tv",
@@ -1631,6 +1631,17 @@
       "working": null
     },
     {
+      "id": "yourtime-tv",
+      "name": "YourTime TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://live.yourtime.tv/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=YourTime-TV#persian",
+      "working": null
+    },
+    {
       "id": "sky-news",
       "name": "Sky News",
       "category": "News",
@@ -2396,7 +2407,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1777269600&s=xGgSBfu7gL54yLjxWDgzDQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1777312800&s=YpqUkSGBO3SRegR1nJ_-uQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4310,7 +4321,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1777271496&hash=7e20e25653399f4f18e17c6fe00a86dd3af37585764a2040a99a7649ba51a0cc",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1777309166&hash=acbe0f01b3140dec27829175b6ffdcc0f811b379692f2b20d3952e55c1248a51",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4321,7 +4332,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1777271499&hash=e8804c63ef19a72ba99249296a623ac2d4f64e402e5b2ce0357d1a8fd057ddbb",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1777309168&hash=e09cad051818e2b9cf51c0070126f6e177b40c2f2d6565ce67e539abf93090f1",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4332,7 +4343,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1777271501&hash=269c7a6842db4db6513f56db47c34b808f6ce1e9ce040b3773e104557eb4b0c8",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1777309170&hash=f6d8217169dc75d078d981d72dd574dd4f39cd393949d135e07f6fb98034a641",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6686,7 +6697,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1777262805~acl=/alraimedialive/alraitv.smil/*~hmac=7dcf875fa0135e97b02bba25fed5d613dc1b36806ca6a71253f9b6bff3274bf6",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1777300468~acl=/alraimedialive/alraitv.smil/*~hmac=dd7c2f3df58429628a1bf26dabd9a237bcf87b90af4f9f3fc2d39c51162b250e",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8479,7 +8490,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=zNHm0UzEcORCnYd9EAzpZw&e=1777349427",
+      "stream_url": "https://mn-nl.mncdn.com/dogusdyg_eurostar/live.m3u8?st=xZkECJDyEvt5W6XUvvmZAA&e=1777386469",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9194,7 +9205,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-01.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10118,7 +10129,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/-a2C9jWOeM0?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/C2ew4PiQ7E4?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=K1-TV#ukraine",
       "working": null
     },
