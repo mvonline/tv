@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-07T04:20:49Z",
+  "scraped_at": "2026-05-07T15:04:15Z",
   "total": 1034,
   "channels": [
     {
@@ -2407,7 +2407,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1778133600&s=BrHp-K7wq62z_ww95oIxeg",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1778176800&s=g2dpaoqxKDl7vVABrOQ0ZA",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -6697,7 +6697,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1778126987~acl=/alraimedialive/alraitv.smil/*~hmac=536d3bccbed1990134f5d23697ba67d2a859db153d87253e8588a088ca123b80",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1778165633~acl=/alraimedialive/alraitv.smil/*~hmac=6a66fc611324230f0eca923cd99ab96083f9d00119e71e0e1ed30eee95c688f1",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8490,7 +8490,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=D71xitAIAt3RXICgKPkH1Q&e=1778213278",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=725aw2xPA_-Kp1Anjpg0Lw&e=1778251770",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9205,7 +9205,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
