@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-13T04:33:03Z",
-  "total": 1023,
+  "scraped_at": "2026-05-13T15:19:48Z",
+  "total": 1021,
   "channels": [
     {
       "id": "manoto-tv",
@@ -1092,39 +1092,6 @@
       "working": null
     },
     {
-      "id": "afra-film",
-      "name": "Afra Film",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://afrafhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Afra-Film#persian",
-      "working": null
-    },
-    {
-      "id": "afra-series",
-      "name": "Afra Series",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://afrashls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Afra-Series#persian",
-      "working": null
-    },
-    {
-      "id": "arax-tv",
-      "name": "Arax TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://araxhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Arax-TV#persian",
-      "working": null
-    },
-    {
       "id": "royal-tv",
       "name": "Royal TV",
       "category": "General Entertainment",
@@ -1166,6 +1133,17 @@
       "logo_url": null,
       "stream_url": "https://musichls.persiana.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Persiana-Music#persian",
+      "working": null
+    },
+    {
+      "id": "persiana-turkiye",
+      "name": "Persiana Turkiye",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://turkhls.persiana.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Persiana-Turkiye#persian",
       "working": null
     },
     {
@@ -1323,17 +1301,6 @@
       "working": null
     },
     {
-      "id": "persiana-turkiye",
-      "name": "Persiana Turkiye",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://turkhls.persiana.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Persiana-Turkiye#persian",
-      "working": null
-    },
-    {
       "id": "persiana-medical",
       "name": "Persiana Medical",
       "category": "Movies & Series",
@@ -1345,36 +1312,14 @@
       "working": null
     },
     {
-      "id": "porchooneh-tv",
-      "name": "Porchooneh TV",
+      "id": "arax-tv",
+      "name": "Arax TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://oldkors-9u3p1.cfcross.workers.dev/?url=http://porchooneh.com/hls/live1/stream1.m3u8",
-      "page_url": "https://www.parsatv.com/name=Porchooneh-TV#persian",
-      "working": null
-    },
-    {
-      "id": "net-tv",
-      "name": "Net TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://nethls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Net-TV#persian",
-      "working": null
-    },
-    {
-      "id": "tm-tv",
-      "name": "TM TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://hls.tmtv.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=TM-TV#persian",
+      "stream_url": "https://araxhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Arax-TV#persian",
       "working": null
     },
     {
@@ -1494,7 +1439,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://5acf9f9415a10.streamlock.net/live_transcoder/ngrp:mohabat.stream_all/playlist.m3u8",
+      "stream_url": "https://5ad386ff92705.streamlock.net/live_transcodermh/ngrp:mohabat.stream_all/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Mohabat-TV#persian",
       "working": null
     },
@@ -1606,6 +1551,17 @@
       "logo_url": null,
       "stream_url": "https://media.parvizshahbazi.com/ganjehozour/Main_tv/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Ganje-Hozoor#persian",
+      "working": null
+    },
+    {
+      "id": "tm-tv",
+      "name": "TM TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://hls.tmtv.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=TM-TV#persian",
       "working": null
     },
     {
@@ -2385,7 +2341,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1778659200&s=eBDdzVI_STi94ejZoB2f4Q",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1778695200&s=tpJgPsIFUdVFyczOsddeXQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -2506,7 +2462,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://navairan.com/;",
+      "stream_url": "https://navairan.com/;stream.nsv",
       "page_url": "https://www.parsatv.com/name=Radio-Navahang#radio",
       "working": null
     },
@@ -4024,7 +3980,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/9kqA-HZrE3k?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/7LX0_qeO-0A?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Bikini-Party#fashion",
       "working": null
     },
@@ -4046,7 +4002,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/kZlxfwDx1qY?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/vYyJE146pnU?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Lingerie-Party#fashion",
       "working": null
     },
@@ -4057,7 +4013,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/EUHqn8cHIaU?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/nHHbM3skcg0?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Shift-Fashion#fashion",
       "working": null
     },
@@ -4299,7 +4255,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1778653730&hash=1bc06fa4d20b822f6c66c118863d194ef75b0cb56bc3a57954c72b503edc3bba",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1778693578&hash=13e8261acbb30701ab4bf838da92953d9dffaebe9ede4e773ba6ba63a42a3e11",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4310,7 +4266,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1778654805&hash=c7c0487ac64cfcb5b25d0cf1dbe01aa3545ac2e975578a1cfed99dd5aac20158",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=SK&exp=1778691599&hash=a1961785d6bedae7769094d51299e5b744a7a39d93f0e794b941bf99ce34911a",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4321,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1778654807&hash=189a66eff36e661ddaeaf885c2431d07aa1da1212774cd2a2b39cd1ea51f9497",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1778693582&hash=29f6279b41706ebfe21cd589e20a1f8a6011ce6160ac060783be2ead5e0b14f7",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -4926,7 +4882,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://linear-426.frequency.stream/dist/xumo/426/hls/master/playlist.m3u8",
+      "stream_url": "https://amg00477-samsungelectron-worldpokertour-samsunguk-81igb.amagi.tv/playlist/amg00477-samsungelectron-worldpokertour-samsunguk/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=PokerGO#sport",
       "working": null
     },
@@ -5091,7 +5047,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/sWasdbDVNvc?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/FuuC4dpSQ1M?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=NASA-TV#international",
       "working": null
     },
@@ -5102,7 +5058,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/zPH5KtjJFaQ?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/uwXgcTc8oY8?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=NASA-Media#international",
       "working": null
     },
@@ -6708,7 +6664,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1778646145~acl=/alraimedialive/alraitv.smil/*~hmac=c80dbab2e9d50fa258915831e5140fa60fd5ec1e647f29d40f46a9f9f01a1005",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1778684927~acl=/alraimedialive/alraitv.smil/*~hmac=6437da60a3c9e64e2e89f6bac44a90f7da3b13c1f154e3e06eb84e76bf963f93",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -7511,7 +7467,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/Cm1v4bteXbI?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/bNY8a2BB5Gc?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Mecca-Live-Cam#arabic",
       "working": null
     },
@@ -8501,7 +8457,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=iG9MqkN8nww8tCfZD1DLAQ&e=1778732792",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=2fyamYIJ6lE5aIi-cnOd2w&e=1778770837",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -8600,7 +8556,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/live_stream?channel=UCKQhfw-lzz0uKnE1fY1PsAA&modestbranding=1&rel=0",
+      "stream_url": "https://www.youtube-nocookie.com/embed/nmY9i63t6qo?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=A-Haber#turkish",
       "working": null
     },
@@ -8754,7 +8710,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/6g_DvD8e2T0?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/ebVRSmBYC60?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=TV100#turkish",
       "working": null
     },
@@ -9139,7 +9095,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8",
+      "stream_url": "https://www.youtube-nocookie.com/embed/EqoCJ8BPxtE?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Haber-Global#turkish",
       "working": null
     },
@@ -9216,7 +9172,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-de-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-01.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -9953,7 +9909,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://amg01024-olympusat-topcinefreetv-ono-ad-a0.amagi.tv/playlist.m3u8",
+      "stream_url": "https://d38sud5af047z8.cloudfront.net/ftveu.m3u8",
       "page_url": "https://www.parsatv.com/name=FreeTV-Accion#spanish",
       "working": null
     },
@@ -10090,6 +10046,17 @@
       "working": null
     },
     {
+      "id": "tudn",
+      "name": "TUDN",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://streaming-live-fcdn.api.prd.univisionnow.com/tudn/tudn.isml/hls/tudn.m3u8",
+      "page_url": "https://www.parsatv.com/name=TUDN#spanish",
+      "working": null
+    },
+    {
       "id": "channel-24",
       "name": "Channel 24",
       "category": "General Entertainment",
@@ -10197,6 +10164,17 @@
       "logo_url": null,
       "stream_url": "https://www.youtube-nocookie.com/embed/e2gC37ILQmk?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Ukraine-Live-Cam#ukraine",
+      "working": null
+    },
+    {
+      "id": "channel-7",
+      "name": "Channel 7",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://cdn15.live-tv.cloud/ua_infinitas_tv/7tvod-abr/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=Channel-7-Ukraine#ukraine",
       "working": null
     },
     {
