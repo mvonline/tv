@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-25T15:49:21Z",
+  "scraped_at": "2026-05-26T04:43:35Z",
   "total": 1021,
   "channels": [
     {
@@ -2341,7 +2341,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1779732000&s=OrtNZu-fBH7GUnmKtSjYkQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1779782400&s=Q4v7uiQDjXFC7ohFQpj8Bw",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3474,7 +3474,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.ecable.tv/afrobeats/index.m3u8",
+      "stream_url": "https://stream.ecable.tv/afbtv/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Afrobeat-TV#music",
       "working": null
     },
@@ -4255,7 +4255,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?exp=1779730620&hash=1764bc29aa4904df965b1b4a4c21ff0fb41c5690ae0442d2df5e667911d9cfb7",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?exp=1779775966&hash=7b1bea5debeb3b1f26e96822f2c85a2fc09c8c615be5bb0cd879f754ab734706",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4266,7 +4266,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=DE&exp=1779731010&hash=617c5c2b368c8d1cee742b6e8a08ffd6c388b5b274ddd682959110d14b28d9b7",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1779778698&hash=edd1294fc10f552bb1c8546977b9c9e8b8424783ed002e28daaf4eb3e8ea0fc0",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4277,7 +4277,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=NL&exp=1779732052&hash=794d2f59163e4d7585572f0af24513638974e6a7f31c24bde65a06ce93c34657",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?exp=1779776109&hash=7c949a07848c5b680db4d0699e6027fa08069db96b5ca687435f5895edba7a85",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6664,7 +6664,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1779723581~acl=/alraimedialive/alraitv.smil/*~hmac=4ca2686ed2a57a056655b222db06fc26d89ca178ca751b1ee5ebdcca2c7a48b9",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1779770020~acl=/alraimedialive/alraitv.smil/*~hmac=0e4c842b963067748a818df80f0fcb92ef2cb31cc24915e44ddfd2f323a5b875",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8457,7 +8457,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=xiBeotvtGsnQbZC77CCNJA&e=1779809426",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=gJNL0canmz88FhSpmo3aSw&e=1779856651",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9172,7 +9172,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-01.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
