@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-27T05:07:08Z",
-  "total": 1020,
+  "scraped_at": "2026-05-27T16:28:21Z",
+  "total": 1022,
   "channels": [
     {
       "id": "manoto-tv",
@@ -575,14 +575,14 @@
       "working": null
     },
     {
-      "id": "iran-nama",
-      "name": "Iran Nama",
+      "id": "arko-tv",
+      "name": "Arko TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hls.ashena.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Iran-Nama#persian",
+      "stream_url": "https://arkhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Arko-TV",
       "working": null
     },
     {
@@ -762,36 +762,36 @@
       "working": null
     },
     {
-      "id": "home",
-      "name": "Home +",
+      "id": "tm-tv",
+      "name": "TM TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://homeplushls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Home-Plus#Persian",
+      "stream_url": "https://hls.tmtv.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=TM-TV#persian",
       "working": null
     },
     {
-      "id": "khalij-tv",
-      "name": "Khalij TV",
+      "id": "net-tv",
+      "name": "Net TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://khalijhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Khalij-TV",
+      "stream_url": "https://nethls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Net-TV#persian",
       "working": null
     },
     {
-      "id": "arko-tv",
-      "name": "Arko TV",
-      "category": "General Entertainment",
+      "id": "afra-film",
+      "name": "Afra Film",
+      "category": "Movies & Series",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://arkhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Arko-TV",
+      "stream_url": "https://afrafhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Afra-Film#persian",
       "working": null
     },
     {
@@ -1125,36 +1125,36 @@
       "working": null
     },
     {
-      "id": "tm-tv",
-      "name": "TM TV",
+      "id": "home",
+      "name": "Home +",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hls.tmtv.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=TM-TV#persian",
+      "stream_url": "https://homeplushls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Home-Plus#Persian",
       "working": null
     },
     {
-      "id": "net-tv",
-      "name": "Net TV",
+      "id": "piroozi-tv",
+      "name": "Piroozi TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://nethls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Net-TV#persian",
+      "stream_url": "https://piroozhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Piroozi-TV",
       "working": null
     },
     {
-      "id": "afra-film",
-      "name": "Afra Film",
-      "category": "Movies & Series",
+      "id": "cheshme-oghab",
+      "name": "Cheshme Oghab",
+      "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://afrafhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Afra-Film#persian",
+      "stream_url": "https://choghls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Cheshmeh-Oghab",
       "working": null
     },
     {
@@ -2363,7 +2363,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1779868800&s=oaYjzA5vwOM8yvoFkRl82A",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1779912000&s=9IH-yikKef6DFFCC_DvqMA",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3375,7 +3375,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8",
+      "stream_url": "https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=Retro-Music#music",
       "working": null
     },
@@ -3688,14 +3688,14 @@
       "working": null
     },
     {
-      "id": "circle-country",
-      "name": "Circle Country",
+      "id": "vevo-tv",
+      "name": "Vevo TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://circle-samsung.amagi.tv/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=Circle-Country#music",
+      "stream_url": "https://d3150hggbcolbo.cloudfront.net/Vevo_2K.m3u8",
+      "page_url": "https://www.parsatv.com/name=Vevo-TV#music",
       "working": null
     },
     {
@@ -3762,6 +3762,28 @@
       "logo_url": null,
       "stream_url": "https://streamtv.mediasector.es/hls/activatv/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Activa-TV#music",
+      "working": null
+    },
+    {
+      "id": "circle-country",
+      "name": "Circle Country",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://circle-samsung.amagi.tv/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=Circle-Country#music",
+      "working": null
+    },
+    {
+      "id": "vevo-rb",
+      "name": "Vevo R&B",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://d1hf773q57zx9s.cloudfront.net/Vevo_R_B.m3u8",
+      "page_url": "https://www.parsatv.com/name=Vevo-R-and-B#music",
       "working": null
     },
     {
@@ -4277,7 +4299,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1779863129&hash=c3202dca5735e9e963c43f532ed174cf6e404e025679a1ac7c1b87c027330bd2",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1779907418&hash=e4c0a7fe2f472c76e8eee767e41228c51be84e1c6a435a57e2cf0cc047a80a3d",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4288,7 +4310,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1779863115&hash=4f4161d44ece07843cbadd934a49a3c81830ea012863872d6a2fd2725dc666a2",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=SY&exp=1779906664&hash=6704e0d870886cae47b69cab482f7a9756c78a17ffe968e701ebcb549e29bc38",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4299,7 +4321,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1779863103&hash=a8af9a9d9edee0304d8b2dc278027fa14abae94304f67ccd0e6bcd34abd19bfb",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1779907421&hash=dcbef62cf4f536f801d8c5dd8e338e3886688e8972305ecc4b89ee89d7155bcd",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6686,7 +6708,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1779857808~acl=/alraimedialive/alraitv.smil/*~hmac=21287f5bf599f00efbf643a0d9b120cf414ec17d7da223b5c8a97ef18ff4a508",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1779898727~acl=/alraimedialive/alraitv.smil/*~hmac=749b16baf2fc8130731cf949ca26a1a7146a1991154ad6acc32741d4f842f71f",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -7951,7 +7973,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://northtelecom.live/KURD.m3u8",
+      "stream_url": "https://kurdchhls.wns.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Kurd-Channel#kurdish",
       "working": null
     },
@@ -8226,7 +8248,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://c2.radioboss.fm/stream/564",
+      "stream_url": "https://c4.radioboss.fm:8633/stream",
       "page_url": "https://www.parsatv.com/name=Waar-Radio#kurdish",
       "working": null
     },
@@ -8446,7 +8468,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=zlZWpvZxyuscmNb5TH1VyQ&e=1779944435",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=cZ8-IX5Nfdg7wQGdUS3l4g&e=1779985247",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9161,7 +9183,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-03.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
