@@ -1,16 +1,16 @@
 {
-  "scraped_at": "2026-06-09T15:47:13Z",
-  "total": 1025,
+  "scraped_at": "2026-06-10T05:10:13Z",
+  "total": 1027,
   "channels": [
     {
-      "id": "manoto-tv",
-      "name": "Manoto TV",
-      "category": "Documentary",
+      "id": "pars-tv",
+      "name": "Pars TV",
+      "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.parsatv.com/index_files/channels/vid/manotoshutdown.mp4",
-      "page_url": "https://www.parsatv.com/name=Manoto-TV#persian",
+      "stream_url": "https://parshls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Pars-TV#persian",
       "working": null
     },
     {
@@ -36,14 +36,14 @@
       "working": null
     },
     {
-      "id": "pars-tv",
-      "name": "Pars TV",
+      "id": "dej-tv",
+      "name": "DEJ TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://parshls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Pars-TV#persian",
+      "stream_url": "https://rdejhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=DEJ-TV#persian",
       "working": null
     },
     {
@@ -102,14 +102,14 @@
       "working": null
     },
     {
-      "id": "dej-tv",
-      "name": "DEJ TV",
+      "id": "iran-wire",
+      "name": "Iran Wire",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://rdejhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=DEJ-TV#persian",
+      "stream_url": "https://irwhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Iran-Wire-TV#persian",
       "working": null
     },
     {
@@ -2363,7 +2363,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781028000&s=UyQLsi61jQEIoPkTSwokVg",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781078400&s=Y6HMj_w3MhzXVBKp46npiQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4321,7 +4321,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=DE&exp=1781025844&hash=2e17b785728a0688aaa9a894c28d8cecc4f498fad48d9f5d088600451bf71122",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1781072256&hash=a2610d862b6a4b27412123db31f54becf9f70ba6e1c1b5e7dc886c339506c432",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4332,7 +4332,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=SK&exp=1781025255&hash=9560441509a2fda85ca894352b7bdcb30b9c3111f2ac64a84a5570acb8ee3d95",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=CN&exp=1781073943&hash=9e30955db9a87ba2102ccf007abc60ed4848f7e7e55fee48004ebaaaa1512f6f",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4343,7 +4343,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781028128&hash=c064b52c3fa85889de07a189764a182611054f76d411dd7738b8d7530a057317",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781074470&hash=41a3e93b830870969b488fcab1c132b77c741240faeacd42fa834fc93b862b75",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6730,7 +6730,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781019457~acl=/alraimedialive/alraitv.smil/*~hmac=2569a9ee125c37583d3c90178247c9ab78e3b29002762174025c1922594005bc",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781067495~acl=/alraimedialive/alraitv.smil/*~hmac=1686bca508c349434235202dddb56e9ea7909ce3c6f403ab5d32ae117f84a5f7",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -7549,14 +7549,14 @@
       "working": null
     },
     {
-      "id": "afghan-intl-rd",
-      "name": "Afghan Intl Rd",
-      "category": "General Entertainment",
+      "id": "bbc-pashto",
+      "name": "BBC Pashto",
+      "category": "News",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://stream.radiojar.com/vemf3w2rv38uv",
-      "page_url": "https://www.parsatv.com/name=Afghanistan-International-Radio#afghan",
+      "stream_url": "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_afghan_tv/t=3840/v=pv14/b=5070016/main.m3u8",
+      "page_url": "https://www.parsatv.com/name=BBC-Pashto#afghan",
       "working": null
     },
     {
@@ -7986,6 +7986,28 @@
       "logo_url": null,
       "stream_url": "https://stream.dushanbetv.tj/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Dushanbe-TV#afghan",
+      "working": null
+    },
+    {
+      "id": "afghan-intl-rd",
+      "name": "Afghan Intl Rd",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://stream.radiojar.com/vemf3w2rv38uv",
+      "page_url": "https://www.parsatv.com/name=Afghanistan-International-Radio#afghan",
+      "working": null
+    },
+    {
+      "id": "bbc-pashto-rd",
+      "name": "BBC Pashto Rd",
+      "category": "News",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://stream.live.vc.bbcmedia.co.uk/bbc_pashto_radio",
+      "page_url": "https://www.parsatv.com/name=BBC-Pashto-Radio#afghan",
       "working": null
     },
     {
@@ -8490,7 +8512,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=nyIb5XPRsqEbFrF_yi1cHg&e=1781105653",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=dM7NaJRaif4p-OX7TIxaoQ&e=1781153885",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
