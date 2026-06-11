@@ -1,7 +1,18 @@
 {
-  "scraped_at": "2026-06-11T05:17:00Z",
-  "total": 1027,
+  "scraped_at": "2026-06-11T16:40:09Z",
+  "total": 1000,
   "channels": [
+    {
+      "id": "ceremony",
+      "name": "Ceremony",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://d2w9q46ikgrcwx.cloudfront.net/v1/sysdata_s_p_a_fifa_7/samsungheadend_us/latest/main/hls/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=World-Cup-Opening-Ceremony#persian",
+      "working": null
+    },
     {
       "id": "pars-tv",
       "name": "Pars TV",
@@ -795,303 +806,6 @@
       "working": null
     },
     {
-      "id": "gem-tv",
-      "name": "GEM TV",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gem/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-TV#persian",
-      "working": null
-    },
-    {
-      "id": "gem-series",
-      "name": "GEM Series",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemseries/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Series#persian",
-      "working": null
-    },
-    {
-      "id": "gem-mifa",
-      "name": "GEM Mifa",
-      "category": "Music",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemmifa/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=Mifa-Music#persian",
-      "working": null
-    },
-    {
-      "id": "gem-life",
-      "name": "GEM Life",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemlife/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Life#persian",
-      "working": null
-    },
-    {
-      "id": "gem-film",
-      "name": "GEM Film",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemfilm/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Film#persian",
-      "working": null
-    },
-    {
-      "id": "gem-rubix",
-      "name": "GEM Rubix",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemrubix/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Rubix#persian",
-      "working": null
-    },
-    {
-      "id": "gem-river",
-      "name": "GEM River",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemriver/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-River#persian",
-      "working": null
-    },
-    {
-      "id": "gem-junior",
-      "name": "GEM Junior",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemjunior/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Junior#persian",
-      "working": null
-    },
-    {
-      "id": "gem-kids",
-      "name": "GEM Kids",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemkids/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Kids#persian",
-      "working": null
-    },
-    {
-      "id": "gem-classic",
-      "name": "GEM Classic",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemclassic/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Classic#persian",
-      "working": null
-    },
-    {
-      "id": "gem-drama",
-      "name": "GEM Drama",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemdrama/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Drama#persian",
-      "working": null
-    },
-    {
-      "id": "gem-comedy",
-      "name": "GEM Comedy",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemcomedy/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Comedy#persian",
-      "working": null
-    },
-    {
-      "id": "gem-ent",
-      "name": "GEM Ent",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gementertainment/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Entertainment#persian",
-      "working": null
-    },
-    {
-      "id": "gem-onyx",
-      "name": "GEM Onyx",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemonyx/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Onyx#persian",
-      "working": null
-    },
-    {
-      "id": "gem-bollywood",
-      "name": "GEM Bollywood",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gembollywood/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Bollywood#persian",
-      "working": null
-    },
-    {
-      "id": "gem-fit",
-      "name": "GEM Fit",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemfit/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Fit#persian",
-      "working": null
-    },
-    {
-      "id": "gem-nature",
-      "name": "GEM Nature",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemnature/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Nature#persian",
-      "working": null
-    },
-    {
-      "id": "gem-food",
-      "name": "GEM Food",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemfood/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Food#persian",
-      "working": null
-    },
-    {
-      "id": "gem-pixel",
-      "name": "GEM Pixel",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gempixel/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Pixel#persian",
-      "working": null
-    },
-    {
-      "id": "gem-24b",
-      "name": "GEM 24B",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gem24b/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-24B#persian",
-      "working": null
-    },
-    {
-      "id": "gem-mifa",
-      "name": "GEM Mifa +",
-      "category": "Music",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemmifaplus/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=Mifa-Music-Plus#persian",
-      "working": null
-    },
-    {
-      "id": "gem-tv",
-      "name": "GEM TV +",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemtvplus/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-TV-Plus#persian",
-      "working": null
-    },
-    {
-      "id": "gem-series",
-      "name": "GEM Series +",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemseriesplus/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Series-Plus#persian",
-      "working": null
-    },
-    {
-      "id": "gem-drama",
-      "name": "GEM Drama +",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemdramaplus/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Drama-Plus#persian",
-      "working": null
-    },
-    {
-      "id": "gem-river",
-      "name": "GEM River +",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemriverplus/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-River-Plus#persian",
-      "working": null
-    },
-    {
-      "id": "gem-rubix",
-      "name": "GEM Rubix +",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/gemrubixplus/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=GEM-Rubix-Plus#persian",
-      "working": null
-    },
-    {
-      "id": "meta-film",
-      "name": "Meta Film",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://metafilmhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Meta-Film#persian",
-      "working": null
-    },
-    {
       "id": "royal-tv",
       "name": "Royal TV",
       "category": "General Entertainment",
@@ -1362,7 +1076,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdnw.telewebion.com/sport1/live/playlist.m3u8",
+      "stream_url": "https://corsply-r7x4jn9.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sport1/live/1080p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Telewebion-Sport-1#persian",
       "working": null
     },
@@ -1373,7 +1087,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdnw.telewebion.com/sport2/live/playlist.m3u8",
+      "stream_url": "https://corsply-r7x4jn9.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sport2/live/1080p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Telewebion-Sport-2#persian",
       "working": null
     },
@@ -1384,7 +1098,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://cdnw.telewebion.com/sport3/live/playlist.m3u8",
+      "stream_url": "https://corsply-r7x4jn9.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sport3/live/1080p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Telewebion-Sport-3#persian",
       "working": null
     },
@@ -1595,6 +1309,17 @@
       "logo_url": null,
       "stream_url": null,
       "page_url": "https://www.parsatv.com/name=IRIB",
+      "working": null
+    },
+    {
+      "id": "meta-film",
+      "name": "Meta Film",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://metafilmhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Meta-Film#persian",
       "working": null
     },
     {
@@ -2363,7 +2088,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781164800&s=kqG-EvVxOKTvGFDfMCQ9bQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781208000&s=eLUZ7o_5S40_ZV7SKMxfFQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3936,7 +3661,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/NyVHi_I-cY4?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/uPK7h15CJms?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Bikini-Runway#fashion",
       "working": null
     },
@@ -3969,7 +3694,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/0SS3_qGCNtE?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/uhJGr0psJ1Q?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Runway-Fashion#fashion",
       "working": null
     },
@@ -4002,7 +3727,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/ynAMZlo1Y_c?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/xPDmSv3bztY?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Black-Tape-Project#fashion",
       "working": null
     },
@@ -4024,7 +3749,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/1UZXpFHGe-8?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/GOFCafQ-d5A?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Swimwear-Party#fashion",
       "working": null
     },
@@ -4035,7 +3760,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/r_bhgMXdmYw?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/UUZ1f4lp6oU?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Swim-Week#fashion",
       "working": null
     },
@@ -4068,30 +3793,8 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/IJzTJ2Yb0WE?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/1ieM3yNny8o?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Lingerie-Party#fashion",
-      "working": null
-    },
-    {
-      "id": "shift-fashion",
-      "name": "Shift Fashion",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/nHHbM3skcg0?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Shift-Fashion#fashion",
-      "working": null
-    },
-    {
-      "id": "shift-bikini",
-      "name": "Shift Bikini",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/cb3I1O4stLo?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Shift-Bikini#fashion",
       "working": null
     },
     {
@@ -4106,13 +3809,24 @@
       "working": null
     },
     {
+      "id": "yoga-girl",
+      "name": "Yoga Girl",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://www.youtube-nocookie.com/embed/KxrlvLMciXQ?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=Yoga-Girl#fashion",
+      "working": null
+    },
+    {
       "id": "splash-tv",
       "name": "Splash TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/O3Clb6JWcSE?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/mvDFpAyXZe4?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Splash-TV#fashion",
       "working": null
     },
@@ -4136,6 +3850,17 @@
       "logo_url": null,
       "stream_url": "https://sy.wns.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Super-Yacht-TV#fashion",
+      "working": null
+    },
+    {
+      "id": "fashion-finds",
+      "name": "Fashion Finds",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc5us/master.m3u8",
+      "page_url": "https://www.parsatv.com/name=Fashion-Finds#fashion",
       "working": null
     },
     {
@@ -4227,28 +3952,6 @@
       "working": null
     },
     {
-      "id": "fashion-finds",
-      "name": "Fashion Finds",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc5us/master.m3u8",
-      "page_url": "https://www.parsatv.com/name=Fashion-Finds#fashion",
-      "working": null
-    },
-    {
-      "id": "yoga-girl",
-      "name": "Yoga Girl",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/KxrlvLMciXQ?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Yoga-Girl#fashion",
-      "working": null
-    },
-    {
       "id": "rakuten-tv",
       "name": "Rakuten TV",
       "category": "General Entertainment",
@@ -4321,7 +4024,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1781163028&hash=3180b74bef30b7f86a90c3ac8b76b66358039534c55cc0b6900e2f2c6a329d0f",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=CZ&exp=1781203008&hash=c9c85fe038a282c5a33c39c0b5fda2373119180d1c92cb5f114ee841e6adafcd",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4332,7 +4035,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1781163031&hash=231a5a71775abd3fb532eabb8e78b05945f120300d21c8013548e3bc16f98447",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=CZ&exp=1781202988&hash=30a1377384769ea466fa0d63453093f7077c8357a5692e9c758b91e5f8cd31cc",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4343,7 +4046,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781162386&hash=e24e391116853da5c6c5be68ef9aa8609f7a05b876fd40b6f6b74d238f980f00",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781202999&hash=5faf2c8d3cd73838787f56cffc004e0cb6d5f2d5c61be157e82a3fc9901a2bd5",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6730,7 +6433,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781154375~acl=/alraimedialive/alraitv.smil/*~hmac=b4b80f131cb93020ab0c51390165e02acd3e281f86d6823ae830da1dfc8837f3",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781195428~acl=/alraimedialive/alraitv.smil/*~hmac=ece0d086fddda544dcc6ea68b4c77caed7ac41cd6abac6628f207c4b760a6d3a",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8512,7 +8215,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=WVmQz6o3Qv-yD0bhLZuiEQ&e=1781240671",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=_jO4ePaxl6oiRm0v8lOEdw&e=1781281209",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -9227,7 +8930,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-de-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10481,7 +10184,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app:8443/IRIBChannel3/index-0.m3u8?token=onetv202",
+      "stream_url": "https://varzcors-o8u5ix.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/tv3/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabakeh-3#irib",
       "working": null
     },
@@ -10514,7 +10217,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://varzcors-o8u5ix.cfcross.workers.dev/?url=https://live-azd1104.telewebion.ir/ek/sport1/live/720p/index.m3u8",
+      "stream_url": "https://varzcors-o8u5ix.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/varzesh/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Varzesh#irib",
       "working": null
     },
