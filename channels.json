@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-17T05:26:04Z",
+  "scraped_at": "2026-06-17T16:20:58Z",
   "total": 1004,
   "channels": [
     {
@@ -2132,7 +2132,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781683200&s=TeA_ac8SDXAEITCY1_IVnw",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781726400&s=DFNxbukxntqhymkZP6d6AQ",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -3716,7 +3716,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/NIQHAMqNFe0?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/0Cs6Ay8J_YE?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Swim-Style-TV#fashion",
       "working": null
     },
@@ -3727,7 +3727,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/RfN1rQywbRg?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/SW5oC-lYjZ0?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Traffic-Chic#fashion",
       "working": null
     },
@@ -3765,14 +3765,14 @@
       "working": null
     },
     {
-      "id": "black-tape",
-      "name": "Black Tape",
+      "id": "world-cup-models",
+      "name": "World Cup Models",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/xPDmSv3bztY?autoplay=&modestbranding=1&rel=0&autohide=1",
-      "page_url": "https://www.parsatv.com/name=Black-Tape-Project#fashion",
+      "stream_url": "https://www.youtube-nocookie.com/embed/kpDaPsB9xPs?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "page_url": "https://www.parsatv.com/name=World-Cup-Models#fashion",
       "working": null
     },
     {
@@ -3793,7 +3793,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/GOFCafQ-d5A?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/BLRTKgKfCyg?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Swimwear-Party#fashion",
       "working": null
     },
@@ -3837,7 +3837,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.youtube-nocookie.com/embed/1ieM3yNny8o?autoplay=&modestbranding=1&rel=0&autohide=1",
+      "stream_url": "https://www.youtube-nocookie.com/embed/EhB8aItCjX4?autoplay=&modestbranding=1&rel=0&autohide=1",
       "page_url": "https://www.parsatv.com/name=Lingerie-Party#fashion",
       "working": null
     },
@@ -4068,7 +4068,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1781682075&hash=aa77f7be7ff9d4b2eb9bf11cc869b3ae2ea3d0de81d23ff5423be7f1bec4c817",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1781721321&hash=4218d397111cd909dde891e7983b79d7cab30a9ae1c34cdda375d19b2662cd84",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4079,7 +4079,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1781682077&hash=e1389cd015082abb364ab5558d1b6ac92879c9e34b2320f09b912a083041175a",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1781721324&hash=5d9d882acefab026c911525be2c657eae2785d79b6c72772a1284ff3ddd834e2",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4090,7 +4090,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781682079&hash=814d9f2d225f1213581b493f742062f30795513aea0ce45b1fe4444ea2deae97",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781721326&hash=2e46bb3a1b8c08739e072aaa6d94813d29f7f2979688ac4edda5668e6c07792d",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6477,7 +6477,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781673383~acl=/alraimedialive/alraitv.smil/*~hmac=eee18a82f9bfab818d54a6187a89de40acc9107f305259973e4c81564c59fd5a",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781712651~acl=/alraimedialive/alraitv.smil/*~hmac=2a264abee38806d55d2a1721c389e4cca019a1c12fc796a43caee86571211a5b",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8259,7 +8259,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=kwUq4yMpgwnsCLiuJP_m-A&e=1781759466",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=-ieG2ko-Lt2qydcTXNnBxg&e=1781799228",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
