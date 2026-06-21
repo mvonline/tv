@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-06-20T14:47:21Z",
-  "total": 1006,
+  "scraped_at": "2026-06-21T05:32:19Z",
+  "total": 1012,
   "channels": [
     {
       "id": "highlights",
@@ -163,7 +163,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app:8443/ChannelOne/index-0.m3u8?token=onetv202",
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app:8443/ChannelOne/index-0.m3u8",
       "page_url": "https://www.parsatv.com/name=Channel-One#persian",
       "working": null
     },
@@ -344,14 +344,14 @@
       "working": null
     },
     {
-      "id": "itn-tv",
-      "name": "ITN TV",
-      "category": "Music",
+      "id": "shorai-tv",
+      "name": "Shorai TV",
+      "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://spf-cors-itn.cfcross.workers.dev/?url=https://livestream.5centscdn.com/tvitnweb1/145c6c9228c4d6586df49db1edf9cf4d.sdp/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=ITN-TV#persian",
+      "stream_url": "https://hlspackager.akamaized.net/live/DB/ALTERNATIVE_SHORAI_TV/HLS/ALTERNATIVE_SHORAI_TV.m3u8",
+      "page_url": "https://www.parsatv.com/name=Alternative-Shorai-TV#persian",
       "working": null
     },
     {
@@ -372,8 +372,41 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://shiny-paper-8b46.iranindependent.workers.dev/index.m3u8",
+      "stream_url": "https://mediamtx.elitelatrade.com/live/stream/main_stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Iran-Independent-TV#persian",
+      "working": null
+    },
+    {
+      "id": "itn-tv",
+      "name": "ITN TV",
+      "category": "Music",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://itnhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=ITN-TV#persian",
+      "working": null
+    },
+    {
+      "id": "gem-series",
+      "name": "GEM Series",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/gemseriesbb/index-0.m3u8",
+      "page_url": "https://www.parsatv.com/name=GEM-Series#persian",
+      "working": null
+    },
+    {
+      "id": "yourtime-tv",
+      "name": "YourTime TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://live.yourtime.tv/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=YourTime-TV#persian",
       "working": null
     },
     {
@@ -416,30 +449,8 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app:8443/PMCMusic/index-0.m3u8?token=onetv202",
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/PMCMusic/index-0.m3u8",
       "page_url": "https://www.parsatv.com/name=PMC#persian",
-      "working": null
-    },
-    {
-      "id": "yourtime-tv",
-      "name": "YourTime TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://live.yourtime.tv/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=YourTime-TV#persian",
-      "working": null
-    },
-    {
-      "id": "high-vision",
-      "name": "High Vision",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://streamer1.connectto.com/HIGHVISION_WEB_1205/playlist.m3u8",
-      "page_url": "https://www.parsatv.com/name=High-Vision#persian",
       "working": null
     },
     {
@@ -451,6 +462,17 @@
       "logo_url": null,
       "stream_url": "https://hls.navahang.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=Navahang-TV#persian",
+      "working": null
+    },
+    {
+      "id": "high-vision",
+      "name": "High Vision",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://streamer1.connectto.com/HIGHVISION_WEB_1205/playlist.m3u8",
+      "page_url": "https://www.parsatv.com/name=High-Vision#persian",
       "working": null
     },
     {
@@ -473,6 +495,17 @@
       "logo_url": null,
       "stream_url": "https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AFN-Music#persian",
+      "working": null
+    },
+    {
+      "id": "ravi-tv",
+      "name": "Ravi TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://hls.ravitv.com/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Ravi-TV#Persian",
       "working": null
     },
     {
@@ -506,6 +539,39 @@
       "logo_url": null,
       "stream_url": "https://t2hls.wns.live/hls/stream.m3u8",
       "page_url": "https://www.parsatv.com/name=T2-TV#persian",
+      "working": null
+    },
+    {
+      "id": "t2-movies",
+      "name": "T2 Movies",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8",
+      "page_url": "https://www.parsatv.com/name=T2-Movies#persian",
+      "working": null
+    },
+    {
+      "id": "t2-america",
+      "name": "T2 America",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/T2America/index-0.m3u8",
+      "page_url": "https://www.parsatv.com/name=T2-America#persian",
+      "working": null
+    },
+    {
+      "id": "t2-international",
+      "name": "T2 International",
+      "category": "Documentary",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/T2International/index-0.m3u8",
+      "page_url": "https://www.parsatv.com/name=T2-International#persian",
       "working": null
     },
     {
@@ -575,46 +641,13 @@
       "working": null
     },
     {
-      "id": "t2-movies",
-      "name": "T2 Movies",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/T2Movies/index-0.m3u8?token=onetv202",
-      "page_url": "https://www.parsatv.com/name=T2-Movies#persian",
-      "working": null
-    },
-    {
-      "id": "ravi-tv",
-      "name": "Ravi TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://hls.ravitv.com/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Ravi-TV#Persian",
-      "working": null
-    },
-    {
-      "id": "datis-tv",
-      "name": "Datis TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://dathls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Datis-TV",
-      "working": null
-    },
-    {
       "id": "ekran-movies",
       "name": "Ekran Movies",
       "category": "Movies & Series",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://ca-rt.onetv.app/EkranMovies/index-0.m3u8?token=onetv202",
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/EkranMovies/index-0.m3u8",
       "page_url": "https://www.parsatv.com/name=Ekran-Movies#persian",
       "working": null
     },
@@ -1109,7 +1142,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sport1/live/1080p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Telewebion-Sport-1#persian",
       "working": null
     },
@@ -1120,7 +1153,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sport2/live/1080p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1107.telewebion.ir/ek/sport2/live/1080p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Telewebion-Sport-2#persian",
       "working": null
     },
@@ -1131,8 +1164,41 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sport3/live/1080p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/sport3/live/1080p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Telewebion-Sport-3#persian",
+      "working": null
+    },
+    {
+      "id": "meta-film",
+      "name": "Meta Film",
+      "category": "Movies & Series",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://metafilmhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Meta-Film#persian",
+      "working": null
+    },
+    {
+      "id": "arax-tv",
+      "name": "Arax TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://araxhls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Arax-TV#persian",
+      "working": null
+    },
+    {
+      "id": "maah-tv",
+      "name": "Maah TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://hls.maahtv.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Maah-TV#persian",
       "working": null
     },
     {
@@ -1158,14 +1224,14 @@
       "working": null
     },
     {
-      "id": "erfan-halgheh",
-      "name": "Erfan Halgheh",
+      "id": "datis-tv",
+      "name": "Datis TV",
       "category": "General Entertainment",
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://hls.erfanhalgheh.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Erfan-Halgheh#persian",
+      "stream_url": "https://dathls.wns.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Datis-TV",
       "working": null
     },
     {
@@ -1334,6 +1400,17 @@
       "working": null
     },
     {
+      "id": "erfan-halgheh",
+      "name": "Erfan Halgheh",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://hls.erfanhalgheh.live/hls/stream.m3u8",
+      "page_url": "https://www.parsatv.com/name=Erfan-Halgheh#persian",
+      "working": null
+    },
+    {
       "id": "irib-channels",
       "name": "IRIB Channels",
       "category": "General Entertainment",
@@ -1342,28 +1419,6 @@
       "logo_url": null,
       "stream_url": null,
       "page_url": "https://www.parsatv.com/name=IRIB",
-      "working": null
-    },
-    {
-      "id": "meta-film",
-      "name": "Meta Film",
-      "category": "Movies & Series",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://metafilmhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Meta-Film#persian",
-      "working": null
-    },
-    {
-      "id": "arax-tv",
-      "name": "Arax TV",
-      "category": "General Entertainment",
-      "subcategory": null,
-      "language": "fa",
-      "logo_url": null,
-      "stream_url": "https://araxhls.wns.live/hls/stream.m3u8",
-      "page_url": "https://www.parsatv.com/name=Arax-TV#persian",
       "working": null
     },
     {
@@ -2132,7 +2187,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1781978400&s=u8X5riFM1FeE47-0td3DYQ",
+      "stream_url": "https://www.m24.ru/trans/air/pl.m3u8?e=1782028800&s=SN93so2osnSOMF3yUe5I9g",
       "page_url": "https://www.parsatv.com/name=Moscow-24#news",
       "working": null
     },
@@ -4068,7 +4123,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=US&exp=1781974917&hash=7f5349e8f52d331518f8bb3a97a962520bb9cce230f9cf58b79eb78aa5f44166",
+      "stream_url": "https://live.cdn.joj.sk/live/joj.m3u8?loc=CA&exp=1782026874&hash=fadbfd36b1b277c5bdfe59ea5b5d6f0ab7952288e72a8b478368ca6b040a43ed",
       "page_url": "https://www.parsatv.com/name=JOJ-HD#movie",
       "working": null
     },
@@ -4079,7 +4134,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=CN&exp=1781972035&hash=6711a742661fb3a19c49a24cd866c66cf9fa07f4df9e71ab818da83697531906",
+      "stream_url": "https://live.cdn.joj.sk/live/plus.m3u8?loc=US&exp=1782028035&hash=04b337c6c8cd5bc670281e8c6c10304a583082d9831b95a84db2f55463c0f741",
       "page_url": "https://www.parsatv.com/name=JOJ-Plus-HD#movie",
       "working": null
     },
@@ -4090,7 +4145,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1781974099&hash=33272379d15a7fdf379fd36b082a5e2afd7830ba18439bec5b0795c0f4bb5f5c",
+      "stream_url": "https://live.cdn.joj.sk/live/wau.m3u8?loc=US&exp=1782028037&hash=496be617a3a6555d2d31fe6d773501e24ca43847ce5d8e1f3971454be2909749",
       "page_url": "https://www.parsatv.com/name=JOJ-Family#movie",
       "working": null
     },
@@ -6488,7 +6543,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1781966243~acl=/alraimedialive/alraitv.smil/*~hmac=3f495092826606b88ef732ab8bd19172cc79b08dc80e38153c2f0d5c8becb9ec",
+      "stream_url": "https://live.kwikmotion.com/alraimedialive/alraitv.smil/playlist.m3u8?hdnts=exp=1782019352~acl=/alraimedialive/alraitv.smil/*~hmac=870e6bd3fb09b34d5712f92e2e6c5a807bbf4536a23097617348a50cc77b13e2",
       "page_url": "https://www.parsatv.com/name=Alrai-TV#arabic",
       "working": null
     },
@@ -8110,6 +8165,17 @@
       "working": null
     },
     {
+      "id": "kmc-tv",
+      "name": "KMC TV",
+      "category": "General Entertainment",
+      "subcategory": null,
+      "language": "fa",
+      "logo_url": null,
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/kmc/index-0.m3u8",
+      "page_url": "https://www.parsatv.com/name=Kurdish-Music-Channel#kurdish",
+      "working": null
+    },
+    {
       "id": "star-tv",
       "name": "Star TV",
       "category": "General Entertainment",
@@ -8270,7 +8336,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=6pjeCc5aikyBsP2IWR-yww&e=1782052321",
+      "stream_url": "https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live.m3u8?st=SoNts3zn27T_DKxa7Qlaug&e=1782105903",
       "page_url": "https://www.parsatv.com/name=Euro-Star#turkish",
       "working": null
     },
@@ -8985,7 +9051,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://edge-rs-04.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
+      "stream_url": "https://edge-rs-05.maksnet.tv/cubesanewz-secure/smil:cubesanewz-secure-web.smil/playlist.m3u8",
       "page_url": "https://www.parsatv.com/name=AnewZ-TV#turkish",
       "working": null
     },
@@ -10228,7 +10294,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/tv1/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1101.telewebion.ir/ek/tv1/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-1#irib",
       "working": null
     },
@@ -10239,7 +10305,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/tv2/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/tv2/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-2#irib",
       "working": null
     },
@@ -10261,7 +10327,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/tv4/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1113.telewebion.ir/ek/tv4/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-4#irib",
       "working": null
     },
@@ -10283,7 +10349,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://varzcors-p04t8c1x.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/varzesh/live/720p/index.m3u8",
+      "stream_url": "https://spf-cors-onetv-t5u8q.cfcross.workers.dev/?url=https://ca-rt.onetv.app/IRIB3bb/index-0.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Varzesh#irib",
       "working": null
     },
@@ -10294,7 +10360,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/irinn/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1112.telewebion.ir/ek/irinn/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Khabar#irib",
       "working": null
     },
@@ -10305,7 +10371,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/irinn2/live/576p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/irinn2/live/576p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-Khabar-2#irib",
       "working": null
     },
@@ -10316,7 +10382,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/mostanad/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/mostanad/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Mostanad#irib",
       "working": null
     },
@@ -10327,7 +10393,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/omid/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/omid/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Omid#irib",
       "working": null
     },
@@ -10338,7 +10404,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/pooya/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1112.telewebion.ir/ek/pooya/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Pooya#irib",
       "working": null
     },
@@ -10349,7 +10415,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/iribu/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1112.telewebion.ir/ek/iribu/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Roya#irib",
       "working": null
     },
@@ -10360,7 +10426,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/nasim/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1107.telewebion.ir/ek/nasim/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Nasim#irib",
       "working": null
     },
@@ -10382,7 +10448,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/namayesh/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1102.telewebion.ir/ek/namayesh/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Namayesh#irib",
       "working": null
     },
@@ -10393,7 +10459,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/kawthar/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1108.telewebion.ir/ek/kawthar/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Alkosar#irib",
       "working": null
     },
@@ -10404,7 +10470,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/hdtest/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/hdtest/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Tamasha#irib",
       "working": null
     },
@@ -10415,7 +10481,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/salamat/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/salamat/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Salamat#irib",
       "working": null
     },
@@ -10525,7 +10591,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/ofogh/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1106.telewebion.ir/ek/ofogh/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Ofogh#irib",
       "working": null
     },
@@ -10536,7 +10602,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/quran/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1110.telewebion.ir/ek/quran/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Quran#irib",
       "working": null
     },
@@ -10569,7 +10635,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/labbayk/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/labbayk/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Labbayk#irib",
       "working": null
     },
@@ -10690,7 +10756,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/tv1plus/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1108.telewebion.ir/ek/tv1plus/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Shabake-1-Plus#irib",
       "working": null
     },
@@ -10712,7 +10778,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/alborz/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/alborz/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Alborz#ostani",
       "working": null
     },
@@ -10723,7 +10789,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sabalan/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1107.telewebion.ir/ek/sabalan/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Ardabil#ostani",
       "working": null
     },
@@ -10745,7 +10811,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/atrak/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1108.telewebion.ir/ek/atrak/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Khorasan-Shomali#ostani",
       "working": null
     },
@@ -10756,7 +10822,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/bushehr/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1110.telewebion.ir/ek/bushehr/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Booshehr#ostani",
       "working": null
     },
@@ -10778,7 +10844,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/esfahan/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1112.telewebion.ir/ek/esfahan/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Esfahan#ostani",
       "working": null
     },
@@ -10789,7 +10855,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/fars/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1104.telewebion.ir/ek/fars/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Fars#ostani",
       "working": null
     },
@@ -10800,7 +10866,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/baran/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1113.telewebion.ir/ek/baran/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Gilan#ostani",
       "working": null
     },
@@ -10811,7 +10877,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sabz/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1105.telewebion.ir/ek/sabz/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Golestan#ostani",
       "working": null
     },
@@ -10833,7 +10899,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/khalijefars/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/khalijefars/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Hormozgan#ostani",
       "working": null
     },
@@ -10866,7 +10932,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/zagros/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/zagros/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Kermanshah#ostani",
       "working": null
     },
@@ -10877,7 +10943,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/karoon/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/karoon/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Karoon#ostani",
       "working": null
     },
@@ -10888,7 +10954,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/khoozestan/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1113.telewebion.ir/ek/khoozestan/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Khoozestan#ostani",
       "working": null
     },
@@ -10899,7 +10965,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/kish/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1106.telewebion.ir/ek/kish/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Kish#ostani",
       "working": null
     },
@@ -10910,7 +10976,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/kordestan/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/kordestan/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Kordestan#ostani",
       "working": null
     },
@@ -10921,7 +10987,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/aflak/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/aflak/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Lorestan#ostani",
       "working": null
     },
@@ -10932,7 +10998,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/mahabad/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1113.telewebion.ir/ek/mahabad/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Mahabad#ostani",
       "working": null
     },
@@ -10943,7 +11009,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/aftab/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/aftab/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Markazi#ostani",
       "working": null
     },
@@ -10954,7 +11020,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/khorasanrazavi/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1108.telewebion.ir/ek/khorasanrazavi/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Khorasan-Razavi#ostani",
       "working": null
     },
@@ -10976,7 +11042,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/qazvin/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1113.telewebion.ir/ek/qazvin/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Qazvin#ostani",
       "working": null
     },
@@ -10987,7 +11053,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/noor/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1106.telewebion.ir/ek/noor/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Qom#ostani",
       "working": null
     },
@@ -10998,7 +11064,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/semnan/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1109.telewebion.ir/ek/semnan/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Semnan#ostani",
       "working": null
     },
@@ -11009,7 +11075,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/hamoon/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/hamoon/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Sistan-Baluchestan#ostani",
       "working": null
     },
@@ -11020,7 +11086,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/sahand/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1103.telewebion.ir/ek/sahand/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Azerbaijan-Sharghi#ostani",
       "working": null
     },
@@ -11031,7 +11097,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/azarbayjangharbi/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1112.telewebion.ir/ek/azarbayjangharbi/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Azerbaijan-Gharbi#ostani",
       "working": null
     },
@@ -11042,7 +11108,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/dena/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1107.telewebion.ir/ek/dena/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Kohgiluyeh#ostani",
       "working": null
     },
@@ -11053,7 +11119,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/taban/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1106.telewebion.ir/ek/taban/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Yazd#ostani",
       "working": null
     },
@@ -11064,7 +11130,7 @@
       "subcategory": null,
       "language": "fa",
       "logo_url": null,
-      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1111.telewebion.ir/ek/eshragh/live/720p/index.m3u8",
+      "stream_url": "https://corsply-u7i2d9xg.cfcross.workers.dev/?url=https://live-aburayhan1106.telewebion.ir/ek/eshragh/live/720p/index.m3u8",
       "page_url": "https://www.parsatv.com/name=Zanjan#ostani",
       "working": null
     }
